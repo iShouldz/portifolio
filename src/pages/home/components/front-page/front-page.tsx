@@ -7,7 +7,7 @@ import { motion } from "motion/react"
 
 const FrontPageComponent = ({ introRef, heroScale }: any) => {
   return (
-    <section ref={introRef} className="relative min-h-[150vh]">
+    <section ref={introRef} className="relative min-h-[120vh]">
       <div className="sticky top-0 flex h-screen items-center justify-center px-4 sm:px-6 lg:px-10">
         <motion.div
           style={{ scale: heroScale, opacity: 0.94 }}
@@ -31,7 +31,7 @@ const FrontPageComponent = ({ introRef, heroScale }: any) => {
                 initial={{ opacity: 0, x: -600, y: 24, scale: 0.96 }}
                 animate={{ opacity: 1, x: 0, y: 0, scale: 1 }}
                 transition={{
-                  duration: 4,
+                  duration: 3,
                   delay: 0.12,
                   ease: [0.22, 1, 0.36, 1],
                 }}
@@ -43,7 +43,7 @@ const FrontPageComponent = ({ introRef, heroScale }: any) => {
                 initial={{ opacity: 0, x: 600, y: -4, scale: 0.96 }}
                 animate={{ opacity: 1, x: 0, y: 0, scale: 1 }}
                 transition={{
-                  duration: 4,
+                  duration: 3,
                   delay: 0.22,
                   ease: [0.22, 1, 0.36, 1],
                 }}
@@ -56,7 +56,7 @@ const FrontPageComponent = ({ introRef, heroScale }: any) => {
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.8,
+                duration: 1.25,
                 delay: 2.5,
                 ease: [0.22, 1, 0.36, 1],
               }}

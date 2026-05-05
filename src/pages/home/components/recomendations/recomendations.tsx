@@ -2,7 +2,6 @@ import { Marquee } from "@/components/ui/marquee"
 import { motion } from "motion/react"
 import Card from "../card/card"
 import type { ICard } from "../../types"
-import React from "react"
 
 const Recomendations = ({ cardsLift, cardsSkew }: any) => {
   const reviews: ICard[] = [
@@ -43,8 +42,11 @@ const Recomendations = ({ cardsLift, cardsSkew }: any) => {
     },
   ]
   const firstRow = reviews.slice(0, reviews.length / 2)
+
+  const remainRow = reviews.slice(reviews.length / 2)
+  console.log(remainRow)
   return (
-    <div className="relative mt-20 mb-20 flex w-full flex-col items-center justify-center gap-8 overflow-hidden">
+    <div className="relative mt-20 mb-20 flex min-h-[120vh] w-full flex-col items-center justify-center gap-8 overflow-hidden">
       <motion.div
         style={{ y: cardsLift, rotateX: cardsSkew, transformPerspective: 1200 }}
         className="mb-8 flex flex-col gap-4 px-4 sm:px-6 md:flex-row md:items-end md:justify-between lg:px-10"
@@ -56,11 +58,18 @@ const Recomendations = ({ cardsLift, cardsSkew }: any) => {
         </div>
       </motion.div>
 
-      <Marquee pauseOnHover className="[--duration:20s]">
-        {firstRow.map((review) => (
-          <Card {...review} />
-        ))}
-      </Marquee>
+      <div>
+        <Marquee pauseOnHover className="[--duration:15s]">
+          {firstRow.map((review) => (
+            <Card {...review} />
+          ))}
+        </Marquee>
+        <Marquee reverse pauseOnHover className="[--duration:15s]">
+          {remainRow.map((review) => (
+            <Card {...review} />
+          ))}
+        </Marquee>
+      </div>
 
       <div className="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-linear-to-r from-background"></div>
       <div className="pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-linear-to-l from-background"></div>
