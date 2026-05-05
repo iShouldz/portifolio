@@ -1,11 +1,12 @@
 import { cn } from "./lib/utils"
 import { MagicCard } from "./components/ui/magic-card"
-import { ArrowDown, ArrowLeft, ArrowUp } from "lucide-react"
+import { ArrowDown, ArrowLeft, ArrowUp, PiIcon } from "lucide-react"
 import Text3DFlip from "./components/ui/text-3d-flip"
 import { InteractiveHoverButton } from "./components/ui/interactive-hover-button"
 import { RetroGrid } from "./components/ui/retro-grid"
 import { LineShadowText } from "./components/ui/line-shadow-text"
 import { DiaTextReveal } from "./components/ui/dia-text-reveal"
+import { Dock, DockIcon } from "./components/ui/dock"
 
 export function App() {
   return (
@@ -18,6 +19,8 @@ export function App() {
           "inset-x-0 inset-y-[-30%] h-[200%] skew-y-12"
         )}
       />
+
+     
 
       <div className="absolute top-0">
         <MagicCard
@@ -49,7 +52,7 @@ export function App() {
 
       <div className="absolute bottom-0">
         <Text3DFlip
-          className="bg-transparent text-[10rem] font-bold"
+          className="bg-transparent text-[10rem]"
           textClassName="bg-transparent text-foreground"
           flipTextClassName="bg-transparent text-foreground"
           rotateDirection="top"
@@ -98,6 +101,22 @@ export function App() {
           </div>
         </MagicCard>
       </div>
+       <div className="relative bottom-1 right-0">
+      <Dock direction="middle">
+        <DockIcon>
+          <PiIcon className="size-6" />
+        </DockIcon>
+        <DockIcon>
+          <PiIcon className="size-6" />
+        </DockIcon>
+        <DockIcon>
+          <PiIcon className="size-6" />
+        </DockIcon>
+        <DockIcon>
+          <PiIcon className="size-6" />
+        </DockIcon>
+      </Dock>
+    </div>
     </div>
   )
 }
