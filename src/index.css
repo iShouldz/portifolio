@@ -81,72 +81,52 @@
     background-position: 100% -100%;}}}
 
 :root {
-  --background: oklch(0.9803 0.017 128.65);
-  --foreground: oklch(0.1904 0.033 132.5);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.1904 0.033 132.5);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.1904 0.033 132.5);
-  --primary: oklch(0.4972 0.115 130.73);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.8271 0.097 167.74);
-  --secondary-foreground: oklch(0.1904 0.033 132.5);
-  --muted: oklch(0.92 0 0);
-  --muted-foreground: oklch(0.4 0 0);
-  --accent: oklch(0.6986 0.108 191.87);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.87 0 0);
-  --chart-2: oklch(0.556 0 0);
-  --chart-3: oklch(0.439 0 0);
-  --chart-4: oklch(0.371 0 0);
-  --chart-5: oklch(0.269 0 0);
-  --radius: 0.625rem;
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  /* default (light) tokens kept for backward compatibility */
 }
 
-.dark {
-  --background: oklch(0.1 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.15 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.15 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.6972 0.115 130.73);
-  --primary-foreground: oklch(0.1 0 0);
-  --secondary: oklch(0.5271 0.097 167.74);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.25 0 0);
-  --muted-foreground: oklch(0.7 0 0);
-  --accent: oklch(0.5986 0.108 191.87);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.87 0 0);
-  --chart-2: oklch(0.556 0 0);
-  --chart-3: oklch(0.439 0 0);
-  --chart-4: oklch(0.371 0 0);
-  --chart-5: oklch(0.269 0 0);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
+@layer base {
+  :root {
+    --text: #0e1707;
+    --background: #f5fbef;
+    --primary: #4b6f20;
+    --secondary: #84dbba;
+    --accent: #32b3af;
+    --foreground: var(--text);
+    --card: var(--background);
+    --card-foreground: var(--text);
+    --popover: var(--background);
+    --popover-foreground: var(--text);
+    --primary-foreground: var(--background);
+    --secondary-foreground: var(--text);
+    --accent-foreground: var(--text);
+    --muted: color-mix(in srgb, var(--background) 92%, var(--text) 8%);
+    --muted-foreground: color-mix(in srgb, var(--text) 62%, var(--background));
+    --border: color-mix(in srgb, var(--text) 16%, var(--background));
+    --input: var(--border);
+    --ring: var(--primary);
+    --radius: 1rem;
+  }
+  .dark {
+    --text: #eff8e8;
+    --background: #0a1004;
+    --primary: #bcdf90;
+    --secondary: #247b59;
+    --accent: #4ccdc8;
+    --foreground: var(--text);
+    --card: var(--background);
+    --card-foreground: var(--text);
+    --popover: var(--background);
+    --popover-foreground: var(--text);
+    --primary-foreground: var(--background);
+    --secondary-foreground: var(--text);
+    --accent-foreground: var(--text);
+    --muted: color-mix(in srgb, var(--background) 86%, var(--text) 14%);
+    --muted-foreground: color-mix(in srgb, var(--text) 68%, var(--background));
+    --border: color-mix(in srgb, var(--text) 18%, var(--background));
+    --input: var(--border);
+    --ring: var(--primary);
+    --radius: 1rem;
+  }
 }
 
 @layer base {
@@ -160,7 +140,8 @@
     font-family: "Maitree", serif;
     min-height: 100vh;
     overflow-x: hidden;
-    @apply bg-background text-foreground;
+    background: var(--background);
+    color: var(--foreground);
   }
   #root {
     min-height: 100vh;

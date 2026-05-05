@@ -5,7 +5,7 @@ const CardDisplay = ({ cardsRef, cardsLift, cardsSkew }: any) => {
   return (
     <section
       ref={cardsRef}
-      className="max-w-8xl relative mx-auto flex flex-col gap-5 mb-4"
+      className="max-w-8xl relative mx-auto mb-4 flex flex-col gap-5"
     >
       <motion.div
         style={{ y: cardsLift, rotateX: cardsSkew, transformPerspective: 1200 }}
@@ -28,10 +28,7 @@ const CardDisplay = ({ cardsRef, cardsLift, cardsSkew }: any) => {
         viewport={{ once: true, amount: 0.4 }}
         className="max-w-8xl mx-auto grid w-full grid-cols-1 gap-4 px-4 sm:px-6 lg:grid-cols-4 lg:px-10"
       >
-        <WobbleCard
-          containerClassName="col-span-1 lg:col-span-1 lg:row-span-2 bg-secondary/90 min-h-[320px] lg:min-h-[560px]"
-          className=""
-        >
+        <WobbleCard containerClassName="col-span-1 lg:col-span-1 lg:row-span-2 bg-secondary min-h-[320px] lg:min-h-[560px] rounded-[2.5rem]">
           <div className="flex h-full w-full flex-col justify-between p-6">
             <h2 className="text-left text-base font-semibold tracking-[-0.015em] text-balance text-foreground md:text-xl lg:text-3xl">
               Projetos
@@ -47,7 +44,7 @@ const CardDisplay = ({ cardsRef, cardsLift, cardsSkew }: any) => {
           </div>
         </WobbleCard>
 
-        <WobbleCard containerClassName="col-span-1 lg:col-start-2 lg:col-span-2 bg-primary min-h-[320px] lg:min-h-[360px]">
+        <WobbleCard containerClassName="col-span-1 lg:col-start-2 lg:col-span-2 bg-primary/20 min-h-[320px] lg:min-h-[360px]">
           <div className="p-6">
             <h2 className="text-left text-base font-semibold tracking-[-0.015em] text-balance text-foreground md:text-xl lg:text-3xl">
               Experiências
@@ -78,7 +75,7 @@ const CardDisplay = ({ cardsRef, cardsLift, cardsSkew }: any) => {
 
         <WobbleCard containerClassName="col-span-1 lg:col-start-2 lg:col-span-3 bg-accent min-h-[160px] lg:min-h-[220px]">
           <div className="flex max-w-sm flex-col justify-between p-6">
-            <h2 className="text-foregroundd max-w-sm text-left text-base font-semibold tracking-[-0.015em] text-balance md:max-w-lg md:text-xl lg:text-3xl">
+            <h2 className="max-w-80 text-left text-base font-semibold tracking-[-0.015em] text-balance text-foreground md:text-xl lg:text-3xl">
               Sobre mim
             </h2>
             <div className="flex">
