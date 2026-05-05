@@ -61,12 +61,12 @@ const Recomendations = ({ cardsLift, cardsSkew }: any) => {
       <div>
         <Marquee pauseOnHover className="[--duration:15s]">
           {firstRow.map((review) => (
-            <Card {...review} />
+            <Card {...review} key={review.name} />
           ))}
         </Marquee>
         <Marquee reverse pauseOnHover className="[--duration:15s]">
           {remainRow.map((review) => (
-            <Card {...review} />
+            <Card {...review} key={review.name} />
           ))}
         </Marquee>
       </div>
