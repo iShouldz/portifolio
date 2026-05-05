@@ -188,3 +188,7 @@
     font-size: 0.750rem;
   }
 }
+
+::view-transition-old(root), ::view-transition-new(root) {
+    animation: none;
+    mix-blend-mode: normal;}
