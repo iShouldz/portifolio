@@ -1,3 +1,4 @@
+@import 'lenis/dist/lenis.css';
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
@@ -152,9 +153,17 @@
   * {
     @apply border-border outline-ring/50;
   }
+  html {
+    scroll-behavior: auto;
+  }
   body {
     font-family: "Maitree", serif;
+    min-height: 100vh;
+    overflow-x: hidden;
     @apply bg-background text-foreground;
+  }
+  #root {
+    min-height: 100vh;
   }
   html {
     font-family: "Maitree", serif;
