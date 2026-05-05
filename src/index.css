@@ -1,13 +1,24 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
-@import "@fontsource-variable/inter";
+@import "@fontsource/maitree/400.css";
+@import "@fontsource/maitree/700.css";
 
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --font-heading: var(--font-sans);
-  --font-sans: "Inter Variable", sans-serif;
+  --font-heading: "Maitree", serif;
+  --font-body: "Maitree", serif;
+  --font-sans: var(--font-body);
+  --text-sm: 0.750rem;
+  --text-base: 1rem;
+  --text-xl: 1.333rem;
+  --text-2xl: 1.777rem;
+  --text-3xl: 2.369rem;
+  --text-4xl: 3.158rem;
+  --text-5xl: 4.210rem;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -60,7 +71,13 @@
     opacity: 0;
     }
   }
-}
+  --animate-line-shadow: line-shadow 15s linear infinite
+;
+  @keyframes line-shadow {
+  0% {
+    background-position: 0 0;}
+  100% {
+    background-position: 100% -100%;}}}
 
 :root {
   --background: oklch(0.9803 0.017 128.65);
@@ -136,9 +153,36 @@
     @apply border-border outline-ring/50;
   }
   body {
+    font-family: "Maitree", serif;
     @apply bg-background text-foreground;
   }
   html {
-    @apply font-sans;
+    font-family: "Maitree", serif;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: "Maitree", serif;
+    font-weight: 700;
+  }
+  h1 {
+    font-size: 4.210rem;
+  }
+  h2 {
+    font-size: 3.158rem;
+  }
+  h3 {
+    font-size: 2.369rem;
+  }
+  h4 {
+    font-size: 1.777rem;
+  }
+  h5 {
+    font-size: 1.333rem;
+  }
+  small {
+    font-size: 0.750rem;
   }
 }
