@@ -5,7 +5,7 @@ const CardDisplay = ({ cardsRef, cardsLift, cardsSkew }: any) => {
   return (
     <section
       ref={cardsRef}
-      className="max-w-8xl relative mx-auto mb-4 flex flex-col gap-5"
+      className="max-w-8xl relative mx-auto mb-4 flex flex-col items-center justify-center gap-5"
     >
       <motion.div
         style={{ y: cardsLift, rotateX: cardsSkew, transformPerspective: 1200 }}
@@ -16,7 +16,7 @@ const CardDisplay = ({ cardsRef, cardsLift, cardsSkew }: any) => {
             Então
           </p>
           <h2 className="mt-3 text-3xl leading-tight font-bold md:text-5xl">
-            Vamos começar, me conheça.
+            Conheça meu trabalho.
           </h2>
         </div>
       </motion.div>
