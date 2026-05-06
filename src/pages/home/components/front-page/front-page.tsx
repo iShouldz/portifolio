@@ -1,8 +1,6 @@
 import { RetroGrid } from "@/components/ui/retro-grid"
 import { cn } from "@/lib/utils"
-import {
-  MoveDown,
-} from "lucide-react"
+import { MoveDown } from "lucide-react"
 import { motion } from "motion/react"
 
 const FrontPageComponent = ({ introRef, heroScale }: any) => {
@@ -66,17 +64,18 @@ const FrontPageComponent = ({ introRef, heroScale }: any) => {
                 Front-end engineer
               </p>
             </motion.div>
-          </div>
-          <div className="absolute top-1/2 right-4 flex -translate-y-1/2 items-end justify-between gap-4">
-            <motion.div
-              initial={{ opacity: 0, y: 24 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 2, delay: 3 }}
-              className="flex flex-col-reverse items-center gap-2 text-sm text-muted-foreground md:inline-flex"
-            >
-              Scroole para baixo.
-              <MoveDown size={42} />
-            </motion.div>
+
+            <div className="absolute bottom-0 flex -translate-y-1/2 items-end justify-between gap-4">
+              <motion.div
+                initial={{ opacity: 0, y: 24 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 2, delay: 3 }}
+                className="flex flex-col-reverse items-center gap-2 text-sm text-muted-foreground md:inline-flex"
+              >
+                Scroole para baixo.
+                <MoveDown size={42} />
+              </motion.div>
+            </div>
           </div>
         </motion.div>
       </div>
