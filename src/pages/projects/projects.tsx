@@ -75,6 +75,18 @@ const projects: Project[] = [
   },
 ]
 
+const currentProjects = [
+  {
+    id: "one-pace-br",
+    title: "One Pace BR",
+    description: "lero lero",
+    gitHubUrl: "",
+    tecnologies: ["React", "Next.js", "SEO", "UX"],
+    tags: ["React", "Next.js", "SEO", "UX"],
+    deployLink: "",
+  },
+]
+
 type ProjectCardProps = {
   project: Project
   index: number
