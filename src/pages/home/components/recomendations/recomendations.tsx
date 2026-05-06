@@ -18,7 +18,7 @@ const Recomendations = ({ cardsLift, cardsSkew }: any) => {
       </motion.div>
 
       <div>
-        <Marquee pauseOnHover className="[--duration:20s]">
+        <Marquee pauseOnHover className="[--duration:25s]">
           {reviews.map((review) => (
             <Card {...review} key={review.name} />
           ))}
