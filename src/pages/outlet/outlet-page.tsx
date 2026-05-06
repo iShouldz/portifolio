@@ -12,9 +12,18 @@ import {
 } from "@/components/ui/tooltip"
 import { useCallback } from "react"
 import { RoutesUrl } from "@/utils/enum/routes.utils"
+import { useTranslation } from "react-i18next"
+
+import {
+  HoverCard,
+  HoverCardContent,
+  HoverCardTrigger,
+} from "@/components/ui/hover-card"
+import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group"
 
 const OutletPage = () => {
   const navigate = useNavigate()
+  const { i18n, t } = useTranslation()
 
   const handleGoToHome = useCallback(() => {
     navigate(RoutesUrl.HOME)
@@ -52,7 +61,7 @@ const OutletPage = () => {
                 <Home />
               </TooltipTrigger>
               <TooltipContent>
-                <p>Ir para a página inicial</p>
+                <p>{t("dock.home")}</p>
               </TooltipContent>
             </Tooltip>
           </DockIcon>
@@ -72,7 +81,7 @@ const OutletPage = () => {
                 </svg>
               </TooltipTrigger>
               <TooltipContent>
-                <p>Perfil no GitHub</p>
+                <p>{t("dock.github")}</p>
               </TooltipContent>
             </Tooltip>
           </DockIcon>
@@ -92,7 +101,7 @@ const OutletPage = () => {
                 </svg>
               </TooltipTrigger>
               <TooltipContent>
-                <p>Perfil no LinkedIn</p>
+                <p>{t("dock.linkedin")}</p>
               </TooltipContent>
             </Tooltip>
           </DockIcon>
@@ -108,9 +117,64 @@ const OutletPage = () => {
               </a>
 
               <TooltipContent>
-                <p>Download do currículo</p>
+                <p>{t("dock.curriculum")}</p>
               </TooltipContent>
             </Tooltip>
+          </DockIcon>
+
+          <DockIcon>
+            <HoverCard>
+              <HoverCardTrigger>
+                <AnimateIcon animateOnHover>
+                  <svg
+                    width="100%"
+                    height="100%"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5 8L10 13M4 14L10 8L12 5M2 5H14M7 2H8M12.913 17H20.087M12.913 17L11 21M12.913 17L15.7783 11.009C16.0092 10.5263 16.1246 10.2849 16.2826 10.2086C16.4199 10.1423 16.5801 10.1423 16.7174 10.2086C16.8754 10.2849 16.9908 10.5263 17.2217 11.009L20.087 17M20.087 17L22 21"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </AnimateIcon>
+              </HoverCardTrigger>
+              <HoverCardContent className="flex w-fit flex-col gap-4">
+                <h4>{t("dock.language.label")}</h4>
+                <ToggleGroup
+                  type="single"
+                  defaultValue={i18n.language}
+                  variant="outline"
+                  className="flex w-fit flex-1"
+                >
+                  <ToggleGroupItem
+                    value="en"
+                    aria-label="Toggle top"
+                    onClick={() => i18n.changeLanguage("en")}
+                  >
+                    {t("dock.language.options.en")}
+                  </ToggleGroupItem>
+                  <ToggleGroupItem
+                    value="es"
+                    aria-label="Toggle bottom"
+                    onClick={() => i18n.changeLanguage("es")}
+                  >
+                    {t("dock.language.options.es")}
+                  </ToggleGroupItem>
+                  <ToggleGroupItem
+                    value="pt"
+                    aria-label="Toggle left"
+                    onClick={() => i18n.changeLanguage("pt")}
+                  >
+                    {t("dock.language.options.pt")}
+                  </ToggleGroupItem>
+                </ToggleGroup>
+              </HoverCardContent>
+            </HoverCard>
           </DockIcon>
         </Dock>
       </motion.div>

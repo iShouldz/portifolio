@@ -1,10 +1,17 @@
 {
-  "nav": {
-    "home": "Início",
-    "projects": "Projetos",
-    "experience": "Experiências",
-    "about": "Sobre",
-    "contact": "Contato"
+  "dock": {
+    "home": "Ir para a página inicial",
+    "github": "Perfil no GitHub",
+    "linkedin": "Perfil no LinkedIn",
+    "curriculum": "Download do currículo",
+    "language": {
+      "label": "Mudar idioma",
+      "options": {
+        "en": "Inglês",
+        "es": "Espanhol",
+        "pt": "Português"
+      }
+    }
   },
   "home": {
     "hero": {

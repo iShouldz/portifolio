@@ -1,55 +1,21 @@
 {
-  "nav": {
-    "home": "Inicio",
-    "projects": "Proyectos",
-    "experience": "Experiencias",
-    "about": "Acerca de",
-    "contact": "Contacto"
-  },
-  "home": {
-    "hero": {
-      "title": "Hola, soy Pedro",
-      "subtitle": "Desarrollador Frontend & Entusiasta Full Stack",
-      "cta": "Ver mi trabajo"
-    },
-    "projects": {
-      "title": "Conoce mi trabajo.",
-      "description": "Conoce algunos proyectos que he desarrollado a lo largo de mi trayectoria, desde proyectos personales hasta proyectos de la comunidad Open Source.",
-      "cta": "Ver proyectos"
-    },
-    "experience": {
-      "title": "Experiencias",
-      "description": "Conoce mis experiencias profesionales, dónde he trabajado y qué he aprendido.",
-      "cta": "Ver experiencias"
-    },
-    "about": {
-      "title": "Acerca de mí",
-      "description": "Conoce un poco sobre la persona detrás del desarrollador.",
-      "cta": "Saber más"
-    },
-    "contact": {
-      "title": "Contacto",
-      "description": "Llámame para trabajos, colaboraciones y oportunidades.",
-      "cta": "Ponte en contacto"
-    },
-    "recommendations": {
-      "title": "Algunas recomendaciones de colegas.",
-      "scrollDown": "Desplázate hacia abajo."
+  "dock": {
+    "home": "Ir a la página de inicio",
+    "github": "Perfil de GitHub",
+    "linkedin": "Perfil de LinkedIn",
+    "curriculum": "Descargar currículum",
+    "language": {
+      "label": "Cambiar idioma",
+      "options": {
+        "en": "Inglés",
+        "es": "Español",
+        "pt": "Português"
+      }
     }
   },
-  "projects": {
-    "title": "Proyectos",
-    "subtitle": "Mi trabajo reciente",
-    "viewProject": "Ver proyecto",
-    "viewCode": "Ver código"
-  },
-  "experience": {
-    "title": "Experiencia Profesional",
-    "current": "Actual",
-    "period": "Período"
-  },
-  "footer": {
-    "copyright": "© 2026 Pedro. Todos los derechos reservados.",
-    "links": "Enlaces"
-  }
+  "home": {
+    "front-page": {
+        
+    }
+}
 }
