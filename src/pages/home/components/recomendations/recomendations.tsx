@@ -11,6 +11,9 @@ const Recomendations = ({ cardsLift, cardsSkew }: any) => {
     returnObjects: true,
   }) as ICard[]
 
+  const firstRow = recomendationsList.slice(0, recomendationsList.length / 2)
+  const secondRow = recomendationsList.slice(recomendationsList.length / 2)
+
   return (
     <div className="relative mt-32 mb-20 flex min-h-[120vh] w-full flex-col items-center justify-center gap-8 overflow-hidden">
       <motion.div
@@ -30,7 +33,12 @@ const Recomendations = ({ cardsLift, cardsSkew }: any) => {
 
       <div>
         <Marquee pauseOnHover className="[--duration:25s]">
-          {recomendationsList.map((review) => (
+          {firstRow.map((review) => (
+            <Card {...review} key={review.name} />
+          ))}
+        </Marquee>
+        <Marquee pauseOnHover reverse className="[--duration:25s]">
+          {secondRow.map((review) => (
             <Card {...review} key={review.name} />
           ))}
         </Marquee>
