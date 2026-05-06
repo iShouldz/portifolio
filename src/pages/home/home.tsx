@@ -1,19 +1,9 @@
-import ReactLenis from "lenis/react"
+
 import { useScroll, useTransform } from "motion/react"
 import { useRef } from "react"
 import FrontPageComponent from "./components/front-page/front-page"
 import CardDisplay from "./components/card-display/card-display"
 import Recomendations from "./components/recomendations/recomendations"
-import { ScrollProgress } from "@/components/ui/scroll-progress"
-import { Dock, DockIcon } from "@/components/ui/dock"
-import { Search, Settings } from "lucide-react"
-import { motion } from "motion/react"
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipTrigger,
-} from "@/components/ui/tooltip"
-import { AnimatedThemeToggler } from "@/components/ui/animated-theme-toggler"
 
 const Home = () => {
   const introRef = useRef<HTMLElement | null>(null)
@@ -37,13 +27,12 @@ const Home = () => {
     <>
       <FrontPageComponent introRef={introRef} heroScale={heroScale} />
 
+      <CardDisplay cardsLift={cardsLift} cardsSkew={cardsSkew} />
       <Recomendations
         cardsRef={cardsRef}
         cardsLift={cardsLift}
         cardsSkew={cardsSkew}
       />
-
-      <CardDisplay cardsLift={cardsLift} cardsSkew={cardsSkew} />
     </>
   )
 }

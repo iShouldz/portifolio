@@ -2,96 +2,7 @@ import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card"
 import { getGithubRepos } from "@/hooks/use-github/use-github"
 import { motion, useScroll, useTransform } from "motion/react"
 import { useRef } from "react"
-
-type Project = {
-  id: string
-  title: string
-  description: string
-  image: string
-  tags: string[]
-  repoUrl: string
-}
-
-const projects: Project[] = [
-  {
-    id: "one-pace-br",
-    title: "One Pace BR",
-    description:
-      "Plataforma em portugues para catalogo e navegacao de episodios com foco em performance e usabilidade.",
-    image:
-      "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1400&auto=format&fit=crop",
-    tags: ["React", "Next.js", "SEO", "UX"],
-    repoUrl: "https://github.com/",
-  },
-  {
-    id: "simulador-cdb",
-    title: "Simulador de Juros & CDB",
-    description:
-      "Interface para calculos financeiros com simulacoes em tempo real e visualizacao clara dos cenarios.",
-    image:
-      "https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=1400&auto=format&fit=crop",
-    tags: ["TypeScript", "Fintech", "Data Viz"],
-    repoUrl: "https://github.com/",
-  },
-  {
-    id: "jellyfin-theme",
-    title: "Jellyfin Custom UI",
-    description:
-      "Sistema de temas e refinamento visual para media server com foco em TV e dispositivos de streaming.",
-    image:
-      "https://images.unsplash.com/photo-1527443224154-c4e7064f3acf?q=80&w=1400&auto=format&fit=crop",
-    tags: ["CSS", "Theming", "Media"],
-    repoUrl: "https://github.com/",
-  },
-  {
-    id: "one-pace-br",
-    title: "One Pace BR",
-    description:
-      "Plataforma em portugues para catalogo e navegacao de episodios com foco em performance e usabilidade.",
-    image:
-      "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1400&auto=format&fit=crop",
-    tags: ["React", "Next.js", "SEO", "UX"],
-    repoUrl: "https://github.com/",
-  },
-  {
-    id: "simulador-cdb",
-    title: "Simulador de Juros & CDB",
-    description:
-      "Interface para calculos financeiros com simulacoes em tempo real e visualizacao clara dos cenarios.",
-    image:
-      "https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=1400&auto=format&fit=crop",
-    tags: ["TypeScript", "Fintech", "Data Viz"],
-    repoUrl: "https://github.com/",
-  },
-  {
-    id: "jellyfin-theme",
-    title: "Jellyfin Custom UI",
-    description:
-      "Sistema de temas e refinamento visual para media server com foco em TV e dispositivos de streaming.",
-    image:
-      "https://images.unsplash.com/photo-1527443224154-c4e7064f3acf?q=80&w=1400&auto=format&fit=crop",
-    tags: ["CSS", "Theming", "Media"],
-    repoUrl: "https://github.com/",
-  },
-]
-
-const currentProjects = [
-  {
-    id: "one-pace-br",
-    title: "One Pace BR",
-    description: "lero lero",
-    gitHubUrl: "",
-    tecnologies: ["React", "Next.js", "SEO", "UX"],
-    tags: ["React", "Next.js", "SEO", "UX"],
-    deployLink: "",
-  },
-]
-
-type ProjectCardProps = {
-  project: Project
-  index: number
-  progress: ReturnType<typeof useScroll>["scrollYProgress"]
-}
+import currentProjects from "@/utils/projects.json"
 
 const Projects = () => {
   const sectionRef = useRef<HTMLElement | null>(null)
@@ -119,21 +30,21 @@ const Projects = () => {
       </motion.div>
 
       <div className="flex flex-wrap justify-center gap-6">
-        {projects.map((project, index) => (
-          <CardContainer className="inter-var">
-            <CardBody className="group/card relative h-auto w-auto rounded-xl border border-black/[0.1] bg-gray-50 p-6 sm:w-[30rem] dark:border-white/[0.2] dark:bg-black dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1]">
+        {currentProjects.map((project) => (
+          <CardContainer className="inter-var" key={project.id}>
+            <CardBody className="group/card relative h-120 w-120 rounded-xl border border-black/[0.1] bg-gray-50 p-6 sm:w-[30rem] dark:border-white/[0.2] dark:bg-black dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1]">
               <CardItem
                 translateZ="50"
                 className="text-xl font-bold text-neutral-600 dark:text-white"
               >
-                Make things float in air
+                {project.title}
               </CardItem>
               <CardItem
                 as="p"
                 translateZ="60"
                 className="mt-2 max-w-sm text-sm text-neutral-500 dark:text-neutral-300"
               >
-                Hover over this card to unleash the power of CSS perspective
+                {project.description}
               </CardItem>
               <CardItem translateZ="100" className="mt-4 w-full">
                 <img
@@ -152,14 +63,7 @@ const Projects = () => {
                   target="__blank"
                   className="rounded-xl px-4 py-2 text-xs font-normal dark:text-white"
                 >
-                  Try now →
-                </CardItem>
-                <CardItem
-                  translateZ={20}
-                  as="button"
-                  className="rounded-xl bg-black px-4 py-2 text-xs font-bold text-white dark:bg-white dark:text-black"
-                >
-                  Sign up
+                  Conhecer detalhes →
                 </CardItem>
               </div>
             </CardBody>

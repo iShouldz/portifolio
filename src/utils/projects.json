@@ -1,0 +1,45 @@
+[
+  {
+    "id": "portifolio",
+    "title": "Portifolio",
+    "description": "Meu portifolio pessoal, onde agrego meus projetos e habilidades.",
+    "githubUrl": "https://github.com/iShouldz/portifolio",
+    "tecnologies": ["React", "Typescript", "SEO", "UX"],
+    "tags": ["Web", "Frontend", "Pessoal"]
+  },
+  {
+    "id": "one-pace-hub",
+    "title": "One Pace BR Hub",
+    "description": "Hub focado em reunir os episódios editados e as legendas em Português do Brasil (PT-BR) do projeto One Pace.",
+    "githubUrl": "https://github.com/iShouldz/one-pace-br-hub",
+    "tecnologies": ["React", "Next.js", "SEO", "UX"],
+    "tags": ["Web", "Frontend", "Pessoal"],
+    "deployLink": "one-pace-br.pages.dev"
+  },
+  {
+    "id": "treine-se",
+    "title": "Treine-Se",
+    "description": "Aplicativo fitness construido em React usando webridge do Capacitor para portar para mobile.",
+    "githubUrl": "https://github.com/iShouldz/treine-se",
+    "tecnologies": ["React", "Capacitor JS", "Android Studio", "IA"],
+    "tags": ["Web", "Frontend", "Webview", "Web Bridge", "Fitness", "IA"]
+  },
+  {
+    "id": "adedonha",
+    "title": "Adedonha",
+    "description": "rojeto para acompanhamento do jogo adedonha (Stop) no mobile.",
+    "githubUrl": "https://github.com/iShouldz/adedonha",
+    "tecnologies": ["React", "Typescript", "Shadcn", "IA"],
+    "tags": ["Web", "Frontend", "Jogos", "Pessoal", "Mobile First"],
+    "deployLink": "https://adedonha.vercel.app/"
+  },
+  {
+    "id": "vet-care",
+    "title": "Vet Care",
+    "description": "Projeto academico para gerenciamento de cuidados veterinários.",
+    "githubUrl": "https://github.com/iShouldz/vet-care",
+    "tecnologies": ["React", "Typescript", "Shadcn"],
+    "tags": ["Web", "Frontend", "Gereciamento", "React"],
+    "deployLink": "https://vetcareufape.vercel.app/"
+  }
+]

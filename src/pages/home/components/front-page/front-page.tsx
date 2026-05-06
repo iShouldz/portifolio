@@ -29,7 +29,7 @@ const FrontPageComponent = ({ introRef, heroScale }: any) => {
                 initial={{ opacity: 0, x: -600, y: 24, scale: 0.96 }}
                 animate={{ opacity: 1, x: 0, y: 0, scale: 1 }}
                 transition={{
-                  duration: 3,
+                  duration: 2.4,
                   delay: 0.12,
                   ease: [0.22, 1, 0.36, 1],
                 }}
@@ -41,7 +41,7 @@ const FrontPageComponent = ({ introRef, heroScale }: any) => {
                 initial={{ opacity: 0, x: 600, y: -4, scale: 0.96 }}
                 animate={{ opacity: 1, x: 0, y: 0, scale: 1 }}
                 transition={{
-                  duration: 3,
+                  duration: 2.5,
                   delay: 0.22,
                   ease: [0.22, 1, 0.36, 1],
                 }}
@@ -69,7 +69,7 @@ const FrontPageComponent = ({ introRef, heroScale }: any) => {
               <motion.div
                 initial={{ opacity: 0, y: 24 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 2, delay: 3 }}
+                transition={{ duration: 1.5, delay: 2 }}
                 className="flex flex-col-reverse items-center gap-2 text-sm text-muted-foreground md:inline-flex"
               >
                 Scroole para baixo.
