@@ -3,8 +3,10 @@ import { getGithubRepos } from "@/hooks/use-github/use-github"
 import { motion, useScroll, useTransform } from "motion/react"
 import { useRef } from "react"
 import currentProjects from "@/utils/projects.json"
+import { useTranslation } from "react-i18next"
 
 const Projects = () => {
+  const { t } = useTranslation()
   const sectionRef = useRef<HTMLElement | null>(null)
   const { scrollYProgress } = useScroll({
     target: sectionRef,
@@ -25,7 +27,7 @@ const Projects = () => {
         className="mb-10 flex flex-col items-center gap-2"
       >
         <h2 className="text-3xl leading-tight font-bold md:text-5xl">
-          Meus projetos, a sua disposição.
+          {t("projects.title")}
         </h2>
       </motion.div>
 
@@ -63,7 +65,7 @@ const Projects = () => {
                   target="__blank"
                   className="rounded-xl px-4 py-2 text-xs font-normal dark:text-white"
                 >
-                  Conhecer detalhes →
+                  {t("projects.cards.btn")} →
                 </CardItem>
               </div>
             </CardBody>

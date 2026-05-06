@@ -62,7 +62,7 @@ const CardDisplay = ({ cardsRef, cardsLift, cardsSkew }: any) => {
           viewport={{ once: true }}
         >
           <h2 className="mt-3 text-3xl leading-tight font-bold md:text-5xl">
-            {t("cards-section.title")}
+            {t("landing-page.cards-section.title")}
           </h2>
         </motion.div>
       </motion.div>
@@ -86,11 +86,11 @@ const CardDisplay = ({ cardsRef, cardsLift, cardsSkew }: any) => {
           >
             <div className="group flex h-full w-full flex-col justify-between p-6">
               <h2 className="text-left text-base font-semibold tracking-[-0.015em] text-balance text-foreground md:text-xl lg:text-3xl">
-                {t("cards-section.cards.projects.title")}
+                {t("landing-page.cards-section.cards.projects.title")}
               </h2>
               <div className="flex flex-col">
                 <p className="mt-4 max-w-104 text-left text-base/6 text-secondary-foreground">
-                  {t("cards-section.cards.projects.description")}
+                  {t("landing-page.cards-section.cards.projects.description")}
                 </p>
                 <p className="mt-4 text-left text-4xl transition-transform duration-300 ease-out group-hover:translate-x-3">
                   →
@@ -111,11 +111,11 @@ const CardDisplay = ({ cardsRef, cardsLift, cardsSkew }: any) => {
           >
             <div className="group flex h-full flex-col justify-between p-6">
               <h2 className="text-left text-base font-semibold tracking-[-0.015em] text-balance text-foreground md:text-xl lg:text-3xl">
-                {t("cards-section.cards.experience.title")}
+                {t("landing-page.cards-section.cards.experience.title")}
               </h2>
               <div className="flex flex-col">
                 <p className="mt-4 max-w-104 text-left text-base/6 text-secondary-foreground">
-                  {t("cards-section.cards.experience.description")}
+                  {t("landing-page.cards-section.cards.experience.description")}
                 </p>
                 <p className="mt-4 text-left text-4xl transition-transform duration-300 ease-out group-hover:translate-x-3">
                   →
@@ -136,11 +136,11 @@ const CardDisplay = ({ cardsRef, cardsLift, cardsSkew }: any) => {
           >
             <div className="group flex h-full flex-col justify-between p-6">
               <h2 className="max-w-80 text-left text-base font-semibold tracking-[-0.015em] text-balance text-foreground md:text-xl lg:text-3xl">
-                {t("cards-section.cards.contact.title")}
+                {t("landing-page.cards-section.cards.contact.title")}
               </h2>
               <div className="flex flex-col">
                 <p className="mt-4 max-w-104 text-left text-base/6 text-secondary-foreground">
-                  {t("cards-section.cards.contact.description")}
+                  {t("landing-page.cards-section.cards.contact.description")}
                 </p>
                 <p className="mt-4 text-left text-4xl transition-transform duration-300 ease-out group-hover:translate-x-3">
                   →
@@ -161,11 +161,11 @@ const CardDisplay = ({ cardsRef, cardsLift, cardsSkew }: any) => {
           >
             <div className="group flex h-full max-w-sm flex-col justify-between p-6">
               <h2 className="max-w-80 text-left text-base font-semibold tracking-[-0.015em] text-balance text-foreground md:text-xl lg:text-3xl">
-                {t("cards-section.cards.about-me.title")}
+                {t("landing-page.cards-section.cards.about-me.title")}
               </h2>
               <div className="flex flex-col">
                 <p className="mt-4 max-w-104 text-left text-base/6 text-secondary-foreground">
-                  {t("cards-section.cards.about-me.description")}
+                  {t("landing-page.cards-section.cards.about-me.description")}
                 </p>
                 <p className="mt-4 text-left text-4xl transition-transform duration-300 ease-out group-hover:translate-x-3">
                   →
@@ -182,7 +182,7 @@ const CardDisplay = ({ cardsRef, cardsLift, cardsSkew }: any) => {
           transition={{ duration: 2, delay: 3 }}
           className="flex flex-col-reverse items-center gap-2 text-sm text-muted-foreground md:inline-flex"
         >
-          {t("cards-section.scroll_down")}
+          {t("landing-page.cards-section.scroll_down")}
           <MoveDown size={42} />
         </motion.div>
       </div>

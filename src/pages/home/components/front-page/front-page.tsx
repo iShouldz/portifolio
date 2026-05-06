@@ -74,7 +74,7 @@ const FrontPageComponent = ({ introRef, heroScale }: any) => {
                 transition={{ duration: 1.5, delay: 2 }}
                 className="flex flex-col-reverse items-center gap-2 text-sm text-muted-foreground md:inline-flex"
               >
-                {t("home.front-page.scroll_down")}
+                {t("landing-page.home.front-page.scroll_down")}
                 <MoveDown size={42} />
               </motion.div>
             </div>

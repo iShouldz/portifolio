@@ -13,76 +13,84 @@
       }
     }
   },
-  "home": {
-    "front-page": {
-      "scroll_down": "Scroll down."
+  "landing-page": {
+    "home": {
+      "front-page": {
+        "scroll_down": "Scroll down."
+      }
+    },
+    "cards-section": {
+      "title": "Explore my work.",
+      "scroll_down": "Scroll down.",
+      "cards": {
+        "experience": {
+          "title": "Experience",
+          "description": "Discover my professional experience, where I've worked, and what I've learned."
+        },
+        "projects": {
+          "title": "Projects",
+          "description": "Explore some of the projects I've developed throughout my career, from personal endeavors to Open Source community contributions."
+        },
+        "about-me": {
+          "title": "About me",
+          "description": "Get to know the person behind the developer."
+        },
+        "contact": {
+          "title": "Contact",
+          "description": "Reach out for freelance work, collaborations, and opportunities."
+        }
+      }
+    },
+    "recomendations": {
+      "title": "Some recommendations from colleagues.",
+      "list": [
+        {
+          "name": "Marcos Lopes",
+          "description": "Product Designer | UX/UI Designer | Design System",
+          "body": "I had the opportunity to work alongside Pedro on a highly complex project, and he stood out not only for his proactivity but also for his excellence as a developer. His delivery speed is impressive, always maintaining a high level of quality. Furthermore, he has a keen eye for usability, ensuring that each solution is functional and intuitive. We had countless conversations about flows and choosing the best components for different scenarios, which demonstrates his commitment to user experience. Pedro is also an extremely collaborative professional, always in a good mood and contributing to a light and productive work environment.",
+          "username": "/marcos-lopes-94a77b165",
+          "initials": "ML",
+          "tone": "from-emerald-400 via-teal-400 to-cyan-500"
+        },
+        {
+          "name": "Renato Davoli",
+          "username": "/renatodam",
+          "initials": "RD",
+          "tone": "from-emerald-400 via-teal-400 to-cyan-500",
+          "body": "Excellent developer. I had the opportunity to participate in the same project as him, where he stood out for his agility, code quality, great communication, and knowledge sharing among colleagues. Our project had several critical points where Pedro's knowledge and agility were essential for us to achieve our goals.",
+          "description": "Software Developer | Salesforce Developer | Java | Kotlin | Node | Spring | Micronaut | React | QA | Automation | 1x AWS | 1x Salesforce Certified"
+        },
+        {
+          "name": "Pedro Henrique Goes",
+          "username": "/pedro-henrique-ntgoes",
+          "body": "I had the privilege of working with Pedro in my first professional experience. From the beginning, he showed himself to be very dedicated and open to conversations and discussions about various subjects. Throughout this period, he maintained a fast pace in his deliveries, being very efficient and acting as a strong support to help other colleagues. I could rely on his front-end knowledge to understand screens and interfaces to guide me regarding the system's needs. In addition, his relaxed behavior made the work environment lighter for everyone in the group, easing the difficulties and unforeseen events we encountered during the project.",
+          "description": "Backend Developer | Spring Boot | Node.js | Mobile Developer | React Native | Bachelor in Computer Engineering/UFES",
+          "initials": "PH",
+          "tone": "from-sky-400 via-blue-400 to-indigo-500"
+        },
+        {
+          "name": "Amanda Castro",
+          "username": "/amanda-n-castro",
+          "description": "Full Stack Engineer | React | Node | Java | UX/UI Designer | Content Creator",
+          "initials": "AC",
+          "body": "Pedro is an excellent developer and a very proactive professional. He manages to complete tasks quickly while still maintaining quality. Personally, he is very easy to deal with, extremely focused and organized with his responsibilities, and brings a sense of lightness to the work environment. It was excellent collaborating with him.",
+          "tone": "from-fuchsia-400 via-pink-400 to-rose-500"
+        },
+        {
+          "name": "Joao Guilherme Oliveira",
+          "username": "/joao-guilherme-oliveira-007722142",
+          "description": "Back End Developer - Java | SpringBoot",
+          "initials": "JG",
+          "body": "Pedro is an excellent professional, both for his technical ability and his day-to-day partnership. I had the opportunity to work with him on developing the loan flow for the Vivo app, where the quality and consistency of his frontend deliveries were remarkable. He also demonstrates a great mastery of React, which directly reflects in the way he builds well-structured solutions. Besides the technical aspect, he stands out greatly for his human side. He is an accessible person, knows how to work in a team, and contributes to a lighter and more collaborative environment. I have complete confidence in recommending him to any team looking for a reliable, proactive frontend developer who adds value to deliveries.",
+          "tone": "from-fuchsia-400 via-pink-400 to-rose-500"
+        }
+      ]
     }
   },
-  "cards-section": {
-    "title": "Explore my work.",
-    "scroll_down": "Scroll down.",
+  "projects": {
+    "title": "My projects, at your disposal.",
     "cards": {
-      "experience": {
-        "title": "Experience",
-        "description": "Discover my professional experience, where I've worked, and what I've learned."
-      },
-      "projects": {
-        "title": "Projects",
-        "description": "Explore some of the projects I've developed throughout my career, from personal endeavors to Open Source community contributions."
-      },
-      "about-me": {
-        "title": "About me",
-        "description": "Get to know the person behind the developer."
-      },
-      "contact": {
-        "title": "Contact",
-        "description": "Reach out for freelance work, collaborations, and opportunities."
-      }
+      "btn": "Know the details"
     }
-  },
-  "recomendations": {
-    "title": "Some recommendations from colleagues.",
-    "list": [
-      {
-        "name": "Marcos Lopes",
-        "description": "Product Designer | UX/UI Designer | Design System",
-        "body": "I had the opportunity to work alongside Pedro on a highly complex project, and he stood out not only for his proactivity but also for his excellence as a developer. His delivery speed is impressive, always maintaining a high level of quality. Furthermore, he has a keen eye for usability, ensuring that each solution is functional and intuitive. We had countless conversations about flows and choosing the best components for different scenarios, which demonstrates his commitment to user experience. Pedro is also an extremely collaborative professional, always in a good mood and contributing to a light and productive work environment.",
-        "username": "/marcos-lopes-94a77b165",
-        "initials": "ML",
-        "tone": "from-emerald-400 via-teal-400 to-cyan-500"
-      },
-      {
-        "name": "Renato Davoli",
-        "username": "/renatodam",
-        "initials": "RD",
-        "tone": "from-emerald-400 via-teal-400 to-cyan-500",
-        "body": "Excellent developer. I had the opportunity to participate in the same project as him, where he stood out for his agility, code quality, great communication, and knowledge sharing among colleagues. Our project had several critical points where Pedro's knowledge and agility were essential for us to achieve our goals.",
-        "description": "Software Developer | Salesforce Developer | Java | Kotlin | Node | Spring | Micronaut | React | QA | Automation | 1x AWS | 1x Salesforce Certified"
-      },
-      {
-        "name": "Pedro Henrique Goes",
-        "username": "/pedro-henrique-ntgoes",
-        "body": "I had the privilege of working with Pedro in my first professional experience. From the beginning, he showed himself to be very dedicated and open to conversations and discussions about various subjects. Throughout this period, he maintained a fast pace in his deliveries, being very efficient and acting as a strong support to help other colleagues. I could rely on his front-end knowledge to understand screens and interfaces to guide me regarding the system's needs. In addition, his relaxed behavior made the work environment lighter for everyone in the group, easing the difficulties and unforeseen events we encountered during the project.",
-        "description": "Backend Developer | Spring Boot | Node.js | Mobile Developer | React Native | Bachelor in Computer Engineering/UFES",
-        "initials": "PH",
-        "tone": "from-sky-400 via-blue-400 to-indigo-500"
-      },
-      {
-        "name": "Amanda Castro",
-        "username": "/amanda-n-castro",
-        "description": "Full Stack Engineer | React | Node | Java | UX/UI Designer | Content Creator",
-        "initials": "AC",
-        "body": "Pedro is an excellent developer and a very proactive professional. He manages to complete tasks quickly while still maintaining quality. Personally, he is very easy to deal with, extremely focused and organized with his responsibilities, and brings a sense of lightness to the work environment. It was excellent collaborating with him.",
-        "tone": "from-fuchsia-400 via-pink-400 to-rose-500"
-      },
-      {
-        "name": "Joao Guilherme Oliveira",
-        "username": "/joao-guilherme-oliveira-007722142",
-        "description": "Back End Developer - Java | SpringBoot",
-        "initials": "JG",
-        "body": "Pedro is an excellent professional, both for his technical ability and his day-to-day partnership. I had the opportunity to work with him on developing the loan flow for the Vivo app, where the quality and consistency of his frontend deliveries were remarkable. He also demonstrates a great mastery of React, which directly reflects in the way he builds well-structured solutions. Besides the technical aspect, he stands out greatly for his human side. He is an accessible person, knows how to work in a team, and contributes to a lighter and more collaborative environment. I have complete confidence in recommending him to any team looking for a reliable, proactive frontend developer who adds value to deliveries.",
-        "tone": "from-fuchsia-400 via-pink-400 to-rose-500"
-      }
-    ]
   }
 }

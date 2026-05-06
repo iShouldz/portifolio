@@ -7,7 +7,7 @@ import type { ICard } from "../../types"
 const Recomendations = ({ cardsLift, cardsSkew }: any) => {
   const { t } = useTranslation()
 
-  const recomendationsList = t("recomendations.list", {
+  const recomendationsList = t("landing-page.recomendations.list", {
     returnObjects: true,
   }) as ICard[]
 
@@ -19,7 +19,7 @@ const Recomendations = ({ cardsLift, cardsSkew }: any) => {
       >
         <div>
           <h2 className="mt-3 text-3xl leading-tight font-bold md:text-5xl">
-            {t("recomendations.title")}
+            {t("landing-page.recomendations.title")}
           </h2>
         </div>
       </motion.div>
