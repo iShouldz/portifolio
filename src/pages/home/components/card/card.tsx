@@ -33,7 +33,7 @@ const Card = ({ name, description, body, username }: ICard) => {
         <CardItem
           as="p"
           translateZ="60"
-          className="mt-2 max-w-sm text-sm text-neutral-500 dark:text-neutral-300"
+          className="mt-2 max-w-sm line-clamp-10 text-sm text-neutral-500 dark:text-neutral-300"
         >
           {body}
         </CardItem>

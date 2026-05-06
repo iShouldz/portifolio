@@ -83,6 +83,14 @@
           "initials": "JG",
           "body": "Pedro es un excelente profesional, tanto por su capacidad técnica como por su compañerismo en el día a día. Tuve la oportunidad de trabajar con él en el desarrollo del flujo de préstamos de la app de Vivo, donde fue notable la calidad y consistencia de sus entregas en el frontend. También demuestra un gran dominio de React, lo que se refleja directamente en la forma en que construye soluciones bien estructuradas. Además de la parte técnica, destaca mucho por su lado humano. Es una persona accesible, que sabe trabajar en equipo y contribuye a un ambiente más ligero y colaborativo. Tengo total confianza en recomendarlo para cualquier equipo que busque un desarrollador frontend confiable, proactivo y que aporte valor a las entregas.",
           "tone": "from-fuchsia-400 via-pink-400 to-rose-500"
+        },
+        {
+          "name": "Pedro Paulo Daris",
+          "username": "/pedro-paulo-daris-050442209",
+          "description": "Desarrollador Frontend | React & TypeScript | Aplicaciones Empresariales B2B/B2C",
+          "initials": "PP",
+          "body": "Tuve la oportunidad de trabajar con Pedro en el proyecto de Vivo, y puedo decir con total tranquilidad que es un profesional de altísimo nivel. Desde el principio, quedó muy claro cuánto domina técnicamente lo que hace, especialmente con React. Su conocimiento sobre el proyecto es profundo, y fue esencial para que pudiera adaptarme más rápidamente cuando me uní al equipo. No solo entiende la tecnología, sino también toda la arquitectura y los procesos involucrados, lo que marca una gran diferencia en el día a día. Además de la parte técnica, Pedro destaca mucho por su actitud. Siempre ha sido un compañero extremadamente solidario, paciente y servicial. Desde mi primer día, me recibió con los brazos abiertos para ayudar, y esto continúa hasta hoy; incluso trabajando en diferentes equipos dentro del mismo proyecto, nunca deja de estar disponible cuando lo necesitamos. Otro punto que merece la pena destacar es la forma en que comparte el conocimiento. Tiene una excelente capacidad didáctica y logra explicar conceptos complejos de forma clara y objetiva, lo que contribuyó mucho a mi desarrollo y adaptación al proyecto. Sin duda, es un profesional que aporta muchísimo tanto a nivel técnico como personal dentro de cualquier equipo.",
+          "tone": "from-fuchsia-400 via-pink-400 to-rose-500"
         }
       ]
     }

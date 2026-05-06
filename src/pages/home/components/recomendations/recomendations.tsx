@@ -14,6 +14,10 @@ const Recomendations = ({ cardsLift, cardsSkew }: any) => {
   return (
     <div className="relative mt-32 mb-20 flex min-h-[120vh] w-full flex-col items-center justify-center gap-8 overflow-hidden">
       <motion.div
+        initial={{ opacity: 0, x: -80 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 2, ease: "easeOut" }}
+        viewport={{ once: true }}
         style={{ y: cardsLift, rotateX: cardsSkew, transformPerspective: 1200 }}
         className="mb-8 flex flex-col gap-4 px-4 sm:px-6 md:flex-row md:items-end md:justify-between lg:px-10"
       >

@@ -83,6 +83,14 @@
           "initials": "JG",
           "body": "O Pedro é um excelente profissional, tanto pela capacidade técnica quanto pela parceria no dia a dia. Tive a oportunidade de trabalhar com ele no desenvolvimento do fluxo de empréstimos do app da Vivo, onde era notável a qualidade e a consistência das suas entregas no frontend. Ele também demonstra um grande domínio de React, o que se reflete diretamente na forma como constrói soluções bem estruturadas. Além da parte técnica, ele se destaca muito pelo lado humano. É uma pessoa acessível, que sabe trabalhar em equipe e contribui para um ambiente mais leve e colaborativo. Tenho total confiança em recomendá-lo para qualquer equipe que busque um desenvolvedor front confiável, proativo e que agrega valor às entregas.",
           "tone": "from-fuchsia-400 via-pink-400 to-rose-500"
+        },
+        {
+          "name": "Pedro Paulo Daris",
+          "username": "/pedro-paulo-daris-050442209",
+          "description": "Frontend Developer | React & TypeScript | Enterprise B2B/B2C Applications",
+          "initials": "PP",
+          "body": "Tive a oportunidade de trabalhar com o Pedro no projeto da Vivo, e posso dizer com tranquilidade que ele é um profissional de altíssimo nível. Desde o início, ficou muito claro o quanto ele domina tecnicamente o que faz, especialmente com React. Seu conhecimento sobre o projeto é profundo, e foi essencial para que eu conseguisse me adaptar mais rapidamente quando entrei na equipe. Ele não apenas entende a tecnologia, mas também toda a arquitetura e os processos envolvidos, o que faz muita diferença no dia a dia. Além da parte técnica, o Pedro se destaca muito pela postura. Sempre foi extremamente parceiro, paciente e solícito. Desde o meu primeiro dia, esteve de braços abertos para ajudar, e isso continua até hoje — mesmo trabalhando em equipes diferentes dentro do mesmo projeto, ele nunca deixa de estar disponível quando precisamos. Outro ponto que merece destaque é a forma como ele compartilha conhecimento. Ele tem uma ótima didática e consegue explicar conceitos complexos de forma clara e objetiva, o que contribuiu muito para o meu desenvolvimento e adaptação ao projeto. Sem dúvida, é um profissional que agrega muito tecnicamente e também como pessoa dentro de qualquer equipe.",
+          "tone": "from-fuchsia-400 via-pink-400 to-rose-500"
         }
       ]
     }

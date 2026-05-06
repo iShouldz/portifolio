@@ -56,9 +56,9 @@ const CardDisplay = ({ cardsRef, cardsLift, cardsSkew }: any) => {
         className="mb-8 flex flex-col gap-4 px-4 sm:px-6 md:flex-row md:items-end md:justify-between lg:px-10"
       >
         <motion.div
-          initial={{ opacity: 0, x: -20 }}
+          initial={{ opacity: 0, x: -80 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
+          transition={{ duration: 2, ease: "easeOut" }}
           viewport={{ once: true }}
         >
           <h2 className="mt-3 text-3xl leading-tight font-bold md:text-5xl">
