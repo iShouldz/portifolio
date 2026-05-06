@@ -37,6 +37,14 @@ const OutletPage = () => {
     window.open("https://www.linkedin.com/in/pedro-souza-385794241/", "_blank")
   }, [])
 
+  const handleToggleLanguage = useCallback(
+    (language: "pt" | "en" | "es") => {
+      localStorage.setItem("lang", language)
+      i18n.changeLanguage(language)
+    },
+    [i18n]
+  )
+
   return (
     <ReactLenis root options={{ lerp: 0.08, duration: 1.2, smoothWheel: true }}>
       <ScrollProgress className="h-2" />
@@ -144,7 +152,7 @@ const OutletPage = () => {
                 </AnimateIcon>
               </HoverCardTrigger>
               <HoverCardContent className="flex w-fit flex-col gap-4">
-                <h4>{t("dock.language.label")}</h4>
+                <h5>{t("dock.language.label")}</h5>
                 <ToggleGroup
                   type="single"
                   defaultValue={i18n.language}
@@ -154,21 +162,21 @@ const OutletPage = () => {
                   <ToggleGroupItem
                     value="en"
                     aria-label="Toggle top"
-                    onClick={() => i18n.changeLanguage("en")}
+                    onClick={() => handleToggleLanguage("en")}
                   >
                     {t("dock.language.options.en")}
                   </ToggleGroupItem>
                   <ToggleGroupItem
                     value="es"
                     aria-label="Toggle bottom"
-                    onClick={() => i18n.changeLanguage("es")}
+                    onClick={() => handleToggleLanguage("es")}
                   >
                     {t("dock.language.options.es")}
                   </ToggleGroupItem>
                   <ToggleGroupItem
                     value="pt"
                     aria-label="Toggle left"
-                    onClick={() => i18n.changeLanguage("pt")}
+                    onClick={() => handleToggleLanguage("pt")}
                   >
                     {t("dock.language.options.pt")}
                   </ToggleGroupItem>

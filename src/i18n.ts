@@ -17,25 +17,28 @@ const resources = {
 }
 
 const getInitialLanguage = () => {
-  const browserLang = navigator.language.split("-")[0]
   const supportedLangs = ["en", "pt", "es"]
-  
-  if (supportedLangs.includes(browserLang)) {
-    return browserLang
-  }
-  
+
+  try {
+    const stored =
+      localStorage.getItem("lang") || localStorage.getItem("i18nextLng")
+    if (stored && supportedLangs.includes(stored)) return stored
+  } catch (e) {}
+
+  const browserLang =
+    typeof navigator !== "undefined" ? navigator.language.split("-")[0] : null
+  if (browserLang && supportedLangs.includes(browserLang)) return browserLang
+
   return "pt"
 }
 
-i18n
-  .use(initReactI18next)
-  .init({
-    resources,
-    lng: getInitialLanguage(),
-    fallbackLng: "pt",
-    interpolation: {
-      escapeValue: false,
-    },
-  })
+i18n.use(initReactI18next).init({
+  resources,
+  lng: getInitialLanguage(),
+  fallbackLng: "pt",
+  interpolation: {
+    escapeValue: false,
+  },
+})
 
 export default i18n
