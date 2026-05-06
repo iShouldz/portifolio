@@ -175,7 +175,7 @@ const CardDisplay = ({ cardsRef, cardsLift, cardsSkew }: any) => {
           </WobbleCard>
         </motion.div>
       </motion.div>
-      <div className="absolute bottom-0 flex -translate-y-1/2 items-end justify-between gap-4">
+      <div className="absolute bottom-0 flex right-8 items-end justify-between gap-4">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
