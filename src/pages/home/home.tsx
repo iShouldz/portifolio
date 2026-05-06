@@ -34,7 +34,7 @@ const Home = () => {
   const cardsSkew = useTransform(cardsProgress, [0, 0.5, 1], [8, 0, -6])
 
   return (
-    <main className="relative min-h-screen overflow-x-hidden bg-[radial-gradient(circle_at_top_left,rgba(169,124,248,0.18),transparent_25%),radial-gradient(circle_at_top_right,rgba(143,213,189,0.16),transparent_28%),linear-gradient(180deg,rgba(255,255,255,0.84),rgba(246,243,236,0.96))] text-foreground">
+    <>
       <FrontPageComponent introRef={introRef} heroScale={heroScale} />
 
       <Recomendations
@@ -44,7 +44,7 @@ const Home = () => {
       />
 
       <CardDisplay cardsLift={cardsLift} cardsSkew={cardsSkew} />
-    </main>
+    </>
   )
 }
 

@@ -14,9 +14,6 @@ const CardDisplay = ({ cardsRef, cardsLift, cardsSkew }: any) => {
         className="mb-8 flex flex-col gap-4 px-4 sm:px-6 md:flex-row md:items-end md:justify-between lg:px-10"
       >
         <div>
-          <p className="text-xs tracking-[0.5em] text-muted-foreground uppercase">
-            Então
-          </p>
           <h2 className="mt-3 text-3xl leading-tight font-bold md:text-5xl">
             Conheça meu trabalho.
           </h2>
