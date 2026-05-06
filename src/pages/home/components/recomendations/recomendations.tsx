@@ -1,9 +1,16 @@
 import { Marquee } from "@/components/ui/marquee"
 import { motion } from "motion/react"
 import Card from "../card/card"
-import reviews from "@/utils/reviews.json"
+import { useTranslation } from "react-i18next"
+import type { ICard } from "../../types"
 
 const Recomendations = ({ cardsLift, cardsSkew }: any) => {
+  const { t } = useTranslation()
+
+  const recomendationsList = t("recomendations.list", {
+    returnObjects: true,
+  }) as ICard[]
+
   return (
     <div className="relative mt-32 mb-20 flex min-h-[120vh] w-full flex-col items-center justify-center gap-8 overflow-hidden">
       <motion.div
@@ -12,14 +19,14 @@ const Recomendations = ({ cardsLift, cardsSkew }: any) => {
       >
         <div>
           <h2 className="mt-3 text-3xl leading-tight font-bold md:text-5xl">
-            Algumas recomendações de colegas.
+            {t("recomendations.title")}
           </h2>
         </div>
       </motion.div>
 
       <div>
         <Marquee pauseOnHover className="[--duration:25s]">
-          {reviews.map((review) => (
+          {recomendationsList.map((review) => (
             <Card {...review} key={review.name} />
           ))}
         </Marquee>

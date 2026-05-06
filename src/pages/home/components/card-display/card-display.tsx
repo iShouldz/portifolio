@@ -3,6 +3,7 @@ import { WobbleCard } from "@/components/ui/wobble-card"
 import { useNavigate } from "react-router"
 import { useRef } from "react"
 import { MoveDown } from "lucide-react"
+import { useTranslation } from "react-i18next"
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -31,12 +32,13 @@ const itemVariants: Variants | undefined = {
 }
 
 const CardDisplay = ({ cardsRef, cardsLift, cardsSkew }: any) => {
+  const { t } = useTranslation()
   const navigate = useNavigate()
   const containerRef = useRef<HTMLDivElement>(null)
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
-    offset: ["start end", "end start"], 
+    offset: ["start end", "end start"],
   })
 
   const yFast = useTransform(scrollYProgress, [0, 1], [300, -300])
@@ -47,7 +49,7 @@ const CardDisplay = ({ cardsRef, cardsLift, cardsSkew }: any) => {
   return (
     <section
       ref={cardsRef}
-      className="max-w-8xl relative mx-auto mb-24 mt-48 flex flex-col items-center justify-center gap-4"
+      className="max-w-8xl relative mx-auto mt-48 mb-24 flex flex-col items-center justify-center gap-4"
     >
       <motion.div
         style={{ y: cardsLift, rotateX: cardsSkew, transformPerspective: 1200 }}
@@ -60,7 +62,7 @@ const CardDisplay = ({ cardsRef, cardsLift, cardsSkew }: any) => {
           viewport={{ once: true }}
         >
           <h2 className="mt-3 text-3xl leading-tight font-bold md:text-5xl">
-            Conheça o meu trabalho.
+            {t("cards-section.title")}
           </h2>
         </motion.div>
       </motion.div>
@@ -73,7 +75,6 @@ const CardDisplay = ({ cardsRef, cardsLift, cardsSkew }: any) => {
         viewport={{ once: true, amount: 0.2 }}
         className="max-w-8xl mx-auto grid w-full grid-cols-1 gap-4 px-4 sm:px-6 lg:grid-cols-4 lg:px-10"
       >
-        
         <motion.div
           style={{ y: yFast }}
           variants={itemVariants}
@@ -85,13 +86,11 @@ const CardDisplay = ({ cardsRef, cardsLift, cardsSkew }: any) => {
           >
             <div className="group flex h-full w-full flex-col justify-between p-6">
               <h2 className="text-left text-base font-semibold tracking-[-0.015em] text-balance text-foreground md:text-xl lg:text-3xl">
-                Projetos
+                {t("cards-section.cards.projects.title")}
               </h2>
               <div className="flex flex-col">
                 <p className="mt-4 max-w-104 text-left text-base/6 text-secondary-foreground">
-                  Conheça alguns projetos que desenvolvi ao longo da minha
-                  trajetória, desde projetos pessoais até projetos para
-                  comunidade Open Source.
+                  {t("cards-section.cards.projects.description")}
                 </p>
                 <p className="mt-4 text-left text-4xl transition-transform duration-300 ease-out group-hover:translate-x-3">
                   →
@@ -112,12 +111,11 @@ const CardDisplay = ({ cardsRef, cardsLift, cardsSkew }: any) => {
           >
             <div className="group flex h-full flex-col justify-between p-6">
               <h2 className="text-left text-base font-semibold tracking-[-0.015em] text-balance text-foreground md:text-xl lg:text-3xl">
-                Experiências
+                {t("cards-section.cards.experience.title")}
               </h2>
               <div className="flex flex-col">
                 <p className="mt-4 max-w-104 text-left text-base/6 text-secondary-foreground">
-                  Conheça minhas experiências profissionais, onde trabalhei e o
-                  que aprendi.
+                  {t("cards-section.cards.experience.description")}
                 </p>
                 <p className="mt-4 text-left text-4xl transition-transform duration-300 ease-out group-hover:translate-x-3">
                   →
@@ -138,11 +136,11 @@ const CardDisplay = ({ cardsRef, cardsLift, cardsSkew }: any) => {
           >
             <div className="group flex h-full flex-col justify-between p-6">
               <h2 className="max-w-80 text-left text-base font-semibold tracking-[-0.015em] text-balance text-foreground md:text-xl lg:text-3xl">
-                Contato
+                {t("cards-section.cards.contact.title")}
               </h2>
               <div className="flex flex-col">
                 <p className="mt-4 max-w-104 text-left text-base/6 text-secondary-foreground">
-                  Me chame para trabalhos, colaborações e oportunidades.
+                  {t("cards-section.cards.contact.description")}
                 </p>
                 <p className="mt-4 text-left text-4xl transition-transform duration-300 ease-out group-hover:translate-x-3">
                   →
@@ -163,11 +161,11 @@ const CardDisplay = ({ cardsRef, cardsLift, cardsSkew }: any) => {
           >
             <div className="group flex h-full max-w-sm flex-col justify-between p-6">
               <h2 className="max-w-80 text-left text-base font-semibold tracking-[-0.015em] text-balance text-foreground md:text-xl lg:text-3xl">
-                Sobre mim
+                {t("cards-section.cards.about-me.title")}
               </h2>
               <div className="flex flex-col">
                 <p className="mt-4 max-w-104 text-left text-base/6 text-secondary-foreground">
-                  Conheça um pouco da pessoa por trás do desenvolvedor.
+                  {t("cards-section.cards.about-me.description")}
                 </p>
                 <p className="mt-4 text-left text-4xl transition-transform duration-300 ease-out group-hover:translate-x-3">
                   →
@@ -184,7 +182,7 @@ const CardDisplay = ({ cardsRef, cardsLift, cardsSkew }: any) => {
           transition={{ duration: 2, delay: 3 }}
           className="flex flex-col-reverse items-center gap-2 text-sm text-muted-foreground md:inline-flex"
         >
-          Scroole para baixo.
+          {t("cards-section.scroll_down")}
           <MoveDown size={42} />
         </motion.div>
       </div>

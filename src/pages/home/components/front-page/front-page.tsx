@@ -2,8 +2,10 @@ import { RetroGrid } from "@/components/ui/retro-grid"
 import { cn } from "@/lib/utils"
 import { MoveDown } from "lucide-react"
 import { motion } from "motion/react"
+import { useTranslation } from "react-i18next"
 
 const FrontPageComponent = ({ introRef, heroScale }: any) => {
+  const { t } = useTranslation()
   return (
     <section ref={introRef} className="relative min-h-[120vh]">
       <div className="sticky top-0 flex h-screen items-center justify-center px-4 sm:px-6 lg:px-10">
@@ -72,7 +74,7 @@ const FrontPageComponent = ({ introRef, heroScale }: any) => {
                 transition={{ duration: 1.5, delay: 2 }}
                 className="flex flex-col-reverse items-center gap-2 text-sm text-muted-foreground md:inline-flex"
               >
-                Scroole para baixo.
+                {t("home.front-page.scroll_down")}
                 <MoveDown size={42} />
               </motion.div>
             </div>
