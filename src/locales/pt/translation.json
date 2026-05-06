@@ -1,0 +1,55 @@
+{
+  "nav": {
+    "home": "Início",
+    "projects": "Projetos",
+    "experience": "Experiências",
+    "about": "Sobre",
+    "contact": "Contato"
+  },
+  "home": {
+    "hero": {
+      "title": "Olá, sou Pedro",
+      "subtitle": "Desenvolvedor Frontend & Entusiasta Full Stack",
+      "cta": "Veja meu trabalho"
+    },
+    "projects": {
+      "title": "Conheça o meu trabalho.",
+      "description": "Conheça alguns projetos que desenvolvi ao longo da minha trajetória, desde projetos pessoais até projetos para comunidade Open Source.",
+      "cta": "Ver projetos"
+    },
+    "experience": {
+      "title": "Experiências",
+      "description": "Conheça minhas experiências profissionais, onde trabalhei e o que aprendi.",
+      "cta": "Ver experiências"
+    },
+    "about": {
+      "title": "Sobre mim",
+      "description": "Conheça um pouco da pessoa por trás do desenvolvedor.",
+      "cta": "Saiba mais"
+    },
+    "contact": {
+      "title": "Contato",
+      "description": "Me chame para trabalhos, colaborações e oportunidades.",
+      "cta": "Entre em contato"
+    },
+    "recommendations": {
+      "title": "Algumas recomendações de colegas.",
+      "scrollDown": "Scroole para baixo."
+    }
+  },
+  "projects": {
+    "title": "Projetos",
+    "subtitle": "Meus trabalhos recentes",
+    "viewProject": "Ver projeto",
+    "viewCode": "Ver código"
+  },
+  "experience": {
+    "title": "Experiência Profissional",
+    "current": "Atual",
+    "period": "Período"
+  },
+  "footer": {
+    "copyright": "© 2026 Pedro. Todos os direitos reservados.",
+    "links": "Links"
+  }
+}

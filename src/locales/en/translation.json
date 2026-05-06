@@ -1,0 +1,55 @@
+{
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "experience": "Experience",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "home": {
+    "hero": {
+      "title": "Hi, I'm Pedro",
+      "subtitle": "Frontend Developer & Full Stack Enthusiast",
+      "cta": "View my work"
+    },
+    "projects": {
+      "title": "Get to know my work.",
+      "description": "Learn about some projects I've developed throughout my journey, from personal projects to Open Source community projects.",
+      "cta": "View projects"
+    },
+    "experience": {
+      "title": "Experience",
+      "description": "Get to know my professional experiences, where I've worked and what I've learned.",
+      "cta": "View experience"
+    },
+    "about": {
+      "title": "About me",
+      "description": "Get to know a little bit about the person behind the developer.",
+      "cta": "Learn more"
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Call me for work, collaborations and opportunities.",
+      "cta": "Get in touch"
+    },
+    "recommendations": {
+      "title": "Some colleague recommendations.",
+      "scrollDown": "Scroll down."
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "My recent work",
+    "viewProject": "View project",
+    "viewCode": "View code"
+  },
+  "experience": {
+    "title": "Professional Experience",
+    "current": "Current",
+    "period": "Period"
+  },
+  "footer": {
+    "copyright": "© 2026 Pedro. All rights reserved.",
+    "links": "Links"
+  }
+}
