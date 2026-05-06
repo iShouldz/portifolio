@@ -179,7 +179,7 @@ const CardDisplay = ({ cardsRef, cardsLift, cardsSkew }: any) => {
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 2, delay: 3 }}
+          transition={{ duration: 2, delay: 2 }}
           className="flex flex-col-reverse items-center gap-2 text-sm text-muted-foreground md:inline-flex"
         >
           {t("landing-page.cards-section.scroll_down")}

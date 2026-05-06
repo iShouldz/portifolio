@@ -1,9 +1,18 @@
-import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card"
 import { getGithubRepos } from "@/hooks/use-github/use-github"
 import { motion, useScroll, useTransform } from "motion/react"
 import { useRef } from "react"
-import currentProjects from "@/utils/projects.json"
 import { useTranslation } from "react-i18next"
+import {
+  Card,
+  CardAction,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
+import { Button } from "@/components/ui/button"
+import type { IProjectCard } from "./types"
 
 const Projects = () => {
   const { t } = useTranslation()
@@ -16,6 +25,10 @@ const Projects = () => {
   const titleY = useTransform(scrollYProgress, [0, 1], [36, -24])
   const titleOpacity = useTransform(scrollYProgress, [0, 0.25, 1], [0.7, 1, 1])
 
+  const projectsList = t("projects.list", {
+    returnObjects: true,
+  }) as IProjectCard[]
+
   const {} = getGithubRepos("iShouldz")
   return (
     <section
@@ -24,52 +37,49 @@ const Projects = () => {
     >
       <motion.div
         style={{ y: titleY, opacity: titleOpacity }}
-        className="mb-10 flex flex-col items-center gap-2"
+        className="mb-20 flex flex-col items-center gap-2"
       >
         <h2 className="text-3xl leading-tight font-bold md:text-5xl">
           {t("projects.title")}
         </h2>
       </motion.div>
 
-      <div className="flex flex-wrap justify-center gap-6">
-        {currentProjects.map((project) => (
-          <CardContainer className="inter-var" key={project.id}>
-            <CardBody className="group/card relative h-120 w-120 rounded-xl border border-black/[0.1] bg-gray-50 p-6 sm:w-[30rem] dark:border-white/[0.2] dark:bg-black dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1]">
-              <CardItem
-                translateZ="50"
-                className="text-xl font-bold text-neutral-600 dark:text-white"
-              >
-                {project.title}
-              </CardItem>
-              <CardItem
-                as="p"
-                translateZ="60"
-                className="mt-2 max-w-sm text-sm text-neutral-500 dark:text-neutral-300"
-              >
-                {project.description}
-              </CardItem>
-              <CardItem translateZ="100" className="mt-4 w-full">
+      <div className="grid grid-cols-1 justify-center gap-6 lg:grid-cols-3">
+        {projectsList.map((project) => (
+          <Card>
+            <CardHeader>
+              <CardTitle>{project.title}</CardTitle>
+              <CardDescription>{project.description}</CardDescription>
+            </CardHeader>
+            <CardContent className="flex flex-1 flex-col justify-center">
+              {project.img ? (
                 <img
-                  src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  height="1000"
-                  width="1000"
-                  className="h-60 w-full rounded-xl object-cover group-hover/card:shadow-xl"
-                  alt="thumbnail"
+                  src={project.img}
+                  alt={project.title}
+                  className="aspect-video w-full rounded-xl object-cover transition-transform duration-500 group-hover/card:scale-105 group-hover/card:shadow-xl"
                 />
-              </CardItem>
-              <div className="mt-20 flex items-center justify-between">
-                <CardItem
-                  translateZ={20}
-                  as="a"
-                  href="https://twitter.com/mannupaaji"
-                  target="__blank"
-                  className="rounded-xl px-4 py-2 text-xs font-normal dark:text-white"
-                >
-                  {t("projects.cards.btn")} →
-                </CardItem>
-              </div>
-            </CardBody>
-          </CardContainer>
+              ) : (
+                <div className="flex aspect-video w-full flex-col items-center justify-center rounded-xl border border-white/5 bg-gradient-to-br from-neutral-800 to-black transition-transform duration-500 group-hover/card:scale-105">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="64"
+                    height="64"
+                    fill="currentColor"
+                    className="mb-4 text-emerald-500/40 drop-shadow-lg transition-transform duration-500 group-hover/card:scale-110 group-hover/card:text-emerald-500/80"
+                    viewBox="0 0 16 16"
+                  >
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                  </svg>
+                  <span className="px-4 text-center text-xl font-bold tracking-widest text-white/50 uppercase">
+                    {project.title}
+                  </span>
+                </div>
+              )}
+            </CardContent>
+            <CardFooter>
+              <Button variant={"ghost"}>{t("projects.cards.btn")} →</Button>
+            </CardFooter>
+          </Card>
         ))}
       </div>
     </section>
