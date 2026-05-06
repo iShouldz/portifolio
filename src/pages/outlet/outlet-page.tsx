@@ -2,7 +2,7 @@ import { Dock, DockIcon } from "@/components/ui/dock"
 import { ScrollProgress } from "@/components/ui/scroll-progress"
 import ReactLenis from "lenis/react"
 import { Download, Home } from "lucide-react"
-import { Outlet } from "react-router"
+import { Outlet, useNavigate } from "react-router"
 import { motion } from "motion/react"
 import { AnimateIcon } from "@/components/animate-ui/icons/icon"
 import {
@@ -10,8 +10,24 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip"
+import { useCallback } from "react"
+import { RoutesUrl } from "@/utils/enum/routes.utils"
 
 const OutletPage = () => {
+  const navigate = useNavigate()
+
+  const handleGoToHome = useCallback(() => {
+    navigate(RoutesUrl.HOME)
+  }, [navigate])
+
+  const handleGoToGithub = useCallback(() => {
+    window.open("https://github.com/iShouldz", "_blank")
+  }, [])
+
+  const handleGoToLinkedIn = useCallback(() => {
+    window.open("https://www.linkedin.com/in/pedro-souza-385794241/", "_blank")
+  }, [])
+
   return (
     <ReactLenis root options={{ lerp: 0.08, duration: 1.2, smoothWheel: true }}>
       <ScrollProgress className="h-2" />
@@ -30,7 +46,7 @@ const OutletPage = () => {
         className="fixed bottom-4 left-1/2 z-50 w-max -translate-x-1/2"
       >
         <Dock>
-          <DockIcon>
+          <DockIcon onClick={handleGoToHome}>
             <Tooltip>
               <TooltipTrigger asChild>
                 <Home />
@@ -41,7 +57,7 @@ const OutletPage = () => {
             </Tooltip>
           </DockIcon>
 
-          <DockIcon>
+          <DockIcon onClick={handleGoToGithub}>
             <Tooltip>
               <TooltipTrigger asChild>
                 <svg
@@ -61,7 +77,7 @@ const OutletPage = () => {
             </Tooltip>
           </DockIcon>
 
-          <DockIcon>
+          <DockIcon onClick={handleGoToLinkedIn}>
             <Tooltip>
               <TooltipTrigger asChild>
                 <svg
@@ -83,11 +99,14 @@ const OutletPage = () => {
 
           <DockIcon>
             <Tooltip>
-              <TooltipTrigger asChild>
-                <AnimateIcon animateOnHover>
-                  <Download />
-                </AnimateIcon>
-              </TooltipTrigger>
+              <a href="/public/Curriculo.pdf" download="Curriculo.pdf">
+                <TooltipTrigger asChild>
+                  <AnimateIcon animateOnHover>
+                    <Download />
+                  </AnimateIcon>
+                </TooltipTrigger>
+              </a>
+
               <TooltipContent>
                 <p>Download do currículo</p>
               </TooltipContent>
