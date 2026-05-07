@@ -119,18 +119,123 @@
         "description": "Hub focado em reunir os episódios editados e as legendas em Português do Brasil (PT-BR) do projeto One Pace.",
         "githubUrl": "https://github.com/iShouldz/one-pace-br-hub",
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/f_auto,q_auto/Screenshot_2026-04-30_193619_lx0lnu",
-
-        "tecnologies": ["React", "Next.js", "SEO", "UX"],
+        "resources": [
+          {
+            "type": "feature",
+            "title": "Arquitetura de rotas por domínio (Home/Saga/Arco)",
+            "description": "Navegação segmentada com rotas dedicadas para listagem geral, detalhe de saga e detalhe de arco, melhorando organização e manutenção da experiência."
+          },
+          {
+            "type": "feature",
+            "title": "SEO dinâmico com metadados completos",
+            "description": "Cada página atualiza title, description, Open Graph, Twitter Card, canonical e JSON-LD para melhorar indexação e compartilhamento."
+          },
+          {
+            "type": "feature",
+            "title": "Pipeline automatizado de cache de scraping",
+            "description": "Workflow agendado atualiza periodicamente cache de links torrent, reduzindo latência e dependência de scraping em tempo real."
+          },
+          {
+            "type": "feature",
+            "title": "Integração serverless com qBittorrent",
+            "description": "API dedicada autentica no WebUI e envia lotes de torrents, permitindo automação do download direto no cliente do usuário."
+          },
+          {
+            "type": "feature",
+            "title": "Camada de dados resiliente (React Query + fallback)",
+            "description": "Busca de dados com cache, controle de loading/erro e fallback de links em cache estático para maior robustez da aplicação."
+          },
+          {
+            "type": "product",
+            "title": "Hub unificado One Pace PT-BR",
+            "description": "Produto centraliza sagas, arcos e legendas em português em um único ponto, simplificando descoberta e consumo do conteúdo."
+          },
+          {
+            "type": "product",
+            "title": "Jornada guiada de navegação por conteúdo",
+            "description": "Fluxo claro de exploração (home → saga → arco) com breadcrumbs e ações contextuais, reduzindo fricção de uso."
+          },
+          {
+            "type": "product",
+            "title": "Experiência de download orientada ao usuário",
+            "description": "Oferece múltiplos caminhos (manual, magnet, copiar links, enviar ao qBittorrent, baixar legendas), adaptando-se a perfis diferentes."
+          },
+          {
+            "type": "product",
+            "title": "Personalização da experiência visual",
+            "description": "Usuário pode ajustar tema, ordem das sagas, ocultar concluídas e filtros visuais, tornando a navegação mais confortável e pessoal."
+          }
+        ],
+        "tecnologies": [
+          "React",
+          "Typescript",
+          "Serverless",
+          "React Query",
+          "SEO",
+          "UX"
+        ],
         "tags": ["Web", "Frontend", "Pessoal"],
         "deployLink": "one-pace-br.pages.dev"
       },
       {
         "id": "treine-se",
         "title": "Treine-Se",
-        "description": "Aplicativo fitness construido em React usando webridge do Capacitor para portar para mobile.",
+        "description": "Aplicativo de treinos com foco em criação de rotina personalizada (manual ou com IA), execução guiada e acompanhamento básico de progresso. Construido em React usando webridge do Capacitor para portar para mobile. ",
         "githubUrl": "https://github.com/iShouldz/treine-se",
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/v1778095392/treine-se_qyklbm.png",
         "tecnologies": ["React", "Capacitor JS", "Android Studio", "IA"],
+        "resources": [
+          {
+            "type": "feature",
+            "title": "Base local de exercícios estruturada",
+            "description": "Catálogo em JSON com nome, tipo, dificuldade, equipamentos, instruções e músculos trabalhados, usado nos fluxos manual e IA."
+          },
+          {
+            "type": "feature",
+            "title": "Busca/filtro e seleção orientada de exercícios",
+            "description": "Filtros por tipo e dificuldade, combobox para busca de exercício e validações de formulário para garantir montagem consistente da ficha."
+          },
+          {
+            "type": "feature",
+            "title": "Detalhamento rico de exercício com suporte contextual",
+            "description": "Modal com execução, músculos, equipamentos e características; inclui acesso rápido ao chat com IA para dúvidas no contexto do exercício."
+          },
+          {
+            "type": "feature",
+            "title": "Player/embed de demonstração via YouTube",
+            "description": "Busca de vídeo por query, cache com React Query, renderização com React Player e tratamento explícito de estados loading/erro."
+          },
+          {
+            "type": "feature",
+            "title": "Persistência local e integrações externas",
+            "description": "Estado persistido com Redux Persist (perfil, chat e treinos), autenticação/serviços com Appwrite, IA via Google Gemini e notificações locais com Capacitor."
+          },
+          {
+            "type": "product",
+            "title": "Criação de treino manual personalizada",
+            "description": "Fluxo em duas etapas para escolher exercício, configurar séries/repetições/carga/descanso e salvar o treino."
+          },
+          {
+            "type": "product",
+            "title": "Geração de treino com IA",
+            "description": "Questionário guiado que gera uma ficha personalizada com explicação do porquê dos exercícios, pronta para revisão e salvamento."
+          },
+          {
+            "type": "product",
+            "title": "Execução guiada do treino (modo play)",
+            "description": "Experiência focada em treino ativo, com cronômetro, navegação entre exercícios, controle de séries e conclusão com registro no histórico."
+          },
+          {
+            "type": "product",
+            "title": "Hub de progresso no dashboard",
+            "description": "Visão consolidada com treino do dia, treinos feitos, sequência semanal e feed de atividade recente para reforçar consistência."
+          },
+          {
+            "type": "product",
+            "title": "Configuração de perfil e preferências",
+            "description": "Tela de configurações com modo simples/avançado para coletar dados de perfil físico e preferências, apoiando personalização da experiência."
+          }
+        ],
         "tags": ["Web", "Frontend", "Webview", "Web Bridge", "Fitness", "IA"]
       },
       {
@@ -174,5 +279,17 @@
         "deployLink": "https://delivery-car.vercel.app/"
       }
     ]
+  },
+  "project-details": {
+    "btn": {
+      "repository": "Visitar repositório",
+      "figma": "Ver protótipo no Figma"
+    },
+    "stats": {
+      "title": "Estatísticas do repositório"
+    },
+    "languages": {
+      "title": "Linguagens utilizadas"
+    }
   }
 }
