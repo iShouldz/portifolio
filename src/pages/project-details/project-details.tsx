@@ -77,7 +77,7 @@ const ProjectDetails = () => {
         </div>
 
         <div className="w-[30%] pl-6">
-          <Card>
+          <Card className="h-full">
             <CardHeader>
               <CardTitle>{currentProject?.title}</CardTitle>
               <CardDescription>{currentProject?.description}</CardDescription>
