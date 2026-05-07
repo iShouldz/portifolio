@@ -54,7 +54,7 @@ const Projects = () => {
 
       <div className="grid grid-cols-1 justify-center gap-6 lg:grid-cols-3">
         {projectsList.map((project) => (
-          <Card>
+          <Card key={project.title}>
             <CardHeader>
               <CardTitle>{project.title}</CardTitle>
               <CardDescription>{project.description}</CardDescription>

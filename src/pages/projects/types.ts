@@ -6,4 +6,11 @@ export interface IProjectCard {
   tecnologies: string[]
   tags: string[]
   img?: string
+  resources: ResourceType[]
+}
+
+interface ResourceType {
+  type: "feature" | "product"
+  title: string
+  description: string
 }
