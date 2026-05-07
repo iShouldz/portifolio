@@ -3,6 +3,8 @@ export interface IProjectCard {
   title: string
   description: string
   githubUrl: string
+  figmaUrl?: string
+  deployLink?: string
   tecnologies: string[]
   tags: string[]
   img?: string

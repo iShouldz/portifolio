@@ -175,7 +175,7 @@
           "UX"
         ],
         "tags": ["Web", "Frontend", "Pessoal"],
-        "deployLink": "one-pace-br.pages.dev"
+        "deployLink": "https://one-pace-br.pages.dev"
       },
       {
         "id": "treine-se",
@@ -283,7 +283,8 @@
   "project-details": {
     "btn": {
       "repository": "Visitar repositório",
-      "figma": "Ver protótipo no Figma"
+      "figma": "Ver protótipo no Figma",
+      "deploy": "Conferir deploy"
     },
     "stats": {
       "title": "Estatísticas do repositório"

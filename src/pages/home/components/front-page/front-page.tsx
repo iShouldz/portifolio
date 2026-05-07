@@ -65,7 +65,6 @@ const FrontPageComponent = ({ introRef, heroScale }: any) => {
               <p className="text-md tracking-[0.5em] text-muted-foreground uppercase">
                 Front-end engineer
               </p>
-
               <motion.div
                 initial={{ opacity: 0, y: 20, filter: "blur(10px)" }}
                 animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
