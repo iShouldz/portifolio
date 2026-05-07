@@ -7,7 +7,7 @@ import "yet-another-react-lightbox/plugins/thumbnails.css"
 
 export function ProjectGallery({ mediaArray }: { mediaArray: any[] }) {
   return (
-    <div className="w-full overflow-hidden rounded-[2rem] border border-white/10 bg-black/40 shadow-2xl backdrop-blur-2xl">
+    <div className="w-full overflow-hidden rounded-l-[2rem] border border-white/10 shadow-2xl backdrop-blur-2xl">
       <Lightbox
         slides={mediaArray}
         plugins={[Inline, Video, Thumbnails]}
