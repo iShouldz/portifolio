@@ -60,7 +60,7 @@ const ProjectHero = ({ title, description }: ProjectHeroProps) => {
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.5, delay: 2 }}
+          transition={{ duration: 1, delay: 1 }}
           className="flex flex-col-reverse items-center gap-2 text-sm text-muted-foreground md:inline-flex"
         >
           {t("landing-page.home.front-page.scroll_down")}
