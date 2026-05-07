@@ -15,7 +15,6 @@
     "@fontsource-variable/inter": "^5.2.8",
     "@fontsource/maitree": "^5.2.8",
     "@octokit/rest": "^22.0.1",
-    "@readme/markdown": "^14.1.4",
     "@tailwindcss/typography": "^0.5.19",
     "@tailwindcss/vite": "^4.2.1",
     "class-variance-authority": "^0.7.1",

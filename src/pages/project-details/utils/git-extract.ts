@@ -1,5 +1,3 @@
-import type { IUrlTransform } from "./types"
-
 export const normalizeReadmeText = (value: string) =>
   value
     .replace(/src=("|')public\//g, "src=$1/")

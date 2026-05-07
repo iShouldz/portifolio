@@ -1,6 +1,6 @@
 import { RetroGrid } from "@/components/ui/retro-grid"
 import { cn } from "@/lib/utils"
-import { MoveDown } from "lucide-react"
+import { Briefcase, Cloud, Code2, GraduationCap, MoveDown } from "lucide-react"
 import { motion } from "motion/react"
 import { useTranslation } from "react-i18next"
 
@@ -65,6 +65,37 @@ const FrontPageComponent = ({ introRef, heroScale }: any) => {
               <p className="text-md tracking-[0.5em] text-muted-foreground uppercase">
                 Front-end engineer
               </p>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20, filter: "blur(10px)" }}
+                animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+                transition={{
+                  duration: 1.5,
+                  delay: 3,
+                  ease: [0.22, 1, 0.36, 1],
+                }}
+                className="m-4 flex w-full gap-2"
+              >
+                <div className="flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium text-muted-foreground backdrop-blur-md transition-colors hover:bg-white/10 hover:text-primary">
+                  <Briefcase size={16} className="text-emerald-500" />
+                  <span>Front-end @ Compass UOL</span>
+                </div>
+
+                <div className="flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium text-muted-foreground backdrop-blur-md transition-colors hover:bg-white/10 hover:text-primary">
+                  <Code2 size={16} className="text-emerald-500" />
+                  <span>React & TypeScript</span>
+                </div>
+
+                <div className="flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium text-muted-foreground backdrop-blur-md transition-colors hover:bg-white/10 hover:text-primary">
+                  <Cloud size={16} className="text-emerald-500" />
+                  <span>AWS Certified</span>
+                </div>
+
+                <div className="flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium text-muted-foreground backdrop-blur-md transition-colors hover:bg-white/10 hover:text-primary">
+                  <GraduationCap size={16} className="text-emerald-500" />
+                  <span>BCC Graduate</span>
+                </div>
+              </motion.div>
             </motion.div>
 
             <div className="absolute bottom-0 flex -translate-y-1/2 items-end justify-between gap-4">
