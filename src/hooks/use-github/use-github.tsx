@@ -28,3 +28,44 @@ export async function getGithubRepos(username: string) {
       topics: repo.topics,
     }))
 }
+
+export async function getRepoDetailedStats(owner: string, repo: string) {
+  try {
+    const [repoData, languagesData, readmeData] = await Promise.all([
+      octokit.repos.get({ owner, repo }),
+      octokit.repos.listLanguages({ owner, repo }),
+      octokit
+        .request("GET /repos/{owner}/{repo}/readme", {
+          owner,
+          repo,
+          headers: {
+            accept: "application/vnd.github.v3.raw",
+          },
+        })
+        .catch(() => ({ data: "" })), 
+    ])
+
+    return {
+      repo: {
+        owner: repoData.data.owner.login,
+        name: repoData.data.name,
+        url: repoData.data.html_url,
+        defaultBranch: repoData.data.default_branch,
+      },
+      stats: {
+        stars: repoData.data.stargazers_count,
+        forks: repoData.data.forks_count,
+        openIssues: repoData.data.open_issues_count,
+        watchers: repoData.data.watchers_count,
+        sizeKb: repoData.data.size,
+        homepage: repoData.data.homepage, 
+        license: repoData.data.license?.name || "Sem licença",
+      },
+      languages: Object.keys(languagesData.data),
+      readme: readmeData.data, 
+    }
+  } catch (error) {
+    console.error(`Erro ao buscar detalhes do repositório ${repo}:`, error)
+    return null
+  }
+}

@@ -1,10 +1,9 @@
 import { getGithubRepos } from "@/hooks/use-github/use-github"
 import { motion, useScroll, useTransform } from "motion/react"
-import { useRef } from "react"
+import { useCallback, useRef } from "react"
 import { useTranslation } from "react-i18next"
 import {
   Card,
-  CardAction,
   CardContent,
   CardDescription,
   CardFooter,
@@ -13,9 +12,11 @@ import {
 } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import type { IProjectCard } from "./types"
+import { useNavigate } from "react-router"
 
 const Projects = () => {
   const { t } = useTranslation()
+  const navigate = useNavigate()
   const sectionRef = useRef<HTMLElement | null>(null)
   const { scrollYProgress } = useScroll({
     target: sectionRef,
@@ -28,6 +29,13 @@ const Projects = () => {
   const projectsList = t("projects.list", {
     returnObjects: true,
   }) as IProjectCard[]
+
+  const handleRedirectToProjectDetails = useCallback(
+    (id: string) => {
+      navigate(`/projects/${id}`)
+    },
+    [navigate]
+  )
 
   const {} = getGithubRepos("iShouldz")
   return (
@@ -77,7 +85,12 @@ const Projects = () => {
               )}
             </CardContent>
             <CardFooter>
-              <Button variant={"ghost"}>{t("projects.cards.btn")} →</Button>
+              <Button
+                variant={"ghost"}
+                onClick={() => handleRedirectToProjectDetails(project.id)}
+              >
+                {t("projects.cards.btn")} →
+              </Button>
             </CardFooter>
           </Card>
         ))}

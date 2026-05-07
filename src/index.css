@@ -192,3 +192,48 @@
 ::view-transition-old(root), ::view-transition-new(root) {
     animation: none;
     mix-blend-mode: normal;}
+
+.markdown-body {
+  background-color: transparent;
+  color: #c9d1d9;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.markdown-body a {
+  color: #58a6ff;
+}
+
+.markdown-body hr {
+  border-color: #30363d;
+}
+
+.markdown-body pre {
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 12px;
+}
+
+.markdown-body code {
+  background-color: rgba(110, 118, 129, 0.4);
+  border-radius: 6px;
+  padding: 0.2em 0.4em;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  border-radius: 12px;
+  border: 1px solid #30363d;
+  background-color: #0d1117;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.markdown-body blockquote {
+  border-left-color: #30363d;
+  color: #8b949e;
+}
