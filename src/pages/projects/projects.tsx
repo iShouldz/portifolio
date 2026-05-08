@@ -67,7 +67,7 @@ const Projects = () => {
                   className="aspect-video w-full rounded-xl object-cover transition-transform duration-500 group-hover/card:scale-105 group-hover/card:shadow-xl"
                 />
               ) : (
-                <div className="flex aspect-video w-full flex-col items-center justify-center rounded-xl border border-white/5 bg-gradient-to-br from-neutral-800 to-black transition-transform duration-500 group-hover/card:scale-105">
+                <div className="flex aspect-video w-full flex-col items-center justify-center rounded-xl border border-white/5 bg-linear-to-br from-neutral-800 to-black transition-transform duration-500 group-hover/card:scale-105">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="64"

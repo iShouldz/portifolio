@@ -1,7 +1,7 @@
 import { Dock, DockIcon } from "@/components/ui/dock"
 import { ScrollProgress } from "@/components/ui/scroll-progress"
 import ReactLenis from "lenis/react"
-import { Download, Home } from "lucide-react"
+import { Download, Home, Zap } from "lucide-react"
 import { Outlet, useNavigate } from "react-router"
 import { motion } from "motion/react"
 import { AnimateIcon } from "@/components/animate-ui/icons/icon"
@@ -21,6 +21,8 @@ import {
 } from "@/components/ui/hover-card"
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group"
 import ScroolToTop from "@/components/scrool-to-top/scrool-to-top"
+import { AnimatedThemeToggler } from "@/components/ui/animated-theme-toggler"
+import { Separator } from "@/components/ui/separator"
 
 const OutletPage = () => {
   const navigate = useNavigate()
@@ -50,7 +52,8 @@ const OutletPage = () => {
     <ReactLenis root options={{ lerp: 0.08, duration: 1.2, smoothWheel: true }}>
       <ScroolToTop />
       <ScrollProgress className="h-2" />
-      <main className="relative min-h-screen overflow-x-hidden bg-[radial-gradient(circle_at_top_left,rgba(169,124,248,0.18),transparent_25%),radial-gradient(circle_at_top_right,rgba(143,213,189,0.16),transparent_28%),linear-gradient(180deg,rgba(255,255,255,0.84),rgba(246,243,236,0.96))] text-foreground">
+      <main className="relative min-h-screen overflow-x-hidden bg-[radial-gradient(circle_at_top_left,rgba(75,111,32,0.12),transparent_25%),radial-gradient(circle_at_top_right,rgba(50,179,175,0.12),transparent_28%),linear-gradient(180deg,#d4d5d0,#c5c6bf)] text-foreground dark:bg-[radial-gradient(circle_at_top_left,rgba(132,219,186,0.15),transparent_25%),radial-gradient(circle_at_top_right,rgba(50,179,175,0.15),transparent_28%),linear-gradient(180deg,#152312,#0e1707)]">
+        {" "}
         <Outlet />
       </main>
 
@@ -72,6 +75,34 @@ const OutletPage = () => {
               </TooltipTrigger>
               <TooltipContent>
                 <p>{t("dock.home")}</p>
+              </TooltipContent>
+            </Tooltip>
+          </DockIcon>
+
+          <Separator orientation="vertical" />
+          <DockIcon onClick={() => navigate("/resume")}>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Zap />
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>{t("dock.summary", "Resumo Executivo")}</p>
+              </TooltipContent>
+            </Tooltip>
+          </DockIcon>
+
+          <DockIcon>
+            <Tooltip>
+              <a href="/Curriculo.pdf" download="Curriculo.pdf">
+                <TooltipTrigger asChild>
+                  <AnimateIcon animateOnHover>
+                    <Download />
+                  </AnimateIcon>
+                </TooltipTrigger>
+              </a>
+
+              <TooltipContent>
+                <p>{t("dock.curriculum")}</p>
               </TooltipContent>
             </Tooltip>
           </DockIcon>
@@ -116,22 +147,7 @@ const OutletPage = () => {
             </Tooltip>
           </DockIcon>
 
-          <DockIcon>
-            <Tooltip>
-              <a href="/Curriculo.pdf" download="Curriculo.pdf">
-                <TooltipTrigger asChild>
-                  <AnimateIcon animateOnHover>
-                    <Download />
-                  </AnimateIcon>
-                </TooltipTrigger>
-              </a>
-
-              <TooltipContent>
-                <p>{t("dock.curriculum")}</p>
-              </TooltipContent>
-            </Tooltip>
-          </DockIcon>
-
+          <Separator orientation="vertical" />
           <DockIcon>
             <HoverCard>
               <HoverCardTrigger>
@@ -185,6 +201,19 @@ const OutletPage = () => {
                 </ToggleGroup>
               </HoverCardContent>
             </HoverCard>
+          </DockIcon>
+
+          <DockIcon>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <div className="flex h-full w-full cursor-pointer items-center justify-center">
+                  <AnimatedThemeToggler />
+                </div>
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>{t("dock.theme")}</p>
+              </TooltipContent>
+            </Tooltip>
           </DockIcon>
         </Dock>
       </motion.div>

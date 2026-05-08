@@ -4,6 +4,7 @@ import { useNavigate } from "react-router"
 import { useRef } from "react"
 import { MoveDown } from "lucide-react"
 import { useTranslation } from "react-i18next"
+import { RoutesUrl } from "@/utils/enum/routes.utils"
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -82,7 +83,7 @@ const CardDisplay = ({ cardsRef, cardsLift, cardsSkew }: any) => {
         >
           <WobbleCard
             containerClassName="h-full w-full bg-secondary min-h-[320px] lg:min-h-[560px] rounded-[2.5rem] cursor-pointer"
-            onClick={() => navigate("/projects")}
+            onClick={() => navigate(RoutesUrl.PROJECTS)}
           >
             <div className="group flex h-full w-full flex-col justify-between p-6">
               <h2 className="text-left text-base font-semibold tracking-[-0.015em] text-balance text-foreground md:text-xl lg:text-3xl">
@@ -107,7 +108,7 @@ const CardDisplay = ({ cardsRef, cardsLift, cardsSkew }: any) => {
         >
           <WobbleCard
             containerClassName="h-full w-full bg-primary/20 min-h-[320px] lg:min-h-[360px] cursor-pointer"
-            onClick={() => navigate("/experience")}
+            onClick={() => navigate(RoutesUrl.EXPERIENCIES)}
           >
             <div className="group flex h-full flex-col justify-between p-6">
               <h2 className="text-left text-base font-semibold tracking-[-0.015em] text-balance text-foreground md:text-xl lg:text-3xl">
@@ -175,7 +176,7 @@ const CardDisplay = ({ cardsRef, cardsLift, cardsSkew }: any) => {
           </WobbleCard>
         </motion.div>
       </motion.div>
-      <div className="absolute bottom-0 flex right-8 items-end justify-between gap-4">
+      <div className="absolute right-8 bottom-0 flex items-end justify-between gap-4">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
