@@ -99,7 +99,8 @@
 @layer base {
   :root {
     --text: #0e1707;
-    --background: #f5fbef;
+    /* --background: #f5fbef; */
+    --background: #e0d4c4;
     --primary: #4b6f20;
     --secondary: #84dbba;
     --accent: #32b3af;

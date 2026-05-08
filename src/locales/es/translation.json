@@ -170,5 +170,82 @@
         "deployLink": "https://delivery-car.vercel.app/"
       }
     ]
+  },
+  "project-details": {
+    "btn": {
+      "repository": "Visitar repositorio",
+      "figma": "Ver prototipo en Figma",
+      "deploy": "Ver deploy"
+    },
+    "stats": {
+      "title": "Estadísticas del repositorio"
+    },
+    "languages": {
+      "title": "Lenguajes utilizados"
+    }
+  },
+  "experiences": {
+    "title": "Explore my experiences.",
+    "description": "Some experiences that shaped my professional journey, where I worked, and what I learned.",
+    "experiences-list": [
+      {
+        "company": "Compass UOL",
+        "icon": "employment",
+        "role": "Mid-level Front-end Developer",
+        "period": "November 2023 - Present",
+        "location": "Remote (Vivo/Telefônica)",
+        "description": "DevStore Project: Acted as the lead Front-end developer, being solely responsible for the project's delivery in its final phase. Developed and maintained scalable web applications in React, using Zustand, Redux, and React Query for state management and consuming REST APIs via Axios. My experience includes using TypeScript, Shadcn, Tailwind CSS, Styled Components, and Material UI to create optimized and accessible user interfaces. Actively contributed to quality assurance through automated testing with Vitest.\n\nVivo Telefônica (currently): Participated in multiple projects focusing on micro-frontends in the Fintech area. Applied clean code principles and used Mística for UI development. I was responsible for ensuring code robustness through a comprehensive suite of tests, including unit tests with Jest, component tests with Cypress, and mutation tests with Stryker.",
+        "tech": [
+          "React",
+          "TypeScript",
+          "Design System",
+          "Stryker",
+          "Vitest",
+          "Cypress",
+          "Clean Code",
+          "Microfrontends"
+        ]
+      },
+      {
+        "company": "Compass UOL",
+        "role": "Front-end Intern",
+        "icon": "employment",
+        "period": "November 2023 - March 2024",
+        "location": "Remote",
+        "description": "Compass UOL scholarship program focusing on front-end development and cloud computing fundamentals. During the program, I deepened my knowledge of React, exploring technologies like Redux, React Query, and other essential tools for building modern and scalable applications. The internship culminated in obtaining the AWS Cloud Practitioner certification, consolidating skills in cloud services and AWS best practices.",
+        "tech": [
+          "React",
+          "TypeScript",
+          "Vitest",
+          "Cypress",
+          "AWS Cloud Practitioner",
+          "Redux",
+          "React Query"
+        ]
+      },
+      {
+        "company": "CNPq - National Council for Scientific and Technological Development",
+        "role": "PIBIC Researcher",
+        "icon": "academic",
+        "period": "September 2023 - September 2024",
+        "location": "Garanhuns, PE",
+        "description": "Research: PIBIC - Vulnerabilities caused by commits. Supervised by Professor Dr. Rodrigo Andrade. The project aims to analyze the relationship between code commits and the introduction of software vulnerabilities. Using data mining techniques and repository analysis, the study seeks to identify patterns and factors that contribute to the occurrence of security flaws, with the goal of providing insights for safer development practices.",
+        "tech": ["Software Security", "Vulnerability Analysis", "Git", "Python"]
+      },
+      {
+        "company": "UFAPE",
+        "role": "Teaching Assistant - Introduction to Computing",
+        "period": "June 2023 - December 2024",
+        "icon": "academic",
+        "location": "Garanhuns, PE",
+        "description": "Teaching assistant for Introduction to Computing, a course taught by Professor Dr. Ryan Ribeiro de Azevedo. Responsible for helping students with questions related to programming logic, algorithms, and data structures, as well as providing support during practical classes and evaluations.",
+        "tech": [
+          "Software Engineering",
+          "Data Structures",
+          "Web Development",
+          "Algorithms"
+        ]
+      }
+    ]
   }
 }

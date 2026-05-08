@@ -238,11 +238,14 @@ export const AnimatedThemeToggler = ({
       type="button"
       ref={buttonRef}
       onClick={toggleTheme}
-      className={cn(className) + "flex"}
+      className={cn(
+        "flex h-full w-full items-center justify-center",
+        className
+      )}
       {...props}
     >
       {isDark ? (
-        <Sun className="p-4" />
+        <Sun className="text-foreground" />
       ) : (
         <Moon className="text-foreground" />
       )}

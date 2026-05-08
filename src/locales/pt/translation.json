@@ -3,6 +3,7 @@
     "home": "Ir para a página inicial",
     "github": "Perfil no GitHub",
     "linkedin": "Perfil no LinkedIn",
+    "theme": "Alternar tema",
     "curriculum": "Download do currículo",
     "language": {
       "label": "Mudar idioma",
@@ -292,5 +293,74 @@
     "languages": {
       "title": "Linguagens utilizadas"
     }
+  },
+  "experiences": {
+    "title": "Conheça as minhas experiências.",
+    "description": "Algumas experiencias que marcaram minha trajetória profissional, onde trabalhei e o que aprendi.",
+    "experiences-list": [
+      {
+        "company": "Compass UOL",
+        "icon": "employment",
+        "role": "Desenvolvedor Front-end Pleno",
+        "period": "Novembro 2023 - Presente",
+        "location": "Remoto (Vivo/Telefônica)",
+        "description": "Projeto DevStore: Atuei como desenvolvedor Front-end principal, sendo o único responsável pela entrega do projeto na fase final. Desenvolvi e mantive aplicações web escaláveis em React, utilizando Zustand, Redux e React Query para gestão de estado e consumo de APIs REST via Axios. Minha experiência inclui o uso de TypeScript, Shadcn, Tailwind CSS, Styled Components e Material UI para criar interfaces de usuário otimizadas e acessíveis. Contribuí ativamente na garantia de qualidade através de testes automatizados com Vitest. Vivo Telefônica (atualmente): Participei de múltiplos projetos com foco em microfrontends na área de Fintech. Apliquei princípios de clean code e utilizei Mística para o desenvolvimento de UI. Fui responsável por garantir a robustez do código através de um conjunto abrangente de testes, incluindo testes unitários com o Jest, testes de componente com Cypress e testes de mutação com Stryker.",
+        "tech": [
+          "React",
+          "TypeScript",
+          "Design System",
+          "Stryker",
+          "Vitest",
+          "Cypress",
+          "Clean Code",
+          "Microfrontends"
+        ]
+      },
+      {
+        "company": "Compass UOL",
+        "role": "Estágio Front-end",
+        "icon": "employment",
+        "period": "Novembro 2023 - Março 2024",
+        "location": "Remoto",
+        "description": "Programa de bolsas da Compass UOL com foco no desenvolvimento front-end e fundamentos de computação em nuvem. Durante o programa, aprofundei meus conhecimentos em React, explorando tecnologias como Redux, React Query e outras ferramentas essenciais para construção de aplicações modernas e escaláveis. O estágio culminou na obtenção da certificação AWS Cloud Practitioner, consolidando habilidades em serviços de nuvem e práticas recomendadas da AWS.",
+        "tech": [
+          "React",
+          "TypeScript",
+          "Vitest",
+          "Cypress",
+          "AWS Cloud Practitioner",
+          "Redux",
+          "React Query"
+        ]
+      },
+      {
+        "company": "CNPq - Conselho Nacional de Desenvolvimento Científico",
+        "role": "Pesquisador PIBIC",
+        "icon": "academic",
+        "period": "Setembro 2023 - Setembro 2024",
+        "location": "Garanhuns, PE",
+        "description": "Pesquisa: PIBIC - Vulnerabilidades causadas por commits. Orientado pelo professor Dr. Rodrigo Andrade. O projeto visa analisar a relação entre commits de código e a introdução de vulnerabilidades em software. Utilizando técnicas de mineração de dados e análise de repositórios, o estudo busca identificar padrões e fatores que contribuem para a ocorrência de falhas de segurança, com o objetivo de fornecer insights para práticas de desenvolvimento mais seguras.",
+        "tech": [
+          "Segurança de Software",
+          "Análise de Vulnerabilidades",
+          "Git",
+          "Python"
+        ]
+      },
+      {
+        "company": "UFAPE",
+        "role": "Monitor de Introdução à Computação",
+        "period": "Junho 2023 - Dezembro 2024",
+        "icon": "academic",
+        "location": "Garanhuns, PE",
+        "description": "Monitoria de Introdução à computação, disciplina ministrada pelo professor Dr. Ryan Ribeiro de Azevedo. Responsável por auxiliar os alunos com dúvidas relacionadas a lógica de programação, algoritmos e estruturas de dados, além de fornecer suporte durante as aulas práticas e avaliações.",
+        "tech": [
+          "Software Engineering",
+          "Data Structures",
+          "Web Development",
+          "Algorithms"
+        ]
+      }
+    ]
   }
 }
