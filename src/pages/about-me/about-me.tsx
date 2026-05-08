@@ -157,7 +157,7 @@ const AboutContact = () => {
         >
           <div className="flex h-full flex-col gap-3">
             <a
-              href="https://github.com/SeuUser"
+              href="https://github.com/iShouldz"
               target="_blank"
               rel="noopener noreferrer"
               className="group flex flex-1 items-center justify-center gap-3 rounded-[2rem] border border-white/10 bg-white/5 transition-all hover:border-emerald-500/30 hover:bg-white/10"
