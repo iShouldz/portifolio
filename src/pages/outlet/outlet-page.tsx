@@ -86,7 +86,7 @@ const OutletPage = () => {
                 <Zap />
               </TooltipTrigger>
               <TooltipContent>
-                <p>{t("dock.summary", "Resumo Executivo")}</p>
+                <p>{t("dock.summary")}</p>
               </TooltipContent>
             </Tooltip>
           </DockIcon>

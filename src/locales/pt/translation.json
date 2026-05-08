@@ -2,6 +2,7 @@
   "dock": {
     "home": "Ir para a página inicial",
     "github": "Perfil no GitHub",
+    "summary": "Resumo rápido",
     "linkedin": "Perfil no LinkedIn",
     "theme": "Alternar tema",
     "curriculum": "Download do currículo",
@@ -364,8 +365,8 @@
     ]
   },
   "resume": {
-    "title": "Tudo que você precisa saber sobre mim.",
-    "description": "Um resumo rápido sobre mim. Conheça um pouco mais sobre minha trajetória, habilidades e experiências profissionais. Meu currículo está disponível para download, oferecendo uma visão detalhada das minhas qualificações e conquistas ao longo da minha carreira.",
+    "title": "O mínimo que você precisa saber sobre mim.",
+    "description": "Um resumo rápido sobre mim. Conheça um pouco sobre minha trajetória, habilidades e experiências profissionais. Meu currículo está disponível para download, oferecendo uma visão detalhada das minhas qualificações e conquistas ao longo da minha carreira.",
     "btn": "Download do currículo",
     "blocks": {
       "company": {
