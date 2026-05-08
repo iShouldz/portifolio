@@ -73,7 +73,7 @@ const FrontPageComponent = ({ introRef, heroScale }: any) => {
                   delay: 3,
                   ease: [0.22, 1, 0.36, 1],
                 }}
-                className="m-4 flex w-full gap-2"
+                className="mt-4 flex w-full gap-2 flex-wrap items-center justify-center"
               >
                 <div className="flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium text-muted-foreground backdrop-blur-md transition-colors hover:bg-white/10 hover:text-primary">
                   <Briefcase size={16} className="text-emerald-500" />
