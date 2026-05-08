@@ -24,20 +24,19 @@
       "scroll_down": "Desplázate hacia abajo.",
       "cards": {
         "experience": {
-          "title": "Experiencia",
-          "description": "Conoce mi experiencia profesional, dónde he trabajado y lo que he aprendido."
+          "title": "Experiencias",
+          "description": "Conoce mis experiencias profesionales, dónde he trabajado y qué he aprendido."
         },
         "projects": {
           "title": "Proyectos",
-          "description": "Explora algunos de los proyectos que he desarrollado a lo largo de mi trayectoria, desde proyectos personales hasta contribuciones a la comunidad Open Source."
+          "description": "Explora algunos proyectos que he desarrollado a lo largo de mi trayectoria, desde proyectos personales hasta contribuciones a la comunidad Open Source."
         },
         "about-me": {
-          "title": "Sobre mí",
-          "description": "Conoce un poco a la persona detrás del desarrollador."
+          "title": "Sobre mí & Contacto",
+          "description": "Conoce un poco a la persona detrás del desarrollador. Empecemos a conversar."
         },
-        "contact": {
-          "title": "Contacto",
-          "description": "Contáctame para trabajos, colaboraciones y oportunidades."
+        "download": {
+          "title": "Descargar Currículum"
         }
       }
     },
@@ -185,16 +184,16 @@
     }
   },
   "experiences": {
-    "title": "Explore my experiences.",
-    "description": "Some experiences that shaped my professional journey, where I worked, and what I learned.",
+    "title": "Conoce mis experiencias.",
+    "description": "Algunas experiencias que marcaron mi trayectoria profesional, dónde he trabajado y qué he aprendido.",
     "experiences-list": [
       {
         "company": "Compass UOL",
         "icon": "employment",
-        "role": "Mid-level Front-end Developer",
-        "period": "November 2023 - Present",
-        "location": "Remote (Vivo/Telefônica)",
-        "description": "DevStore Project: Acted as the lead Front-end developer, being solely responsible for the project's delivery in its final phase. Developed and maintained scalable web applications in React, using Zustand, Redux, and React Query for state management and consuming REST APIs via Axios. My experience includes using TypeScript, Shadcn, Tailwind CSS, Styled Components, and Material UI to create optimized and accessible user interfaces. Actively contributed to quality assurance through automated testing with Vitest.\n\nVivo Telefônica (currently): Participated in multiple projects focusing on micro-frontends in the Fintech area. Applied clean code principles and used Mística for UI development. I was responsible for ensuring code robustness through a comprehensive suite of tests, including unit tests with Jest, component tests with Cypress, and mutation tests with Stryker.",
+        "role": "Desarrollador Front-end Pleno",
+        "period": "Noviembre 2023 - Presente",
+        "location": "Remoto (Vivo/Telefônica)",
+        "description": "Proyecto DevStore: Actué como desarrollador Front-end principal, siendo el único responsable de la entrega del proyecto en la fase final. Desarrollé y mantuve aplicaciones web escalables en React, utilizando Zustand, Redux y React Query para la gestión de estado y consumo de APIs REST vía Axios. Mi experiencia incluye el uso de TypeScript, Shadcn, Tailwind CSS, Styled Components y Material UI para crear interfaces de usuario optimizadas y accesibles. Contribuí activamente en la garantía de calidad a través de pruebas automatizadas con Vitest.\n\n Vivo Telefônica (actualmente): Participé en múltiples proyectos con enfoque en microfrontends en el área de Fintech. Apliqué principios de clean code y utilicé Mística para el desarrollo de UI. Fui responsable de garantizar la robustez del código a través de un conjunto integral de pruebas, incluyendo pruebas unitarias con Jest, pruebas de componente con Cypress y pruebas de mutación con Stryker.",
         "tech": [
           "React",
           "TypeScript",
@@ -208,11 +207,11 @@
       },
       {
         "company": "Compass UOL",
-        "role": "Front-end Intern",
+        "role": "Prácticas Front-end",
         "icon": "employment",
-        "period": "November 2023 - March 2024",
-        "location": "Remote",
-        "description": "Compass UOL scholarship program focusing on front-end development and cloud computing fundamentals. During the program, I deepened my knowledge of React, exploring technologies like Redux, React Query, and other essential tools for building modern and scalable applications. The internship culminated in obtaining the AWS Cloud Practitioner certification, consolidating skills in cloud services and AWS best practices.",
+        "period": "Noviembre 2023 - Marzo 2024",
+        "location": "Remoto",
+        "description": "Programa de becas de Compass UOL con enfoque en el desarrollo front-end y fundamentos de computación en la nube. Durante el programa, profundicé mis conocimientos en React, explorando tecnologías como Redux, React Query y otras herramientas esenciales para la construcción de aplicaciones modernas y escalables. Las prácticas culminaron con la obtención de la certificación AWS Cloud Practitioner, consolidando habilidades en servicios de nube y mejores prácticas de AWS.",
         "tech": [
           "React",
           "TypeScript",
@@ -224,21 +223,26 @@
         ]
       },
       {
-        "company": "CNPq - National Council for Scientific and Technological Development",
-        "role": "PIBIC Researcher",
+        "company": "CNPq - Consejo Nacional de Desarrollo Científico",
+        "role": "Investigador PIBIC",
         "icon": "academic",
-        "period": "September 2023 - September 2024",
+        "period": "Septiembre 2023 - Septiembre 2024",
         "location": "Garanhuns, PE",
-        "description": "Research: PIBIC - Vulnerabilities caused by commits. Supervised by Professor Dr. Rodrigo Andrade. The project aims to analyze the relationship between code commits and the introduction of software vulnerabilities. Using data mining techniques and repository analysis, the study seeks to identify patterns and factors that contribute to the occurrence of security flaws, with the goal of providing insights for safer development practices.",
-        "tech": ["Software Security", "Vulnerability Analysis", "Git", "Python"]
+        "description": "Investigación: PIBIC - Vulnerabilidades causadas por commits. Orientado por el profesor Dr. Rodrigo Andrade. El proyecto busca analizar la relación entre los commits de código y la introducción de vulnerabilidades en el software. Utilizando técnicas de minería de datos y análisis de repositorios, el estudio busca identificar patrones y factores que contribuyen a la ocurrencia de fallos de seguridad, con el objetivo de proporcionar información para prácticas de desarrollo más seguras.",
+        "tech": [
+          "Seguridad de Software",
+          "Análisis de Vulnerabilidades",
+          "Git",
+          "Python"
+        ]
       },
       {
         "company": "UFAPE",
-        "role": "Teaching Assistant - Introduction to Computing",
-        "period": "June 2023 - December 2024",
+        "role": "Monitor de Introducción a la Computación",
+        "period": "Junio 2023 - Diciembre 2024",
         "icon": "academic",
         "location": "Garanhuns, PE",
-        "description": "Teaching assistant for Introduction to Computing, a course taught by Professor Dr. Ryan Ribeiro de Azevedo. Responsible for helping students with questions related to programming logic, algorithms, and data structures, as well as providing support during practical classes and evaluations.",
+        "description": "Monitoría de Introducción a la Computación, asignatura impartida por el profesor Dr. Ryan Ribeiro de Azevedo. Responsable de ayudar a los alumnos con dudas relacionadas con la lógica de programación, algoritmos y estructuras de datos, además de brindar apoyo durante las clases prácticas y evaluaciones.",
         "tech": [
           "Software Engineering",
           "Data Structures",
@@ -247,5 +251,60 @@
         ]
       }
     ]
+  },
+  "resume": {
+    "title": "Lo esencial sobre mí.",
+    "description": "Un resumen rápido sobre mí. Conoce un poco sobre mi trayectoria, habilidades y experiencias profesionales. Mi currículum está disponible para descargar, ofreciendo una visión detallada de mis cualificaciones y logros a lo largo de mi carrera.",
+    "btn": "Descargar currículum",
+    "blocks": {
+      "company": {
+        "title": "Compass UOL",
+        "role": "Desarrollador Front-end Pleno",
+        "description": "Actuando en la cuenta de <1>Vivo (Telefónica)</1>, enfocado en arquitectura de componentes escalables e interfaces de alto rendimiento en el ecosistema B2B/B2C."
+      },
+      "skills": {
+        "title": "Principales conocimientos técnicos",
+        "description": "Algunas de las tecnologías y herramientas con las que tengo experiencia. Especialista en construir experiencias web fluidas con integraciones robustas, animaciones basadas en física y tipografía rigorosa."
+      },
+      "education": {
+        "certification": "Certificación",
+        "current-certification": "AWS Cloud Practitioner",
+        "title": "Graduación",
+        "description": "Licenciado en Ciencias de la Computación por la UFAPE"
+      },
+      "projects": {
+        "title": "Proyecto más reciente",
+        "project-title": "One Pace BR Hub",
+        "description": "Hub unificado para los episodios editados del proyecto One Pace, con enfoque en SEO, experiencia de usuario y automatización de descargas."
+      },
+      "btn": {
+        "show-projects": "Conocer proyectos",
+        "portifolio": "Visitar portafolio"
+      }
+    }
+  },
+  "about": {
+    "title": "Saber más sobre mí.",
+    "description": "Desarrollador Front-end graduado en Ciencias de la Computación (UFAPE), con actuación sólida en arquitecturas complejas y Microfrontends. En Compass UOL, trabajo en la cuenta de Vivo, donde elevo el listón de calidad aplicando Clean Code y pruebas integrales (Unitarias, de Componente y de Mutación con Stryker). Mi enfoque une la estética moderna de herramientas como Tailwind y Shadcn con la robustez técnica de la gestión de estados con Zustand y el consumo eficiente de APIs. Me motiva el desafío de transformar los requisitos de negocio en productos escalables dentro de entornos ágiles y colaborativos.",
+    "form": {
+      "title": "¿Hablamos?",
+      "description": "Completa la información a continuación y me pondré en contacto pronto.",
+      "name": {
+        "label": "¿Cuál es tu email?",
+        "placeholder": "Escribe tu nombre"
+      },
+      "subject": {
+        "label": "¿Cuál es el asunto?",
+        "placeholder": "Ej: Oportunidad, Alianza..."
+      },
+      "message": {
+        "label": "Tu mensaje",
+        "placeholder": "Cuéntame más sobre tu idea o proyecto..."
+      },
+      "btn": {
+        "send-email": "Enviar email",
+        "send-email_isSending": "Enviando..."
+      }
+    }
   }
 }

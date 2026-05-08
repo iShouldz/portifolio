@@ -20,7 +20,7 @@
       }
     },
     "cards-section": {
-      "title": "Explore my work.",
+      "title": "Discover my work.",
       "scroll_down": "Scroll down.",
       "cards": {
         "experience": {
@@ -29,15 +29,14 @@
         },
         "projects": {
           "title": "Projects",
-          "description": "Explore some of the projects I've developed throughout my career, from personal endeavors to Open Source community contributions."
+          "description": "Explore some of the projects I've developed throughout my career, ranging from personal projects to Open Source community contributions."
         },
         "about-me": {
-          "title": "About me",
-          "description": "Get to know the person behind the developer."
+          "title": "About & Contact",
+          "description": "Get to know a bit about the person behind the developer. Let's start a conversation."
         },
-        "contact": {
-          "title": "Contact",
-          "description": "Reach out for freelance work, collaborations, and opportunities."
+        "download": {
+          "title": "Download Resume"
         }
       }
     },
@@ -247,5 +246,60 @@
         ]
       }
     ]
+  },
+  "resume": {
+    "title": "The essentials about me.",
+    "description": "A quick summary of my profile. Learn a bit about my trajectory, skills, and professional experiences. My resume is available for download, offering a detailed view of my qualifications and achievements throughout my career.",
+    "btn": "Download resume",
+    "blocks": {
+      "company": {
+        "title": "Compass UOL",
+        "role": "Mid-level Front-end Developer",
+        "description": "Working on the <1>Vivo (Telefônica)</1> account, focused on scalable component architecture and high-performance interfaces in the B2B/B2C ecosystem."
+      },
+      "skills": {
+        "title": "Core technical skills",
+        "description": "Some of the technologies and tools I have experience with. Specialist in building fluid web experiences with robust integrations, physics-based animations, and rigorous typography."
+      },
+      "education": {
+        "certification": "Certification",
+        "current-certification": "AWS Cloud Practitioner",
+        "title": "Education",
+        "description": "Bachelor of Computer Science from UFAPE"
+      },
+      "projects": {
+        "title": "Latest project",
+        "project-title": "One Pace BR Hub",
+        "description": "Unified hub for the One Pace project's edited episodes, focusing on SEO, user experience, and download automation."
+      },
+      "btn": {
+        "show-projects": "Explore projects",
+        "portifolio": "Visit portfolio"
+      }
+    }
+  },
+  "about": {
+    "title": "Learn more about me.",
+    "description": "Front-end Developer with a degree in Computer Science (UFAPE), with solid experience in complex architectures and Microfrontends. At Compass UOL, I work on the Vivo account, where I raise the quality bar by applying Clean Code and comprehensive testing (Unit, Component, and Mutation testing with Stryker). My approach combines the modern aesthetics of tools like Tailwind and Shadcn with the technical robustness of state management with Zustand and efficient API consumption. I am driven by the challenge of transforming business requirements into scalable products within agile and collaborative environments.",
+    "form": {
+      "title": "So, shall we talk?",
+      "description": "Fill in the information below and I will get in touch soon.",
+      "name": {
+        "label": "What's your email?",
+        "placeholder": "Enter your name"
+      },
+      "subject": {
+        "label": "What's the subject?",
+        "placeholder": "Ex: Opportunity, Partnership..."
+      },
+      "message": {
+        "label": "Your message",
+        "placeholder": "Tell me more about your idea or project..."
+      },
+      "btn": {
+        "send-email": "Send email",
+        "send-email_isSending": "Sending..."
+      }
+    }
   }
 }
