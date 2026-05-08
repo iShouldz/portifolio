@@ -1,24 +1,18 @@
-import { motion, useScroll, useTransform, type Variants } from "motion/react"
+import { motion, type Variants } from "motion/react"
 import { Trans, useTranslation } from "react-i18next"
 import { Briefcase, Code2, Award, Star, ArrowRight } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { WobbleCard } from "@/components/ui/wobble-card"
 import { useNavigate } from "react-router"
-import { useRef } from "react"
+import useSetupScrool from "@/hooks/use-setup-scrool/use-setup-scrool"
 
 const Resume = () => {
   const { t } = useTranslation()
   const navigate = useNavigate()
 
-  const sectionRef = useRef<HTMLElement | null>(null)
-  const { scrollYProgress } = useScroll({
-    target: sectionRef,
-    offset: ["start end", "end start"],
-  })
+  const { titleY, sectionRef, titleOpacity } = useSetupScrool()
 
-  const titleY = useTransform(scrollYProgress, [0, 1], [36, -24])
-  const titleOpacity = useTransform(scrollYProgress, [0, 0.25, 1], [0.7, 1, 1])
   const container = {
     hidden: { opacity: 0 },
     show: {
@@ -196,7 +190,7 @@ const Resume = () => {
               <Button
                 variant="ghost"
                 onClick={(e) => {
-                  e.stopPropagation() 
+                  e.stopPropagation()
                   navigate("/projects")
                 }}
                 className="group relative flex h-14 w-full items-center justify-between rounded-2xl border border-transparent bg-white/5 px-6 text-sm font-bold tracking-widest text-foreground uppercase transition-all hover:border-emerald-500/30 hover:bg-emerald-500/20 hover:text-emerald-400"

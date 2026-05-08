@@ -400,11 +400,23 @@
     "description": "Desenvolvedor Front-end graduado em Ciência da Computação (UFAPE), com atuação sólida em arquiteturas complexas e Microfrontends. Na Compass UOL, atuo na conta da Vivo, onde elevo a barra de qualidade aplicando Clean Code e testes abrangentes (Unitários, Componente e Mutação com Stryker). Minha abordagem une a estética moderna de ferramentas como Tailwind e Shadcn à robustez técnica de gerenciamento de estados com Zustand e consumo eficiente de APIs. Sou movido pelo desafio de transformar requisitos de negócio em produtos escaláveis dentro de ambientes ágeis e colaborativos.",
     "form": {
       "title": "Então, vamos conversar?",
-      "description": "Preencha com seu email e vamos construir algo juntos.",
-      "name": "Qual o seu nome?",
-      "subject": "Qual o assunto?",
-      "message": "Escreva sua mensagem aqui.",
-      "btn": "Enviar mensagem"
+      "description": "Preencha as informações abaixo e eu vou entrar em contato em breve.",
+      "name": {
+        "label": "Qual seu email?",
+        "placeholder": "Digite seu nome"
+      },
+      "subject": {
+        "label": "Qual o assunto?",
+        "placeholder": "Ex: Oportunidade, Parceria..."
+      },
+      "message": {
+        "label": "Sua mensagem",
+        "placeholder": "Conte-me mais sobre sua ideia ou projeto..."
+      },
+      "btn": {
+        "send-email": "Enviar email",
+        "send-email_isSendingma": "Enviando..."
+      }
     }
   }
 }
