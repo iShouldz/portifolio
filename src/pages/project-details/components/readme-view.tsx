@@ -68,7 +68,7 @@ const ReadmeView = ({ repoMeta }: any) => {
   return (
     repoDetails && (
       <div className="w-full h-full">
-        <div className="rounded-2xl border border-[#30363d] bg-[#0d1117] p-6 shadow-[0_0_0_1px_rgba(255,255,255,0.02)] md:p-10 lg:col-span-3">
+        <div className="rounded-2xl border border-[#30363d] bg-[#f6f8fa] dark:bg-[#0d1117] p-6 shadow-[0_0_0_1px_rgba(255,255,255,0.02)] md:p-10 lg:col-span-3">
           <article className="markdown-body max-w-none">
             {repoDetails.readme ? (
               <ReactMarkdown

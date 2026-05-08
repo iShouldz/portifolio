@@ -23,13 +23,13 @@ const ReadmeShowcase = ({ repoMeta }: ReadmeShowcaseProps) => {
         </motion.div>
 
         <motion.div
-          className="overflow-hidden rounded-3xl border border-white/10 bg-black/20 backdrop-blur-xl"
+          className="overflow-hidden rounded-3xl border border-white/10 bg-muted-foreground backdrop-blur-xl"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <div className="p-8 md:p-12">
+          <div className="p-8 md:p-4">
             <ReadmeView repoMeta={repoMeta} />
           </div>
         </motion.div>
