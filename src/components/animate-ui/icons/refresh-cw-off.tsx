@@ -1,16 +1,15 @@
-'use client';
+"use client"
 
-import * as React from 'react';
-import { motion, type Variants } from 'motion/react';
+import { motion, type Variants } from "motion/react"
 
 import {
   getVariants,
   useAnimateIconContext,
   IconWrapper,
   type IconProps,
-} from '@/components/animate-ui/icons/icon';
+} from "@/components/animate-ui/icons/icon"
 
-type RefreshCwOffProps = IconProps<keyof typeof animations>;
+type RefreshCwOffProps = IconProps<keyof typeof animations>
 
 const animations = {
   default: {
@@ -19,8 +18,8 @@ const animations = {
         x: 0,
       },
       animate: {
-        x: [0, '-7%', '7%', '-7%', '7%', 0],
-        transition: { duration: 0.6, ease: 'easeInOut' },
+        x: [0, "-7%", "7%", "-7%", "7%", 0],
+        transition: { duration: 0.6, ease: "easeInOut" },
       },
     },
     path1: {},
@@ -46,15 +45,15 @@ const animations = {
       animate: {
         opacity: 1,
         pathLength: 1,
-        transition: { duration: 0.6, ease: 'easeInOut' },
+        transition: { duration: 0.6, ease: "easeInOut" },
       },
     },
   } satisfies Record<string, Variants>,
-} as const;
+} as const
 
 function IconComponent({ size, ...props }: RefreshCwOffProps) {
-  const { controls } = useAnimateIconContext();
-  const variants = getVariants(animations);
+  const { controls } = useAnimateIconContext()
+  const variants = getVariants(animations)
 
   return (
     <motion.svg
@@ -115,11 +114,11 @@ function IconComponent({ size, ...props }: RefreshCwOffProps) {
         animate={controls}
       />
     </motion.svg>
-  );
+  )
 }
 
 function RefreshCwOff(props: RefreshCwOffProps) {
-  return <IconWrapper icon={IconComponent} {...props} />;
+  return <IconWrapper icon={IconComponent} {...props} />
 }
 
 export {
@@ -128,4 +127,4 @@ export {
   RefreshCwOff as RefreshCwOffIcon,
   type RefreshCwOffProps,
   type RefreshCwOffProps as RefreshCwOffIconProps,
-};
+}

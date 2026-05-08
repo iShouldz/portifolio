@@ -1,52 +1,51 @@
-'use client';
+"use client"
 
-import * as React from 'react';
-import { motion, type Variants } from 'motion/react';
+import { motion, type Variants } from "motion/react"
 
 import {
   getVariants,
   useAnimateIconContext,
   IconWrapper,
   type IconProps,
-} from '@/components/animate-ui/icons/icon';
+} from "@/components/animate-ui/icons/icon"
 
-type DownloadProps = IconProps<keyof typeof animations>;
+type DownloadProps = IconProps<keyof typeof animations>
 
 const animations = {
   default: {
     group: {
       initial: {
         y: 0,
-        transition: { duration: 0.3, ease: 'easeInOut' },
+        transition: { duration: 0.3, ease: "easeInOut" },
       },
       animate: {
         y: 2,
-        transition: { duration: 0.3, ease: 'easeInOut' },
+        transition: { duration: 0.3, ease: "easeInOut" },
       },
     },
     path1: {},
     path2: {},
     path3: {},
   } satisfies Record<string, Variants>,
-  'default-loop': {
+  "default-loop": {
     group: {
       initial: {
         y: 0,
       },
       animate: {
         y: [0, 2, 0],
-        transition: { duration: 0.6, ease: 'easeInOut' },
+        transition: { duration: 0.6, ease: "easeInOut" },
       },
     },
     path1: {},
     path2: {},
     path3: {},
   } satisfies Record<string, Variants>,
-} as const;
+} as const
 
 function IconComponent({ size, ...props }: DownloadProps) {
-  const { controls } = useAnimateIconContext();
-  const variants = getVariants(animations);
+  const { controls } = useAnimateIconContext()
+  const variants = getVariants(animations)
 
   return (
     <motion.svg
@@ -82,11 +81,11 @@ function IconComponent({ size, ...props }: DownloadProps) {
         animate={controls}
       />
     </motion.svg>
-  );
+  )
 }
 
 function Download(props: DownloadProps) {
-  return <IconWrapper icon={IconComponent} {...props} />;
+  return <IconWrapper icon={IconComponent} {...props} />
 }
 
 export {
@@ -95,4 +94,4 @@ export {
   Download as DownloadIcon,
   type DownloadProps,
   type DownloadProps as DownloadIconProps,
-};
+}

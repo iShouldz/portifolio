@@ -4,7 +4,6 @@ import { ArrowDown, ArrowLeft, ArrowUp, PiIcon } from "lucide-react"
 import Text3DFlip from "./components/ui/text-3d-flip"
 import { InteractiveHoverButton } from "./components/ui/interactive-hover-button"
 import { RetroGrid } from "./components/ui/retro-grid"
-import { LineShadowText } from "./components/ui/line-shadow-text"
 import { DiaTextReveal } from "./components/ui/dia-text-reveal"
 import { Dock, DockIcon } from "./components/ui/dock"
 
@@ -12,15 +11,11 @@ export function App() {
   return (
     <div className="relative h-screen w-full overflow-hidden rounded-lg border bg-background">
       <RetroGrid
-        // height={90}
-        // width={90}
         className={cn(
           "mask-[radial-gradient(700px_circle_at_center,white,transparent)]",
           "inset-x-0 inset-y-[-30%] h-[200%] skew-y-12"
         )}
       />
-
-     
 
       <div className="absolute top-0">
         <MagicCard
@@ -101,22 +96,22 @@ export function App() {
           </div>
         </MagicCard>
       </div>
-       <div className="relative bottom-1 right-0">
-      <Dock direction="middle">
-        <DockIcon>
-          <PiIcon className="size-6" />
-        </DockIcon>
-        <DockIcon>
-          <PiIcon className="size-6" />
-        </DockIcon>
-        <DockIcon>
-          <PiIcon className="size-6" />
-        </DockIcon>
-        <DockIcon>
-          <PiIcon className="size-6" />
-        </DockIcon>
-      </Dock>
-    </div>
+      <div className="relative right-0 bottom-1">
+        <Dock direction="middle">
+          <DockIcon>
+            <PiIcon className="size-6" />
+          </DockIcon>
+          <DockIcon>
+            <PiIcon className="size-6" />
+          </DockIcon>
+          <DockIcon>
+            <PiIcon className="size-6" />
+          </DockIcon>
+          <DockIcon>
+            <PiIcon className="size-6" />
+          </DockIcon>
+        </Dock>
+      </div>
     </div>
   )
 }
