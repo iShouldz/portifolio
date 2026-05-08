@@ -4,7 +4,6 @@ import ReactLenis from "lenis/react"
 import { Download, Home, Zap } from "lucide-react"
 import { Outlet, useNavigate } from "react-router"
 import { motion } from "motion/react"
-import { AnimateIcon } from "@/components/animate-ui/icons/icon"
 import {
   Tooltip,
   TooltipContent,
@@ -13,7 +12,6 @@ import {
 import { useCallback } from "react"
 import { RoutesUrl } from "@/utils/enum/routes.utils"
 import { useTranslation } from "react-i18next"
-
 import {
   HoverCard,
   HoverCardContent,
@@ -53,7 +51,6 @@ const OutletPage = () => {
       <ScroolToTop />
       <ScrollProgress className="h-2" />
       <main className="relative min-h-screen overflow-x-hidden bg-[radial-gradient(circle_at_top_left,rgba(75,111,32,0.12),transparent_25%),radial-gradient(circle_at_top_right,rgba(50,179,175,0.12),transparent_28%),linear-gradient(180deg,#d4d5d0,#c5c6bf)] text-foreground dark:bg-[radial-gradient(circle_at_top_left,rgba(132,219,186,0.15),transparent_25%),radial-gradient(circle_at_top_right,rgba(50,179,175,0.15),transparent_28%),linear-gradient(180deg,#152312,#0e1707)]">
-        {" "}
         <Outlet />
       </main>
 
@@ -95,9 +92,7 @@ const OutletPage = () => {
             <Tooltip>
               <a href="/Curriculo.pdf" download="Curriculo.pdf">
                 <TooltipTrigger asChild>
-                  <AnimateIcon animateOnHover>
                     <Download />
-                  </AnimateIcon>
                 </TooltipTrigger>
               </a>
 
@@ -151,7 +146,6 @@ const OutletPage = () => {
           <DockIcon>
             <HoverCard>
               <HoverCardTrigger>
-                <AnimateIcon animateOnHover>
                   <svg
                     width="100%"
                     height="100%"
@@ -167,7 +161,6 @@ const OutletPage = () => {
                       strokeLinejoin="round"
                     />
                   </svg>
-                </AnimateIcon>
               </HoverCardTrigger>
               <HoverCardContent className="flex w-fit flex-col gap-4">
                 <h5>{t("dock.language.label")}</h5>
