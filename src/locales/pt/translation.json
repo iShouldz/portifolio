@@ -362,5 +362,36 @@
         ]
       }
     ]
+  },
+  "resume": {
+    "title": "Tudo que você precisa saber sobre mim.",
+    "description": "Um resumo rápido sobre mim. Conheça um pouco mais sobre minha trajetória, habilidades e experiências profissionais. Meu currículo está disponível para download, oferecendo uma visão detalhada das minhas qualificações e conquistas ao longo da minha carreira.",
+    "btn": "Download do currículo",
+    "blocks": {
+      "company": {
+        "title": "Compass UOL",
+        "role": "Desenvolvedor Front-end Pleno",
+        "description": "Atuando na conta da <1>Vivo (Telefônica)</1>, focado em arquitetura de componentes escaláveis e interfaces de alta performance no ecossistema B2B/B2C."
+      },
+      "skills": {
+        "title": "Principais conhecimentos técnicos",
+        "description": "Algumas das tecnologias e ferramentas com as quais tenho experiência. Especialista em construir experiências web fluidas com integrações robustas, animações baseadas em física e tipografia rigorosa."
+      },
+      "education": {
+        "certification": "Certificação",
+        "current-certification": "AWS Cloud Practitioner",
+        "title": "Graduação",
+        "description": "Bacharel em Ciência da Computação pela UFAPE"
+      },
+      "projects": {
+        "title": "Projeto mais recente",
+        "project-title": "One Pace BR Hub",
+        "description": "Hub unificado para os episódios editados do projeto One Pace, com foco em SEO, experiência de usuário e automação de downloads."
+      },
+      "btn": {
+        "show-projects": "Conhecer projetos",
+        "portifolio": "Visitar portfólio"
+      }
+    }
   }
 }
