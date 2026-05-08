@@ -2,7 +2,7 @@ import { motion, useScroll, useTransform, type Variants } from "motion/react"
 import { WobbleCard } from "@/components/ui/wobble-card"
 import { useNavigate } from "react-router"
 import { useRef } from "react"
-import { MoveDown } from "lucide-react"
+import { Download, MoveDown } from "lucide-react"
 import { useTranslation } from "react-i18next"
 import { RoutesUrl } from "@/utils/enum/routes.utils"
 
@@ -131,24 +131,16 @@ const CardDisplay = ({ cardsRef, cardsLift, cardsSkew }: any) => {
           variants={itemVariants}
           className="col-span-1 lg:col-span-1"
         >
-          <WobbleCard
-            containerClassName="h-full w-full min-h-[320px] lg:min-h-[360px] bg-secondary cursor-pointer"
-            onClick={() => navigate("/contact")}
-          >
-            <div className="group flex h-full flex-col justify-between p-6">
-              <h2 className="max-w-80 text-left text-base font-semibold tracking-[-0.015em] text-balance text-foreground md:text-xl lg:text-3xl">
-                {t("landing-page.cards-section.cards.contact.title")}
-              </h2>
-              <div className="flex flex-col">
-                <p className="mt-4 max-w-104 text-left text-base/6 text-secondary-foreground">
-                  {t("landing-page.cards-section.cards.contact.description")}
-                </p>
-                <p className="mt-4 text-left text-4xl transition-transform duration-300 ease-out group-hover:translate-x-3">
-                  →
-                </p>
+          <a href="/Curriculo.pdf" download="Curriculo.pdf">
+            <WobbleCard containerClassName="h-full w-full min-h-[320px] lg:min-h-[360px] bg-secondary cursor-pointer">
+              <div className="group flex h-full flex-col items-center justify-center p-6 text-center">
+                <h2 className="flex flex-col items-center justify-center gap-4 text-center text-base font-semibold tracking-[-0.015em] text-balance text-foreground md:text-xl lg:text-3xl">
+                  <Download size={64} />
+                  {t("landing-page.cards-section.cards.download.title")}
+                </h2>
               </div>
-            </div>
-          </WobbleCard>
+            </WobbleCard>
+          </a>
         </motion.div>
 
         <motion.div

@@ -34,12 +34,11 @@
           "description": "Conheça alguns projetos que desenvolvi ao longo da minha trajetória, desde projetos pessoais até projetos para comunidade Open Source."
         },
         "about-me": {
-          "title": "Sobre mim",
-          "description": " Conheça um pouco da pessoa por trás do desenvolvedor."
+          "title": "Sobre & Contato",
+          "description": " Conheça um pouco da pessoa por trás do desenvolvedor. Vamos começar a conversar."
         },
-        "contact": {
-          "title": "Contato",
-          "description": " Me chame para trabalhos, colaborações e oportunidades."
+        "download": {
+          "title": "Download do Currículo"
         }
       }
     },
