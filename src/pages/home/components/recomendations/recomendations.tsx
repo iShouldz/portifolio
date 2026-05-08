@@ -44,8 +44,6 @@ const Recomendations = ({ cardsLift, cardsSkew }: any) => {
         </Marquee>
       </div>
 
-      <div className="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-linear-to-r from-background"></div>
-      <div className="pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-linear-to-l from-background"></div>
     </div>
   )
 }

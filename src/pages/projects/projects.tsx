@@ -1,6 +1,6 @@
 import { getGithubRepos } from "@/hooks/use-github/use-github"
-import { motion, useScroll, useTransform } from "motion/react"
-import { useCallback, useRef } from "react"
+import { motion } from "motion/react"
+import { useCallback } from "react"
 import { useTranslation } from "react-i18next"
 import {
   Card,
@@ -13,18 +13,12 @@ import {
 import { Button } from "@/components/ui/button"
 import type { IProjectCard } from "./types"
 import { useNavigate } from "react-router"
+import useSetupScrool from "@/hooks/use-setup-scrool/use-setup-scrool"
 
 const Projects = () => {
   const { t } = useTranslation()
   const navigate = useNavigate()
-  const sectionRef = useRef<HTMLElement | null>(null)
-  const { scrollYProgress } = useScroll({
-    target: sectionRef,
-    offset: ["start end", "end start"],
-  })
-
-  const titleY = useTransform(scrollYProgress, [0, 1], [36, -24])
-  const titleOpacity = useTransform(scrollYProgress, [0, 0.25, 1], [0.7, 1, 1])
+  const { titleY, sectionRef, titleOpacity } = useSetupScrool()
 
   const projectsList = t("projects.list", {
     returnObjects: true,

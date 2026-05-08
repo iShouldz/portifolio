@@ -394,5 +394,17 @@
         "portifolio": "Visitar portfólio"
       }
     }
+  },
+  "about": {
+    "title": "Saiba mais sobre mim.",
+    "description": "Desenvolvedor Front-end graduado em Ciência da Computação (UFAPE), com atuação sólida em arquiteturas complexas e Microfrontends. Na Compass UOL, atuo na conta da Vivo, onde elevo a barra de qualidade aplicando Clean Code e testes abrangentes (Unitários, Componente e Mutação com Stryker). Minha abordagem une a estética moderna de ferramentas como Tailwind e Shadcn à robustez técnica de gerenciamento de estados com Zustand e consumo eficiente de APIs. Sou movido pelo desafio de transformar requisitos de negócio em produtos escaláveis dentro de ambientes ágeis e colaborativos.",
+    "form": {
+      "title": "Então, vamos conversar?",
+      "description": "Preencha com seu email e vamos construir algo juntos.",
+      "name": "Qual o seu nome?",
+      "subject": "Qual o assunto?",
+      "message": "Escreva sua mensagem aqui.",
+      "btn": "Enviar mensagem"
+    }
   }
 }
