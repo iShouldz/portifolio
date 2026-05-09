@@ -66,9 +66,11 @@ const ReadmeShowcase = ({ repoMeta, currentProject }: ReadmeShowcaseProps) => {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl font-bold md:text-4xl">Documentação</h2>
+          <h2 className="text-3xl font-bold md:text-4xl">
+            {t("project-details.documentation.title")}
+          </h2>
           <p className="mt-2 text-muted-foreground">
-            Detalhes e informações do projeto
+            {t("project-details.documentation.description")}
           </p>
         </motion.div>
         <motion.div

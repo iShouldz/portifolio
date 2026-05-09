@@ -1,11 +1,13 @@
 import { motion } from "motion/react"
 import { ProjectGallery } from "@/components/gallery/CloudinaryGallery"
+import { useTranslation } from "react-i18next"
 
 interface GalleryShowcaseProps {
   slides: any[]
 }
 
 const GalleryShowcase = ({ slides }: GalleryShowcaseProps) => {
+  const { t } = useTranslation()
   return (
     <section className="relative min-h-screen py-20">
       <div className="mx-auto max-w-440 px-4">
@@ -16,9 +18,11 @@ const GalleryShowcase = ({ slides }: GalleryShowcaseProps) => {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl font-bold md:text-4xl">Galeria</h2>
+          <h2 className="text-3xl font-bold md:text-4xl">
+            {t("project-details.gallery.title")}
+          </h2>
           <p className="mt-2 text-muted-foreground">
-            Explore os visuais do projeto
+            {t("project-details.gallery.description")}
           </p>
         </motion.div>
 

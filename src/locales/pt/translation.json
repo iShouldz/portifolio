@@ -283,6 +283,14 @@
   },
   "project-details": {
     "title": "Detalhes do projeto",
+    "gallery": {
+      "title": "Galeria",
+      "description": "Explore os visuais do projeto."
+    },
+    "documentation": {
+      "title": "Documentação",
+      "description": "Detalhes e informações do projeto"
+    },
     "btn": {
       "repository": "Visitar repositório",
       "figma": "Ver protótipo no Figma",
