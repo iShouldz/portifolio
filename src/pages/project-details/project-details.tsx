@@ -36,9 +36,9 @@ const ProjectDetails = () => {
         description={currentProject?.description}
       />
 
-      <GalleryShowcase slides={slides} currentProject={currentProject} />
+      <GalleryShowcase slides={slides} />
 
-      <ReadmeShowcase repoMeta={repoMeta} />
+      <ReadmeShowcase repoMeta={repoMeta} currentProject={currentProject} />
     </motion.div>
   )
 }

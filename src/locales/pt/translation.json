@@ -282,16 +282,20 @@
     ]
   },
   "project-details": {
+    "title": "Detalhes do projeto",
     "btn": {
       "repository": "Visitar repositório",
       "figma": "Ver protótipo no Figma",
-      "deploy": "Conferir deploy"
+      "deploy": "Conferir deploy",
+      "colors": "Paleta de cores"
     },
-    "stats": {
-      "title": "Estatísticas do repositório"
-    },
-    "languages": {
-      "title": "Linguagens utilizadas"
+    "details": {
+      "features": "Features",
+      "tecnical-details": "Detalhes técnicos",
+      "tecnologies": "Tecnologias utilizadas",
+      "tags": "Tags",
+      "comments": "Comentários",
+      "links": "Links"
     }
   },
   "experiences": {
