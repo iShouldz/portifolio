@@ -12,15 +12,17 @@ import {
 import { useCallback } from "react"
 import { RoutesUrl } from "@/utils/enum/routes.utils"
 import { useTranslation } from "react-i18next"
-import {
-  HoverCard,
-  HoverCardContent,
-  HoverCardTrigger,
-} from "@/components/ui/hover-card"
-import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group"
 import ScroolToTop from "@/components/scrool-to-top/scrool-to-top"
 import { AnimatedThemeToggler } from "@/components/ui/animated-theme-toggler"
 import { Separator } from "@/components/ui/separator"
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuGroup,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
 
 const OutletPage = () => {
   const navigate = useNavigate()
@@ -143,57 +145,51 @@ const OutletPage = () => {
           </DockIcon>
 
           <Separator orientation="vertical" />
+
           <DockIcon>
-            <HoverCard>
-              <HoverCardTrigger>
-                <svg
-                  width="100%"
-                  height="100%"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M5 8L10 13M4 14L10 8L12 5M2 5H14M7 2H8M12.913 17H20.087M12.913 17L11 21M12.913 17L15.7783 11.009C16.0092 10.5263 16.1246 10.2849 16.2826 10.2086C16.4199 10.1423 16.5801 10.1423 16.7174 10.2086C16.8754 10.2849 16.9908 10.5263 17.2217 11.009L20.087 17M20.087 17L22 21"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </HoverCardTrigger>
-              <HoverCardContent className="flex w-fit flex-col gap-4">
-                <h5>{t("dock.language.label")}</h5>
-                <ToggleGroup
-                  type="single"
-                  defaultValue={i18n.language}
-                  variant="outline"
-                  className="flex w-fit flex-1"
-                >
-                  <ToggleGroupItem
-                    value="en"
-                    aria-label="Toggle top"
-                    onClick={() => handleToggleLanguage("en")}
-                  >
+            <DropdownMenu>
+              <DropdownMenuTrigger>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <svg
+                      width="28"
+                      height="28"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      className="mt-2"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5 8L10 13M4 14L10 8L12 5M2 5H14M7 2H8M12.913 17H20.087M12.913 17L11 21M12.913 17L15.7783 11.009C16.0092 10.5263 16.1246 10.2849 16.2826 10.2086C16.4199 10.1423 16.5801 10.1423 16.7174 10.2086C16.8754 10.2849 16.9908 10.5263 17.2217 11.009L20.087 17M20.087 17L22 21"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p>{t("dock.language.label")}</p>
+                  </TooltipContent>
+                </Tooltip>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent>
+                <DropdownMenuGroup>
+                  <DropdownMenuLabel>
+                    {t("dock.language.label")}
+                  </DropdownMenuLabel>
+                  <DropdownMenuItem onClick={() => handleToggleLanguage("en")}>
                     {t("dock.language.options.en")}
-                  </ToggleGroupItem>
-                  <ToggleGroupItem
-                    value="es"
-                    aria-label="Toggle bottom"
-                    onClick={() => handleToggleLanguage("es")}
-                  >
+                  </DropdownMenuItem>
+                  <DropdownMenuItem onClick={() => handleToggleLanguage("es")}>
                     {t("dock.language.options.es")}
-                  </ToggleGroupItem>
-                  <ToggleGroupItem
-                    value="pt"
-                    aria-label="Toggle left"
-                    onClick={() => handleToggleLanguage("pt")}
-                  >
+                  </DropdownMenuItem>
+                  <DropdownMenuItem onClick={() => handleToggleLanguage("pt")}>
                     {t("dock.language.options.pt")}
-                  </ToggleGroupItem>
-                </ToggleGroup>
-              </HoverCardContent>
-            </HoverCard>
+                  </DropdownMenuItem>
+                </DropdownMenuGroup>
+              </DropdownMenuContent>
+            </DropdownMenu>
           </DockIcon>
 
           <DockIcon>
