@@ -32,6 +32,7 @@ const ProjectDetails = () => {
   return (
     <motion.div className="relative w-full overflow-hidden">
       <ProjectHero
+        currentProject={currentProject}
         title={currentProject?.title || "Projeto"}
         description={currentProject?.description}
       />
