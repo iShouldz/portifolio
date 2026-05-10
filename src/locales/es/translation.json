@@ -269,7 +269,89 @@
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/v1778094983/adedonha_tmozpn.png",
         "tecnologies": ["React", "Typescript", "Shadcn", "IA"],
         "tags": ["Web", "Frontend", "Juegos", "Personal", "Mobile First"],
-        "deployLink": "https://adedonha.vercel.app/"
+        "deployLink": "https://adedonha.vercel.app/",
+        "resources": [
+          {
+            "type": "product",
+            "title": "Juego de 'Adedonha' (Stop) digital para partidas rápidas",
+            "description": "El producto transforma el clásico juego de Adedonha en una experiencia web sencilla de usar, con enfoque en jugar directamente en el navegador, sin registro y sin dependencia de backend."
+          },
+          {
+            "type": "feature",
+            "title": "Flujo de partida completo en una sola pantalla",
+            "description": "La experiencia principal ocurre en un panel único: iniciar juego, configurar partida, generar letras, contar tiempo, registrar puntos y cerrar el ranking al final."
+          },
+          {
+            "type": "feature",
+            "title": "Configuración de rondas, tiempo y número de jugadores",
+            "description": "Antes de empezar, se puede ajustar la cantidad de rondas, duración del cronómetro y total de jugadores, haciendo la partida más corta o larga según el grupo."
+          },
+          {
+            "type": "feature",
+            "title": "Sorteo de letras con exclusión manual",
+            "description": "La app sortea letras por ronda y permite bloquear letras no deseadas, lo que ayuda a adaptar el juego al nivel de dificultad que el grupo desee."
+          },
+          {
+            "type": "feature",
+            "title": "Sugerencias de temas para jugar",
+            "description": "Existe una función beta de sugerencias de temas que usa una amplia lista interna (animales, ciudades, profesiones, etc.) para desbloquear partidas cuando faltan ideas."
+          },
+          {
+            "type": "feature",
+            "title": "Puntuación por ronda y leaderboard final",
+            "description": "Cada jugador informa los puntos de la ronda, el sistema acumula el marcador y al final muestra el ranking de la partida destacando a los primeros puestos."
+          },
+          {
+            "type": "feature",
+            "title": "Historial local de partidas con página de detalles",
+            "description": "Los resultados se guardan en el navegador (localStorage), pueden ser revisitados en un modal de historial paginado y abiertos en una vista detallada."
+          },
+          {
+            "type": "feature",
+            "title": "Descarga de resultados e impresos de juego",
+            "description": "El producto permite descargar la imagen del leaderboard y generar una plantilla en PDF para impresión, útil para quienes desean mantener la dinámica física del juego."
+          },
+          {
+            "type": "feature",
+            "title": "Compartir y enlaces rápidos",
+            "description": "Hay botones para compartir el juego en WhatsApp y en X/Twitter, además de un acceso directo al perfil de GitHub del autor."
+          },
+          {
+            "type": "feature",
+            "title": "Soporte de audio durante la ronda",
+            "description": "La app puede narrar la letra sorteada (speech synthesis) y tocar una alerta sonora cuando el tiempo termina, con control de encendido/apagado de sonido."
+          },
+          {
+            "type": "feature",
+            "title": "Tema claro/oscuro e interfaz responsiva",
+            "description": "La interfaz tiene modo claro/oscuro con persistencia local y diseño adaptable para escritorio y móvil, usando modais y menús laterales para no saturar la pantalla."
+          },
+          {
+            "type": "feature",
+            "title": "Gestión de estados de uso",
+            "description": "El producto cubre estados de inicio, partida activa, cuenta regresiva, fin de tiempo, fin de juego e historial vacío; no hay un flujo robusto de error remoto porque no depende de una API."
+          },
+          {
+            "type": "feature",
+            "title": "Estructura de páginas/rutas simplificada",
+            "description": "No existe una navegación multipágina tradicional: es una SPA de ruta única, con la jornada organizada por secciones y modais en lugar de páginas separadas."
+          },
+          {
+            "type": "feature",
+            "title": "SEO y metadatos básicos",
+            "description": "La base actual tiene metadatos simples en el HTML (title y viewport), sin una estrategia más completa de SEO social (Open Graph/Twitter Cards) por el momento."
+          },
+          {
+            "type": "feature",
+            "title": "Integraciones externas puntuales",
+            "description": "Las integraciones son ligeras y enfocadas en la utilidad: WhatsApp/X para compartir y RoboHash para los avatares del podio; no hay integración con servicios de catálogo, episodios o subtítulos."
+          },
+          {
+            "type": "feature",
+            "title": "Documentación y comunidad iniciales",
+            "description": "El repositorio no incluye documentos de contribución, código de conducta o automatizaciones de contenido; el enfoque actual está en el producto jugable en sí mismo."
+          }
+        ]
       },
       {
         "id": "vet-care",

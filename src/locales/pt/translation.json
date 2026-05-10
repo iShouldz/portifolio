@@ -211,7 +211,19 @@
         "description": "Aplicativo de treinos com foco em criação de rotina personalizada (manual ou com IA), execução guiada e acompanhamento básico de progresso. Construido em React usando webridge do Capacitor para portar para mobile. ",
         "githubUrl": "https://github.com/iShouldz/treine-se",
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/v1778095392/treine-se_qyklbm.png",
-        "tecnologies": ["React", "Capacitor JS", "Android Studio", "IA"],
+        "tecnologies": [
+          "React",
+          "Appwrite",
+          "TypeScript",
+          "Redux Toolkit",
+          "Redux Persist",
+          "Google GenAI (Gemini)",
+          "Capacitor (Android/iOS, Geolocation, Notifications, Preferences, Motion, Browser)",
+          "Android Studio",
+          "IA",
+          "TanStack React Query",
+          "Material UI (MUI)"
+        ],
 
         "resources": [
           {
@@ -275,8 +287,92 @@
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/v1778094983/adedonha_tmozpn.png",
         "tecnologies": ["React", "Typescript", "Shadcn", "IA"],
         "tags": ["Web", "Frontend", "Jogos", "Pessoal", "Mobile First"],
-        "deployLink": "https://adedonha.vercel.app/"
+        "deployLink": "https://adedonha.vercel.app/",
+
+        "resources": [
+          {
+            "type": "product",
+            "title": "Jogo de Adedonha digital para partidas rápidas",
+            "description": "O produto transforma a brincadeira clássica de Adedonha em uma experiência web simples de usar, com foco em jogar direto no navegador, sem cadastro e sem dependência de backend."
+          },
+          {
+            "type": "feature",
+            "title": "Fluxo de partida completo em uma única tela",
+            "description": "A experiência principal acontece em um painel único: iniciar jogo, configurar partida, gerar letras, contar tempo, registrar pontos e fechar o ranking no fim."
+          },
+          {
+            "type": "feature",
+            "title": "Configuração de rodadas, tempo e número de jogadores",
+            "description": "Antes de começar, dá para ajustar quantidade de rodadas, duração do cronômetro e total de jogadores, deixando a partida mais curta ou mais longa conforme o grupo."
+          },
+          {
+            "type": "feature",
+            "title": "Sorteio de letras com exclusão manual",
+            "description": "O app sorteia letras por rodada e permite bloquear letras indesejadas, o que ajuda a adaptar o jogo ao nível de dificuldade que o grupo quer."
+          },
+          {
+            "type": "feature",
+            "title": "Sugestões de temas para jogar",
+            "description": "Existe um recurso beta de sugestões de temas que usa uma lista interna ampla (animais, cidades, profissões etc.) para destravar partidas quando falta ideia."
+          },
+          {
+            "type": "feature",
+            "title": "Pontuação por rodada e leaderboard final",
+            "description": "Cada jogador informa os pontos da rodada, o sistema acumula o placar e no fim mostra o ranking da partida com destaque para os primeiros colocados."
+          },
+          {
+            "type": "feature",
+            "title": "Histórico local de partidas com página de detalhes",
+            "description": "Os resultados ficam salvos no navegador (localStorage), podem ser revisitados em modal de histórico paginado e abertos em visualização detalhada."
+          },
+          {
+            "type": "feature",
+            "title": "Download de resultados e material de jogo",
+            "description": "O produto permite baixar imagem do leaderboard e gerar template em PDF para impressão, útil para quem quer manter a dinâmica física do jogo."
+          },
+          {
+            "type": "feature",
+            "title": "Compartilhamento e links rápidos",
+            "description": "Há botões para compartilhar o jogo no WhatsApp e no X/Twitter, além de atalho para o perfil GitHub do autor."
+          },
+          {
+            "type": "feature",
+            "title": "Suporte de áudio durante a rodada",
+            "description": "O app pode narrar a letra sorteada (speech synthesis) e tocar alerta sonoro quando o tempo acaba, com controle de ligar/desligar som."
+          },
+          {
+            "type": "feature",
+            "title": "Tema claro/escuro e interface responsiva",
+            "description": "A interface tem modo claro/escuro com persistência local e layout adaptável para desktop e mobile, usando modais e menus laterais para não poluir a tela."
+          },
+          {
+            "type": "feature",
+            "title": "Tratamento de estados de uso",
+            "description": "O produto cobre estados de início, partida ativa, contagem regressiva, fim de tempo, fim de jogo e vazio de histórico; não há fluxo robusto de erro remoto porque não depende de API."
+          },
+          {
+            "type": "feature",
+            "title": "Estrutura de páginas/rotas enxuta",
+            "description": "Não existe navegação multipágina tradicional: é uma SPA de rota única, com a jornada organizada por seções e modais em vez de páginas separadas."
+          },
+          {
+            "type": "feature",
+            "title": "SEO e metadata básicos",
+            "description": "A base atual tem metadados simples no HTML (title e viewport), sem estratégia mais completa de SEO social (Open Graph/Twitter Cards) no estado atual."
+          },
+          {
+            "type": "feature",
+            "title": "Integrações externas pontuais",
+            "description": "As integrações são leves e focadas em utilidade: WhatsApp/X para compartilhamento e RoboHash para avatars do pódio; não há integração com serviços de catálogo, episódios, legendas ou player embed."
+          },
+          {
+            "type": "feature",
+            "title": "Documentação e comunidade ainda iniciais",
+            "description": "O repositório não traz docs de contribuição, código de conduta ou automações de atualização de conteúdo; o foco atual está no produto jogável em si."
+          }
+        ]
       },
+
       {
         "id": "vet-care",
         "title": "Vet Care",

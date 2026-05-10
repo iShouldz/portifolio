@@ -270,7 +270,89 @@
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/v1778094983/adedonha_tmozpn.png",
         "tecnologies": ["React", "Typescript", "Shadcn", "IA"],
         "tags": ["Web", "Frontend", "Games", "Personal", "Mobile First"],
-        "deployLink": "https://adedonha.vercel.app/"
+        "deployLink": "https://adedonha.vercel.app/",
+        "resources": [
+          {
+            "type": "product",
+            "title": "Digital 'Adedonha' game for quick matches",
+            "description": "The product transforms the classic 'Adedonha' (Stop) game into a simple-to-use web experience, focusing on playing directly in the browser, without registration and without backend dependency."
+          },
+          {
+            "type": "feature",
+            "title": "Full match flow on a single screen",
+            "description": "The main experience happens in a single panel: starting the game, configuring the match, generating letters, counting time, recording points, and closing the ranking at the end."
+          },
+          {
+            "type": "feature",
+            "title": "Rounds, time, and number of players configuration",
+            "description": "Before starting, you can adjust the number of rounds, timer duration, and total players, making the match shorter or longer depending on the group."
+          },
+          {
+            "type": "feature",
+            "title": "Letter draw with manual exclusion",
+            "description": "The app draws letters per round and allows blocking unwanted letters, which helps adapt the game to the difficulty level the group wants."
+          },
+          {
+            "type": "feature",
+            "title": "Topic suggestions for playing",
+            "description": "There is a beta topic suggestion feature that uses a broad internal list (animals, cities, professions, etc.) to unblock matches when ideas are lacking."
+          },
+          {
+            "type": "feature",
+            "title": "Round-by-round scoring and final leaderboard",
+            "description": "Each player reports their round points, the system accumulates the score, and at the end shows the match ranking highlighting the top positions."
+          },
+          {
+            "type": "feature",
+            "title": "Local match history with details page",
+            "description": "Results are saved in the browser (localStorage), can be revisited in a paginated history modal, and opened in a detailed view."
+          },
+          {
+            "type": "feature",
+            "title": "Download results and game material",
+            "description": "The product allows downloading the leaderboard image and generating a PDF template for printing, useful for those who want to maintain the physical dynamics of the game."
+          },
+          {
+            "type": "feature",
+            "title": "Sharing and quick links",
+            "description": "There are buttons to share the game on WhatsApp and X/Twitter, plus a shortcut to the author's GitHub profile."
+          },
+          {
+            "type": "feature",
+            "title": "Audio support during the round",
+            "description": "The app can narrate the drawn letter (speech synthesis) and play a sound alert when time runs out, with sound on/off control."
+          },
+          {
+            "type": "feature",
+            "title": "Light/dark theme and responsive interface",
+            "description": "The interface has light/dark mode with local persistence and an adaptable layout for desktop and mobile, using modals and side menus to keep the screen clean."
+          },
+          {
+            "type": "feature",
+            "title": "State handling",
+            "description": "The product covers start, active match, countdown, time's up, game over, and empty history states; there is no robust remote error flow because it doesn't rely on an API."
+          },
+          {
+            "type": "feature",
+            "title": "Lean page/route structure",
+            "description": "There is no traditional multi-page navigation: it's a single-route SPA, with the journey organized by sections and modals instead of separate pages."
+          },
+          {
+            "type": "feature",
+            "title": "Basic SEO and metadata",
+            "description": "The current base has simple metadata in the HTML (title and viewport), without a more complete social SEO strategy (Open Graph/Twitter Cards) at the moment."
+          },
+          {
+            "type": "feature",
+            "title": "Point external integrations",
+            "description": "Integrations are lightweight and utility-focused: WhatsApp/X for sharing and RoboHash for podium avatars; there is no integration with catalog services, episodes, subtitles, or embed players."
+          },
+          {
+            "type": "feature",
+            "title": "Early-stage documentation and community",
+            "description": "The repository does not feature contribution docs, code of conduct, or content update automations; the current focus is on the playable product itself."
+          }
+        ]
       },
       {
         "id": "vet-care",
