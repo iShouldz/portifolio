@@ -34,7 +34,7 @@ const ProjectHero = ({
       className="relative min-h-screen w-full overflow-hidden"
       style={{ scale }}
     >
-      <div className="absolute inset-0 bg-gradient-to-b from-emerald-500/10 via-transparent to-transparent" />
+      <div className="absolute inset-0 bg-linear-to-b from-emerald-500/10 via-transparent to-transparent" />
 
       <motion.div
         style={{ y, opacity }}
@@ -51,7 +51,7 @@ const ProjectHero = ({
         </motion.h1>
 
         {description && (
-          <motion.p
+          <motion.div
             className="max-w-2xl text-lg text-muted-foreground md:text-xl"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -60,7 +60,7 @@ const ProjectHero = ({
           >
             {description}
 
-            <div className="mt-6 flex flex-wrap items-center justify-center gap-4">
+            <p className="mt-6 flex flex-wrap items-center justify-center gap-4">
               {currentProject?.githubUrl && (
                 <Button asChild className="flex items-center gap-2" size="lg">
                   <a
@@ -100,8 +100,8 @@ const ProjectHero = ({
                   </a>
                 </Button>
               )}
-            </div>
-          </motion.p>
+            </p>
+          </motion.div>
         )}
       </motion.div>
 
