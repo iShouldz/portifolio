@@ -264,7 +264,7 @@
       {
         "id": "adedonha",
         "title": "Adedonha",
-        "description": "Proyecto para el seguimiento del juego Adedonha (Stop) en móvil.",
+        "description": "Adedonha es una versión digital del clásico juego \"Stop/Adedonha\", centrada en partidas rápidas entre amigos. El proyecto busca mantener la dinámica tradicional del juego de papel y lápiz, pero con la incorporación de un temporizador, dibujo de letras, control de puntuación e historial de partidas.",
         "githubUrl": "https://github.com/iShouldz/adedonha",
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/v1778094983/adedonha_tmozpn.png",
         "tecnologies": ["React", "Typescript", "Shadcn", "IA"],
@@ -327,17 +327,17 @@
             "description": "La interfaz tiene modo claro/oscuro con persistencia local y diseño adaptable para escritorio y móvil, usando modais y menús laterales para no saturar la pantalla."
           },
           {
-            "type": "feature",
+            "type": "product",
             "title": "Gestión de estados de uso",
             "description": "El producto cubre estados de inicio, partida activa, cuenta regresiva, fin de tiempo, fin de juego e historial vacío; no hay un flujo robusto de error remoto porque no depende de una API."
           },
           {
-            "type": "feature",
+            "type": "product",
             "title": "Estructura de páginas/rutas simplificada",
             "description": "No existe una navegación multipágina tradicional: es una SPA de ruta única, con la jornada organizada por secciones y modais en lugar de páginas separadas."
           },
           {
-            "type": "feature",
+            "type": "product",
             "title": "SEO y metadatos básicos",
             "description": "La base actual tiene metadatos simples en el HTML (title y viewport), sin una estrategia más completa de SEO social (Open Graph/Twitter Cards) por el momento."
           },
@@ -345,11 +345,6 @@
             "type": "feature",
             "title": "Integraciones externas puntuales",
             "description": "Las integraciones son ligeras y enfocadas en la utilidad: WhatsApp/X para compartir y RoboHash para los avatares del podio; no hay integración con servicios de catálogo, episodios o subtítulos."
-          },
-          {
-            "type": "feature",
-            "title": "Documentación y comunidad iniciales",
-            "description": "El repositorio no incluye documentos de contribución, código de conducta o automatizaciones de contenido; el enfoque actual está en el producto jugable en sí mismo."
           }
         ]
       },

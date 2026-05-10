@@ -265,7 +265,7 @@
       {
         "id": "adedonha",
         "title": "Adedonha",
-        "description": "Project for tracking the Adedonha (Stop) game on mobile.",
+        "description": "Adedonha is a digital version of the classic game \"Stop/Adedonha,\" focusing on quick matches between friends. The project aims to maintain the traditional dynamics of paper and pen, but with the support of a timer, letter drawing, score control, and match history.",
         "githubUrl": "https://github.com/iShouldz/adedonha",
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/v1778094983/adedonha_tmozpn.png",
         "tecnologies": ["React", "Typescript", "Shadcn", "IA"],
@@ -328,29 +328,24 @@
             "description": "The interface has light/dark mode with local persistence and an adaptable layout for desktop and mobile, using modals and side menus to keep the screen clean."
           },
           {
-            "type": "feature",
+            "type": "product",
             "title": "State handling",
             "description": "The product covers start, active match, countdown, time's up, game over, and empty history states; there is no robust remote error flow because it doesn't rely on an API."
           },
           {
-            "type": "feature",
+            "type": "product",
             "title": "Lean page/route structure",
             "description": "There is no traditional multi-page navigation: it's a single-route SPA, with the journey organized by sections and modals instead of separate pages."
           },
           {
-            "type": "feature",
+            "type": "product",
             "title": "Basic SEO and metadata",
             "description": "The current base has simple metadata in the HTML (title and viewport), without a more complete social SEO strategy (Open Graph/Twitter Cards) at the moment."
           },
           {
             "type": "feature",
             "title": "Point external integrations",
-            "description": "Integrations are lightweight and utility-focused: WhatsApp/X for sharing and RoboHash for podium avatars; there is no integration with catalog services, episodes, subtitles, or embed players."
-          },
-          {
-            "type": "feature",
-            "title": "Early-stage documentation and community",
-            "description": "The repository does not feature contribution docs, code of conduct, or content update automations; the current focus is on the playable product itself."
+            "description": "Integrations are lightweight and utility-focused: WhatsApp/X for sharing and RoboHash for podium avatars; there is no integration with catalog services, episodes, or subtitles."
           }
         ]
       },
