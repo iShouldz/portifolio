@@ -1,9 +1,10 @@
 import { motion } from "motion/react"
 import { ProjectGallery } from "@/components/gallery/CloudinaryGallery"
 import { useTranslation } from "react-i18next"
+import type { MediaItem } from "@/utils/enum/types"
 
 interface GalleryShowcaseProps {
-  slides: any[]
+  slides: MediaItem[]
 }
 
 const GalleryShowcase = ({ slides }: GalleryShowcaseProps) => {

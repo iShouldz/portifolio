@@ -10,6 +10,7 @@ import { parseGithubRepo } from "./utils/git-extract"
 import ProjectHero from "./components/project-hero"
 import GalleryShowcase from "./components/gallery-showcase"
 import ReadmeShowcase from "./components/readme-showcase"
+import type { ProjectMediaList } from "@/utils/enum/types"
 
 const ProjectDetails = () => {
   const { id } = useParams()
@@ -26,7 +27,9 @@ const ProjectDetails = () => {
     [currentProject?.githubUrl]
   )
 
-  const projectMediaData = projectMedia.find((media) => media.id === id)
+  const projectMediaTyped = projectMedia as unknown as ProjectMediaList
+
+  const projectMediaData = projectMediaTyped.find((media) => media.id === id)
   const slides = projectMediaData?.mediaList || []
 
   return (

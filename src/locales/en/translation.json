@@ -340,6 +340,10 @@
       "tecnologies": "Technologies used",
       "tags": "Tags",
       "links": "Links"
+    },
+    "gallery": {
+      "title": "Gallery",
+      "description": "Explore the project's visuals."
     }
   },
   "experiences": {

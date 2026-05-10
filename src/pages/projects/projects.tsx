@@ -1,4 +1,3 @@
-import { getGithubRepos } from "@/hooks/use-github/use-github"
 import { motion } from "motion/react"
 import { useCallback } from "react"
 import { useTranslation } from "react-i18next"
@@ -31,7 +30,6 @@ const Projects = () => {
     [navigate]
   )
 
-  const {} = getGithubRepos("iShouldz")
   return (
     <section
       ref={sectionRef}

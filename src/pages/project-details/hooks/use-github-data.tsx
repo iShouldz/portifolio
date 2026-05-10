@@ -23,7 +23,7 @@ const useGithubData = ({ repoMeta }: IReadmeView) => {
     getRepoDetailedStats(repoMeta?.owner, repoMeta?.name).then((data) => {
       setRepoDetails(data)
     })
-  }, [repoMeta?.owner, repoMeta?.name])
+  }, [repoMeta])
 
   return { repoDetails, blobBase, rawBase }
 }

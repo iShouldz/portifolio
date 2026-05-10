@@ -339,6 +339,10 @@
       "tecnologies": "Tecnologías utilizadas",
       "tags": "Tags",
       "links": "Links"
+    },
+    "gallery": {
+      "title": "Galería",
+      "description": "Explora los elementos visuales del proyecto."
     }
   },
   "experiences": {
