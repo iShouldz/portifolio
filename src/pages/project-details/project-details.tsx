@@ -74,7 +74,7 @@ const ProjectDetails = memo(function ProjectDetails() {
         <Suspense fallback={<SectionSkeleton />}>
           <ProjectHero
             currentProject={currentProject}
-            title={currentProject?.title || "Projeto"}
+            title={currentProject?.title ?? "Project Title"}
             description={currentProject?.description}
           />
         </Suspense>

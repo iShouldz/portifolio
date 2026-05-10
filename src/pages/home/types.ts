@@ -19,3 +19,8 @@ export interface ICardDisplayProps {
   cardsLift: MotionValue<number>
   cardsRef: React.RefObject<HTMLElement | null>
 }
+
+export interface IFrontPageComponentProps {
+  introRef: React.RefObject<HTMLElement | null>
+  heroScale: MotionValue<number>
+}

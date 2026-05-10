@@ -4,8 +4,12 @@ import { cn } from "@/lib/utils"
 import { Briefcase, Cloud, Code2, GraduationCap, MoveDown } from "lucide-react"
 import { motion } from "motion/react"
 import { useTranslation } from "react-i18next"
+import type { IFrontPageComponentProps } from "../../types"
 
-const FrontPageComponent = ({ introRef, heroScale }: any) => {
+const FrontPageComponent = ({
+  introRef,
+  heroScale,
+}: IFrontPageComponentProps) => {
   const { t } = useTranslation()
   return (
     <section ref={introRef} className="relative min-h-[120vh]">

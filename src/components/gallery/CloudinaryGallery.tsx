@@ -24,8 +24,8 @@ export function ProjectGallery({ mediaList }: { mediaList: MediaItem[] }) {
     else mq.addListener(handler)
     return () => {
       if (mq.removeEventListener)
-        mq.removeEventListener("change", handler as any)
-      else mq.removeListener(handler as any)
+        mq.removeEventListener("change", handler as unknown as EventListener)
+      else mq.removeListener(handler as unknown as EventListener)
     }
   }, [])
 
