@@ -16,8 +16,13 @@
   "landing-page": {
     "home": {
       "front-page": {
-        "scroll_down": "Scroll down."
-      }
+        "scroll_down": "Scroll down.",
+        "role": "Front-end Developer @ Compass UOL",
+        "stack": "React & TypeScript",
+        "certification": "AWS Certified",
+        "degree": "Bachelor of Science in Computer Science"
+      },
+      "role": "Front-end Engineer"
     },
     "cards-section": {
       "title": "Discover my work.",
@@ -106,8 +111,17 @@
         "description": "My personal portfolio, where I aggregate my projects and skills.",
         "githubUrl": "https://github.com/iShouldz/portifolio",
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/v1778094315/6e74906a-8e4c-432c-815e-68055465ab8a.png",
-        "tecnologies": ["React", "Typescript", "SEO", "UX"],
-        "tags": ["Web", "Frontend", "Personal"]
+        "tecnologies": [
+          "React",
+          "Typescript",
+          "SEO",
+          "UX"
+        ],
+        "tags": [
+          "Web",
+          "Frontend",
+          "Personal"
+        ]
       },
       {
         "id": "one-pace-hub",
@@ -115,8 +129,17 @@
         "description": "Hub focused on gathering the edited episodes and Brazilian Portuguese (PT-BR) subtitles for the One Pace project.",
         "githubUrl": "https://github.com/iShouldz/one-pace-br-hub",
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/f_auto,q_auto/Screenshot_2026-04-30_193619_lx0lnu",
-        "tecnologies": ["React", "Next.js", "SEO", "UX"],
-        "tags": ["Web", "Frontend", "Personal"],
+        "tecnologies": [
+          "React",
+          "Next.js",
+          "SEO",
+          "UX"
+        ],
+        "tags": [
+          "Web",
+          "Frontend",
+          "Personal"
+        ],
         "deployLink": "one-pace-br.pages.dev"
       },
       {
@@ -125,8 +148,20 @@
         "description": "Fitness application built in React using Capacitor's web bridge to port to mobile.",
         "githubUrl": "https://github.com/iShouldz/treine-se",
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/v1778095392/treine-se_qyklbm.png",
-        "tecnologies": ["React", "Capacitor JS", "Android Studio", "IA"],
-        "tags": ["Web", "Frontend", "Webview", "Web Bridge", "Fitness", "IA"]
+        "tecnologies": [
+          "React",
+          "Capacitor JS",
+          "Android Studio",
+          "IA"
+        ],
+        "tags": [
+          "Web",
+          "Frontend",
+          "Webview",
+          "Web Bridge",
+          "Fitness",
+          "IA"
+        ]
       },
       {
         "id": "adedonha",
@@ -134,8 +169,19 @@
         "description": "Project for tracking the Adedonha (Stop) game on mobile.",
         "githubUrl": "https://github.com/iShouldz/adedonha",
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/v1778094983/adedonha_tmozpn.png",
-        "tecnologies": ["React", "Typescript", "Shadcn", "IA"],
-        "tags": ["Web", "Frontend", "Games", "Personal", "Mobile First"],
+        "tecnologies": [
+          "React",
+          "Typescript",
+          "Shadcn",
+          "IA"
+        ],
+        "tags": [
+          "Web",
+          "Frontend",
+          "Games",
+          "Personal",
+          "Mobile First"
+        ],
         "deployLink": "https://adedonha.vercel.app/"
       },
       {
@@ -144,8 +190,17 @@
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/v1778094396/a9efa034-f169-467f-857a-41d60f2df409.png",
         "description": "Academic project for veterinary care management.",
         "githubUrl": "https://github.com/iShouldz/vet-care",
-        "tecnologies": ["React", "Typescript", "Shadcn"],
-        "tags": ["Web", "Frontend", "Management", "React"],
+        "tecnologies": [
+          "React",
+          "Typescript",
+          "Shadcn"
+        ],
+        "tags": [
+          "Web",
+          "Frontend",
+          "Management",
+          "React"
+        ],
         "deployLink": "https://vetcareufape.vercel.app/"
       },
       {
@@ -154,8 +209,17 @@
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/v1778096521/6d4d2e82-35e8-4970-a9dd-aab97fe93bde.png",
         "description": "Repository for the second challenge of the Compass UOL scholarship program. In the application, the user could register new flowers and manage inventory, as well as make sales. The project was developed using React for the frontend with responsiveness applied, and json server for the backend.",
         "githubUrl": "https://github.com/iShouldz/FloriculturaGrupo04",
-        "tecnologies": ["React", "Typescript", "Shadcn"],
-        "tags": ["Web", "Frontend", "Management", "React"],
+        "tecnologies": [
+          "React",
+          "Typescript",
+          "Shadcn"
+        ],
+        "tags": [
+          "Web",
+          "Frontend",
+          "Management",
+          "React"
+        ],
         "deployLink": "https://floricultura-grupo04-pkbf-ofin807ak-ishouldzs-projects.vercel.app/"
       },
       {
@@ -164,8 +228,17 @@
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/v1778096066/c51748d2-481d-4972-b007-17d1fdaa1a51.png",
         "description": "Repository for the third challenge of the Compass UOL scholarship program. In the application, users could choose a car model, select the color and desired accessories, and finalize the purchase. The project was developed using React for the frontend, with json server for the backend.",
         "githubUrl": "https://github.com/iShouldz/DeliveryCar",
-        "tecnologies": ["React", "Typescript", "Shadcn"],
-        "tags": ["Web", "Frontend", "Management", "React"],
+        "tecnologies": [
+          "React",
+          "Typescript",
+          "Shadcn"
+        ],
+        "tags": [
+          "Web",
+          "Frontend",
+          "Management",
+          "React"
+        ],
         "deployLink": "https://delivery-car.vercel.app/"
       }
     ]
@@ -229,7 +302,12 @@
         "period": "September 2023 - September 2024",
         "location": "Garanhuns, PE",
         "description": "Research: PIBIC - Vulnerabilities caused by commits. Supervised by Professor Dr. Rodrigo Andrade. The project aims to analyze the relationship between code commits and the introduction of software vulnerabilities. Using data mining techniques and repository analysis, the study seeks to identify patterns and factors that contribute to the occurrence of security flaws, with the goal of providing insights for safer development practices.",
-        "tech": ["Git", "Python", "Software Security", "Vulnerability Analysis"]
+        "tech": [
+          "Git",
+          "Python",
+          "Software Security",
+          "Vulnerability Analysis"
+        ]
       },
       {
         "company": "UFAPE",

@@ -17,7 +17,12 @@
   },
   "landing-page": {
     "home": {
+      "role": "Front-end Engineer",
       "front-page": {
+        "role": "Front-end Developer @ Compass UOL",
+        "stack": "React & TypeScript",
+        "certification": "AWS Certified",
+        "degree": "Bacharel em Ciência da Computação",
         "scroll_down": "Role para baixo."
       }
     },
@@ -111,8 +116,17 @@
         "description": "Meu portifolio pessoal, onde agrego meus projetos e habilidades.",
         "githubUrl": "https://github.com/iShouldz/portifolio",
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/v1778094315/6e74906a-8e4c-432c-815e-68055465ab8a.png",
-        "tecnologies": ["React", "Typescript", "SEO", "UX"],
-        "tags": ["Web", "Frontend", "Pessoal"]
+        "tecnologies": [
+          "React",
+          "Typescript",
+          "SEO",
+          "UX"
+        ],
+        "tags": [
+          "Web",
+          "Frontend",
+          "Pessoal"
+        ]
       },
       {
         "id": "one-pace-hub",
@@ -175,7 +189,11 @@
           "SEO",
           "UX"
         ],
-        "tags": ["Web", "Frontend", "Pessoal"],
+        "tags": [
+          "Web",
+          "Frontend",
+          "Pessoal"
+        ],
         "deployLink": "https://one-pace-br.pages.dev"
       },
       {
@@ -184,7 +202,12 @@
         "description": "Aplicativo de treinos com foco em criação de rotina personalizada (manual ou com IA), execução guiada e acompanhamento básico de progresso. Construido em React usando webridge do Capacitor para portar para mobile. ",
         "githubUrl": "https://github.com/iShouldz/treine-se",
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/v1778095392/treine-se_qyklbm.png",
-        "tecnologies": ["React", "Capacitor JS", "Android Studio", "IA"],
+        "tecnologies": [
+          "React",
+          "Capacitor JS",
+          "Android Studio",
+          "IA"
+        ],
         "resources": [
           {
             "type": "feature",
@@ -237,7 +260,14 @@
             "description": "Tela de configurações com modo simples/avançado para coletar dados de perfil físico e preferências, apoiando personalização da experiência."
           }
         ],
-        "tags": ["Web", "Frontend", "Webview", "Web Bridge", "Fitness", "IA"]
+        "tags": [
+          "Web",
+          "Frontend",
+          "Webview",
+          "Web Bridge",
+          "Fitness",
+          "IA"
+        ]
       },
       {
         "id": "adedonha",
@@ -245,8 +275,19 @@
         "description": "rojeto para acompanhamento do jogo adedonha (Stop) no mobile.",
         "githubUrl": "https://github.com/iShouldz/adedonha",
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/v1778094983/adedonha_tmozpn.png",
-        "tecnologies": ["React", "Typescript", "Shadcn", "IA"],
-        "tags": ["Web", "Frontend", "Jogos", "Pessoal", "Mobile First"],
+        "tecnologies": [
+          "React",
+          "Typescript",
+          "Shadcn",
+          "IA"
+        ],
+        "tags": [
+          "Web",
+          "Frontend",
+          "Jogos",
+          "Pessoal",
+          "Mobile First"
+        ],
         "deployLink": "https://adedonha.vercel.app/"
       },
       {
@@ -255,8 +296,17 @@
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/v1778094396/a9efa034-f169-467f-857a-41d60f2df409.png",
         "description": "Projeto academico para gerenciamento de cuidados veterinários.",
         "githubUrl": "https://github.com/iShouldz/vet-care",
-        "tecnologies": ["React", "Typescript", "Shadcn"],
-        "tags": ["Web", "Frontend", "Gereciamento", "React"],
+        "tecnologies": [
+          "React",
+          "Typescript",
+          "Shadcn"
+        ],
+        "tags": [
+          "Web",
+          "Frontend",
+          "Gereciamento",
+          "React"
+        ],
         "deployLink": "https://vetcareufape.vercel.app/"
       },
       {
@@ -265,8 +315,17 @@
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/v1778096521/6d4d2e82-35e8-4970-a9dd-aab97fe93bde.png",
         "description": "Repositório referente ao segundo desafio do programa de bolsa da Compass UOL. Na aplicação, o usuário poderia cadastrar novas flores e gerenciar o estoque, além de realizar vendas. O projeto foi desenvolvido utilizando React para o frontend e com responsividade aplicada, com json server de backend.",
         "githubUrl": "https://github.com/iShouldz/FloriculturaGrupo04",
-        "tecnologies": ["React", "Typescript", "Shadcn"],
-        "tags": ["Web", "Frontend", "Gereciamento", "React"],
+        "tecnologies": [
+          "React",
+          "Typescript",
+          "Shadcn"
+        ],
+        "tags": [
+          "Web",
+          "Frontend",
+          "Gereciamento",
+          "React"
+        ],
         "deployLink": "https://floricultura-grupo04-pkbf-ofin807ak-ishouldzs-projects.vercel.app/"
       },
       {
@@ -275,8 +334,17 @@
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/v1778096066/c51748d2-481d-4972-b007-17d1fdaa1a51.png",
         "description": "Repositório referente ao terceiro desafio do programa de bolsa da Compass UOL. Na aplicação, o usuários poderiam escolher um modelo de carro, selecionar a cor e os acessórios desejados, e finalizar a compra. O projeto foi desenvolvido utilizando React para o frontend, com json server de backend.",
         "githubUrl": "https://github.com/iShouldz/DeliveryCar",
-        "tecnologies": ["React", "Typescript", "Shadcn"],
-        "tags": ["Web", "Frontend", "Gereciamento", "React"],
+        "tecnologies": [
+          "React",
+          "Typescript",
+          "Shadcn"
+        ],
+        "tags": [
+          "Web",
+          "Frontend",
+          "Gereciamento",
+          "React"
+        ],
         "deployLink": "https://delivery-car.vercel.app/"
       }
     ]

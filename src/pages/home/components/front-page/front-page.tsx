@@ -1,3 +1,4 @@
+import { Badge } from "@/components/ui/badge"
 import { RetroGrid } from "@/components/ui/retro-grid"
 import { cn } from "@/lib/utils"
 import { Briefcase, Cloud, Code2, GraduationCap, MoveDown } from "lucide-react"
@@ -63,7 +64,7 @@ const FrontPageComponent = ({ introRef, heroScale }: any) => {
               className="w-full max-w-2xl text-center"
             >
               <p className="text-md tracking-[0.5em] text-muted-foreground uppercase">
-                Front-end engineer
+                {t("landing-page.home.role")}
               </p>
               <motion.div
                 initial={{ opacity: 0, y: 20, filter: "blur(10px)" }}
@@ -73,27 +74,24 @@ const FrontPageComponent = ({ introRef, heroScale }: any) => {
                   delay: 3,
                   ease: [0.22, 1, 0.36, 1],
                 }}
-                className="mt-4 flex w-full gap-2 flex-wrap items-center justify-center"
+                className="mt-4 flex w-full flex-wrap items-center justify-center gap-2"
               >
-                <div className="flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium text-muted-foreground backdrop-blur-md transition-colors hover:bg-white/10 hover:text-primary">
+                <Badge variant="outline">
                   <Briefcase size={16} className="text-emerald-500" />
-                  <span>Front-end @ Compass UOL</span>
-                </div>
-
-                <div className="flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium text-muted-foreground backdrop-blur-md transition-colors hover:bg-white/10 hover:text-primary">
+                  {t("landing-page.home.front-page.role")}
+                </Badge>
+                <Badge variant="outline">
                   <Code2 size={16} className="text-emerald-500" />
-                  <span>React & TypeScript</span>
-                </div>
-
-                <div className="flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium text-muted-foreground backdrop-blur-md transition-colors hover:bg-white/10 hover:text-primary">
+                  {t("landing-page.home.front-page.stack")}
+                </Badge>
+                <Badge variant="outline">
                   <Cloud size={16} className="text-emerald-500" />
-                  <span>AWS Certified</span>
-                </div>
-
-                <div className="flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium text-muted-foreground backdrop-blur-md transition-colors hover:bg-white/10 hover:text-primary">
+                  {t("landing-page.home.front-page.certification")}
+                </Badge>
+                <Badge variant="outline">
                   <GraduationCap size={16} className="text-emerald-500" />
-                  <span>BCC Graduate</span>
-                </div>
+                  {t("landing-page.home.front-page.degree")}
+                </Badge>
               </motion.div>
             </motion.div>
 
