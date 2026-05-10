@@ -1,0 +1,19 @@
+---
+exclude_paths:
+  - "src/components/ui/**"
+  - "dist/**"
+  - "node_modules/**"
+  - "public/**"
+  - "coverage/**"
+  - "*.config.js"
+  - "*.config.ts"
+  - ".eslintrc.*"
+  - "eslint.config.*"
+
+engines:
+  eslint:
+    enabled: true
+  remark-lint:
+    enabled: false
+  stylelint:
+    enabled: false
