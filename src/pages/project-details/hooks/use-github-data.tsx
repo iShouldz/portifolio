@@ -1,7 +1,8 @@
 import { getRepoDetailedStats } from "@/hooks/use-github/use-github"
 import { useEffect, useState } from "react"
+import type { IReadmeView } from "../components/types"
 
-const useGithubData = ({ repoMeta }: { repoMeta: any }) => {
+const useGithubData = ({ repoMeta }: IReadmeView) => {
   const [repoDetails, setRepoDetails] = useState<any>(null)
 
   const readmeOwner = repoDetails?.repo?.owner ?? repoMeta?.owner
@@ -19,7 +20,7 @@ const useGithubData = ({ repoMeta }: { repoMeta: any }) => {
   useEffect(() => {
     if (!repoMeta) return
 
-    getRepoDetailedStats(repoMeta.owner, repoMeta.name).then((data) => {
+    getRepoDetailedStats(repoMeta?.owner, repoMeta?.name).then((data) => {
       setRepoDetails(data)
     })
   }, [repoMeta?.owner, repoMeta?.name])

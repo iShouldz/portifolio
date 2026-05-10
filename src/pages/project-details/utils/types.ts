@@ -5,3 +5,8 @@ export interface IUrlTransform {
   rawBase: string | null
   blobBase: string | null
 }
+
+export type IGitExtractProps = {
+  owner?: string
+  name?: string
+} | null

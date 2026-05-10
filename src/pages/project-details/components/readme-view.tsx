@@ -11,8 +11,9 @@ import {
   toLocalPublicPath,
 } from "../utils/git-extract"
 import useGithubData from "../hooks/use-github-data"
+import type { IReadmeView } from "./types"
 
-const ReadmeView = ({ repoMeta }: any) => {
+const ReadmeView = ({ repoMeta }: IReadmeView) => {
   const { repoDetails, blobBase, rawBase } = useGithubData({ repoMeta })
 
   const urlTransform = (url: string, key: string, node: unknown) => {
@@ -67,8 +68,8 @@ const ReadmeView = ({ repoMeta }: any) => {
 
   return (
     repoDetails && (
-      <div className="w-full h-full">
-        <div className="rounded-2xl border border-[#30363d] bg-[#f6f8fa] dark:bg-[#0d1117] p-6 shadow-[0_0_0_1px_rgba(255,255,255,0.02)] md:p-10 lg:col-span-3">
+      <div className="h-full w-full">
+        <div className="rounded-2xl border border-[#30363d] bg-[#f6f8fa] p-6 shadow-[0_0_0_1px_rgba(255,255,255,0.02)] md:p-10 lg:col-span-3 dark:bg-[#0d1117]">
           <article className="markdown-body max-w-none">
             {repoDetails.readme ? (
               <ReactMarkdown

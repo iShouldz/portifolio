@@ -29,7 +29,11 @@ export async function getGithubRepos(username: string) {
     }))
 }
 
-export async function getRepoDetailedStats(owner: string, repo: string) {
+export async function getRepoDetailedStats(
+  owner: string | undefined,
+  repo: string | undefined
+) {
+  if (!owner || !repo) return null
   try {
     const [repoData, languagesData, readmeData] = await Promise.all([
       octokit.repos.get({ owner, repo }),
@@ -42,7 +46,7 @@ export async function getRepoDetailedStats(owner: string, repo: string) {
             accept: "application/vnd.github.v3.raw",
           },
         })
-        .catch(() => ({ data: "" })), 
+        .catch(() => ({ data: "" })),
     ])
 
     return {
@@ -58,11 +62,11 @@ export async function getRepoDetailedStats(owner: string, repo: string) {
         openIssues: repoData.data.open_issues_count,
         watchers: repoData.data.watchers_count,
         sizeKb: repoData.data.size,
-        homepage: repoData.data.homepage, 
+        homepage: repoData.data.homepage,
         license: repoData.data.license?.name || "Sem licença",
       },
       languages: Object.keys(languagesData.data),
-      readme: readmeData.data, 
+      readme: readmeData.data,
     }
   } catch (error) {
     console.error(`Erro ao buscar detalhes do repositório ${repo}:`, error)

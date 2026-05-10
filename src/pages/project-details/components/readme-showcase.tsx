@@ -7,9 +7,10 @@ import { Button } from "@/components/ui/button"
 import { useTranslation } from "react-i18next"
 import { Badge } from "@/components/ui/badge"
 import type { ReactNode } from "react"
+import type { IGitExtractProps } from "../utils/types"
 
 interface ReadmeShowcaseProps {
-  repoMeta?: any
+  repoMeta?: IGitExtractProps
   currentProject: IProjectCard | undefined
 }
 

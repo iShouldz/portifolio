@@ -1,9 +1,11 @@
+import type { IGitExtractProps } from "./types"
+
 export const normalizeReadmeText = (value: string) =>
   value
     .replace(/src=("|')public\//g, "src=$1/")
     .replace(/href=("|')public\//g, "href=$1/")
 
-export const parseGithubRepo = (url?: string | null) => {
+export const parseGithubRepo = (url?: string | null): IGitExtractProps => {
   if (!url) return null
   const cleaned = url
     .replace(/^git\+/, "")
@@ -35,4 +37,3 @@ export const toLocalPublicPath = (value: string) => {
   const trimmed = value.replace(/^\.*\/?public\//, "")
   return `/${trimmed}`
 }
-
