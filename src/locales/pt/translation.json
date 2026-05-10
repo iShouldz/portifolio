@@ -1,6 +1,9 @@
 {
   "dock": {
     "home": "Ir para a página inicial",
+    "projects": "Conhecer meus projetos",
+    "experiences": "Conhecer minhas experiências",
+    "about": "Sobre & contato",
     "github": "Perfil no GitHub",
     "summary": "Resumo rápido",
     "linkedin": "Perfil no LinkedIn",

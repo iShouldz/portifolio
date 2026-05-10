@@ -11,7 +11,10 @@
         "es": "Spanish",
         "pt": "Portuguese"
       }
-    }
+    },
+    "projects": "Get to know my projects",
+    "experiences": "Get to know my experiences.",
+    "about": "About and contact"
   },
   "landing-page": {
     "home": {

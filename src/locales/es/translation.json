@@ -11,7 +11,10 @@
         "es": "Español",
         "pt": "Portugués"
       }
-    }
+    },
+    "projects": "Conozca mis proyectos",
+    "experiences": "Conozca mis experiencias.",
+    "about": "Acerca de y contacto"
   },
   "landing-page": {
     "home": {

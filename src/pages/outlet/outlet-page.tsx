@@ -1,7 +1,7 @@
 import { Dock, DockIcon } from "@/components/ui/dock"
 import { ScrollProgress } from "@/components/ui/scroll-progress"
 import ReactLenis from "lenis/react"
-import { Download, Home, Zap } from "lucide-react"
+import { CircleUser, FolderGit2, Home, Library, Zap } from "lucide-react"
 import { Outlet, useNavigate } from "react-router"
 import { motion } from "motion/react"
 import {
@@ -32,9 +32,17 @@ const OutletPage = () => {
     navigate(RoutesUrl.HOME)
   }, [navigate])
 
-  const handleGoToGithub = useCallback(() => {
-    window.open("https://github.com/iShouldz", "_blank")
-  }, [])
+  const handleGoToAbout = useCallback(() => {
+    navigate(RoutesUrl.ABOUT)
+  }, [navigate])
+
+  const handleGoToExperiences = useCallback(() => {
+    navigate(RoutesUrl.EXPERIENCIES)
+  }, [navigate])
+
+  const handleGoToProjects = useCallback(() => {
+    navigate(RoutesUrl.PROJECTS)
+  }, [navigate])
 
   const handleGoToLinkedIn = useCallback(() => {
     window.open("https://www.linkedin.com/in/pedro-souza-385794241/", "_blank")
@@ -90,36 +98,36 @@ const OutletPage = () => {
             </Tooltip>
           </DockIcon>
 
-          <DockIcon>
+          <DockIcon onClick={handleGoToExperiences}>
             <Tooltip>
-              <a href="/Curriculo.pdf" download="Curriculo.pdf">
-                <TooltipTrigger asChild>
-                  <Download />
-                </TooltipTrigger>
-              </a>
+              <TooltipTrigger asChild>
+                <Library />
+              </TooltipTrigger>
 
               <TooltipContent>
-                <p>{t("dock.curriculum")}</p>
+                <p>{t("dock.experiences")}</p>
               </TooltipContent>
             </Tooltip>
           </DockIcon>
 
-          <DockIcon onClick={handleGoToGithub}>
+          <DockIcon onClick={handleGoToProjects}>
             <Tooltip>
               <TooltipTrigger asChild>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  fill="currentColor"
-                  className="bi bi-github"
-                  viewBox="0 0 16 16"
-                >
-                  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
-                </svg>
+                <FolderGit2 />
               </TooltipTrigger>
               <TooltipContent>
-                <p>{t("dock.github")}</p>
+                <p>{t("dock.projects")}</p>
+              </TooltipContent>
+            </Tooltip>
+          </DockIcon>
+
+          <DockIcon onClick={handleGoToAbout}>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <CircleUser />
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>{t("dock.about")}</p>
               </TooltipContent>
             </Tooltip>
           </DockIcon>
