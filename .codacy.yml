@@ -11,6 +11,8 @@ exclude_paths:
   - "eslint.config.*"
   - "src/**/*.css"
   - "src/index.css"
+  - "package-lock.json"
+  - "package.json"
 
 engines:
   eslint:
