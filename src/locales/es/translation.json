@@ -113,17 +113,8 @@
         "description": "Mi portafolio personal, donde agrego mis proyectos y habilidades.",
         "githubUrl": "https://github.com/iShouldz/portifolio",
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/v1778094315/6e74906a-8e4c-432c-815e-68055465ab8a.png",
-        "tecnologies": [
-          "React",
-          "Typescript",
-          "SEO",
-          "UX"
-        ],
-        "tags": [
-          "Web",
-          "Frontend",
-          "Personal"
-        ]
+        "tecnologies": ["React", "Typescript", "SEO", "UX"],
+        "tags": ["Web", "Frontend", "Personal"]
       },
       {
         "id": "one-pace-hub",
@@ -131,17 +122,81 @@
         "description": "Hub enfocado en reunir los episodios editados y los subtítulos en Portugués de Brasil (PT-BR) del proyecto One Pace.",
         "githubUrl": "https://github.com/iShouldz/one-pace-br-hub",
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/f_auto,q_auto/Screenshot_2026-04-30_193619_lx0lnu",
+        "resources": [
+          {
+            "type": "feature",
+            "title": "Arquitectura de rutas por dominio (Home/Saga/Arco)",
+            "description": "La navegación se organizó por contexto para ser intuitiva: la Home presenta la visión general del catálogo, la página de Saga agrupa los arcos relacionados y la página de Arco profundiza en los detalles de cada bloque. Esta separación aclara el flujo para el usuario y facilita la evolución del proyecto sin crear acoplamiento entre pantallas."
+          },
+          {
+            "type": "feature",
+            "title": "SEO dinámico con metadatos completos por página",
+            "description": "Cada pantalla actualiza automáticamente el título, descripción, canonical, Open Graph, Twitter Card y JSON-LD. Con esto, los enlaces compartidos son más atractivos, los motores de búsqueda entienden mejor el contenido y cada ruta gana identidad propia en lugar de heredar metadatos genéricos."
+          },
+          {
+            "type": "feature",
+            "title": "Capa de scraping con fallback para escenarios de bloqueo",
+            "description": "Cuando una fuente externa limita las peticiones o falla parcialmente, el sistema intenta rutas alternativas (RSS, HTML o enlace directo) para recuperar los datos. Esto reduce la posibilidad de pantallas rotas y mejora la confiabilidad de la experiencia, especialmente en flujos de búsqueda de torrents."
+          },
+          {
+            "type": "feature",
+            "title": "Caché de scraping actualizado automáticamente vía workflow",
+            "description": "Existe una rutina automatizada que actualiza el caché de enlaces en intervalos programados. En la práctica, esto disminuye el coste de scraping en tiempo real, mejora el tiempo de respuesta para el usuario y mantiene los datos importantes listos para su uso incluso cuando el proveedor es inestable."
+          },
+          {
+            "type": "feature",
+            "title": "Integración con qBittorrent WebUI",
+            "description": "El usuario puede enviar enlaces en lote directamente al cliente qBittorrent configurado, sin necesidad de copiar y pegar manualmente ítem por ítem. El flujo contempla validación de URL, autenticación, gestión de sesión y mensajes claros de éxito o error para facilitar el diagnóstico."
+          },
+          {
+            "type": "feature",
+            "title": "Extracción y priorización inteligente de enlaces torrent",
+            "description": "El sistema identifica enlaces magnet y hashes, elimina duplicados y prioriza las versiones más útiles según criterios como calidad y disponibilidad. Esto reduce el ruido en la lista final y aumenta la posibilidad de que el usuario descargue la opción correcta al primer intento."
+          },
+          {
+            "type": "feature",
+            "title": "Preferencias de visualización persistidas localmente",
+            "description": "Configuraciones como el tema, orden de listado, filtros visuales y ocultación de sagas completadas se guardan en el navegador. Así, cuando la persona vuelve al sitio, la interfaz ya aparece en el formato preferido sin necesidad de reconfigurarlo todo en cada acceso."
+          },
+          {
+            "type": "feature",
+            "title": "Configuraciones centralizadas en panel lateral",
+            "description": "Las opciones del producto se reunieron en un panel único con secciones claras como visualización, proveedor de torrent, feedback y enlaces útiles. Esto evita una navegación dispersa por múltiples pantallas y hace que el descubrimiento de funciones sea más sencillo para usuarios nuevos."
+          },
+          {
+            "type": "feature",
+            "title": "Soporte a la internacionalización (i18n)",
+            "description": "La base ya está preparada para múltiples idiomas con una estructura de traducción integrada. Aunque el enfoque principal sea PT-BR, esto abre el camino para una futura expansión sin reajustes estructurales y ayuda a mantener textos consistentes en toda la interfaz."
+          },
+          {
+            "type": "product",
+            "title": "Hub brasileño especializado en One Pace",
+            "description": "El producto funciona como un punto de referencia único para que la comunidad BR siga el contenido de One Pace con mejor organización. En lugar de depender de fuentes dispersas, el usuario encuentra en un solo lugar los caminos para descubrir, entender y continuar su viaje."
+          },
+          {
+            "type": "product",
+            "title": "Experiencia orientada al descubrimiento y continuidad",
+            "description": "La propuesta no es solo listar contenido, sino guiar al usuario entre sagas y arcos de forma lógica, ayudándole a decidir el siguiente paso. Esto mejora tanto la entrada de quienes están comenzando como la continuidad de quienes ya siguen el proyecto hace tiempo."
+          },
+          {
+            "type": "product",
+            "title": "Proyecto comunitario, iterativo y abierto a contribuciones",
+            "description": "La evolución del hub se diseña con la participación de la comunidad mediante feedbacks e issues. Este modelo hace que el producto esté más vivo, con mejoras alineadas a necesidades reales de uso, y fortalece el carácter colaborativo de la iniciativa."
+          }
+        ],
         "tecnologies": [
           "React",
-          "Next.js",
+          "Typescript",
+          "Serverless",
+          "React Query",
           "SEO",
-          "UX"
+          "React Router",
+          "TanStack React Query",
+          "Tailwind CSS v4",
+          "shadcn/ui",
+          "GitHub Actions (workflow de actualización de caché)"
         ],
-        "tags": [
-          "Web",
-          "Frontend",
-          "Personal"
-        ],
+        "tags": ["Web", "Frontend", "Personal", "One Pace", "SEO", "Scraping"],
         "deployLink": "one-pace-br.pages.dev"
       },
       {
@@ -150,20 +205,8 @@
         "description": "Aplicación de fitness construida en React usando el puente web de Capacitor para adaptarla a móvil.",
         "githubUrl": "https://github.com/iShouldz/treine-se",
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/v1778095392/treine-se_qyklbm.png",
-        "tecnologies": [
-          "React",
-          "Capacitor JS",
-          "Android Studio",
-          "IA"
-        ],
-        "tags": [
-          "Web",
-          "Frontend",
-          "Webview",
-          "Web Bridge",
-          "Fitness",
-          "IA"
-        ]
+        "tecnologies": ["React", "Capacitor JS", "Android Studio", "IA"],
+        "tags": ["Web", "Frontend", "Webview", "Web Bridge", "Fitness", "IA"]
       },
       {
         "id": "adedonha",
@@ -171,19 +214,8 @@
         "description": "Proyecto para el seguimiento del juego Adedonha (Stop) en móvil.",
         "githubUrl": "https://github.com/iShouldz/adedonha",
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/v1778094983/adedonha_tmozpn.png",
-        "tecnologies": [
-          "React",
-          "Typescript",
-          "Shadcn",
-          "IA"
-        ],
-        "tags": [
-          "Web",
-          "Frontend",
-          "Juegos",
-          "Personal",
-          "Mobile First"
-        ],
+        "tecnologies": ["React", "Typescript", "Shadcn", "IA"],
+        "tags": ["Web", "Frontend", "Juegos", "Personal", "Mobile First"],
         "deployLink": "https://adedonha.vercel.app/"
       },
       {
@@ -192,17 +224,8 @@
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/v1778094396/a9efa034-f169-467f-857a-41d60f2df409.png",
         "description": "Proyecto académico para la gestión de cuidados veterinarios.",
         "githubUrl": "https://github.com/iShouldz/vet-care",
-        "tecnologies": [
-          "React",
-          "Typescript",
-          "Shadcn"
-        ],
-        "tags": [
-          "Web",
-          "Frontend",
-          "Gestión",
-          "React"
-        ],
+        "tecnologies": ["React", "Typescript", "Shadcn"],
+        "tags": ["Web", "Frontend", "Gestión", "React"],
         "deployLink": "https://vetcareufape.vercel.app/"
       },
       {
@@ -211,17 +234,8 @@
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/v1778096521/6d4d2e82-35e8-4970-a9dd-aab97fe93bde.png",
         "description": "Repositorio referente al segundo desafío del programa de becas de Compass UOL. En la aplicación, el usuario podía registrar nuevas flores y gestionar el inventario, además de realizar ventas. El proyecto fue desarrollado utilizando React para el frontend y con diseño responsivo aplicado, con json server para el backend.",
         "githubUrl": "https://github.com/iShouldz/FloriculturaGrupo04",
-        "tecnologies": [
-          "React",
-          "Typescript",
-          "Shadcn"
-        ],
-        "tags": [
-          "Web",
-          "Frontend",
-          "Gestión",
-          "React"
-        ],
+        "tecnologies": ["React", "Typescript", "Shadcn"],
+        "tags": ["Web", "Frontend", "Gestión", "React"],
         "deployLink": "https://floricultura-grupo04-pkbf-ofin807ak-ishouldzs-projects.vercel.app/"
       },
       {
@@ -230,17 +244,8 @@
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/v1778096066/c51748d2-481d-4972-b007-17d1fdaa1a51.png",
         "description": "Repositorio referente al tercer desafío del programa de becas de Compass UOL. En la aplicación, los usuarios podían elegir un modelo de coche, seleccionar el color y los accesorios deseados, y finalizar la compra. El proyecto fue desarrollado utilizando React para el frontend, con json server para el backend.",
         "githubUrl": "https://github.com/iShouldz/DeliveryCar",
-        "tecnologies": [
-          "React",
-          "Typescript",
-          "Shadcn"
-        ],
-        "tags": [
-          "Web",
-          "Frontend",
-          "Gestión",
-          "React"
-        ],
+        "tecnologies": ["React", "Typescript", "Shadcn"],
+        "tags": ["Web", "Frontend", "Gestión", "React"],
         "deployLink": "https://delivery-car.vercel.app/"
       }
     ]

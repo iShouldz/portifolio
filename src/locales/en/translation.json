@@ -114,17 +114,8 @@
         "description": "My personal portfolio, where I aggregate my projects and skills.",
         "githubUrl": "https://github.com/iShouldz/portifolio",
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/v1778094315/6e74906a-8e4c-432c-815e-68055465ab8a.png",
-        "tecnologies": [
-          "React",
-          "Typescript",
-          "SEO",
-          "UX"
-        ],
-        "tags": [
-          "Web",
-          "Frontend",
-          "Personal"
-        ]
+        "tecnologies": ["React", "Typescript", "SEO", "UX"],
+        "tags": ["Web", "Frontend", "Personal"]
       },
       {
         "id": "one-pace-hub",
@@ -132,17 +123,81 @@
         "description": "Hub focused on gathering the edited episodes and Brazilian Portuguese (PT-BR) subtitles for the One Pace project.",
         "githubUrl": "https://github.com/iShouldz/one-pace-br-hub",
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/f_auto,q_auto/Screenshot_2026-04-30_193619_lx0lnu",
+        "resources": [
+          {
+            "type": "feature",
+            "title": "Domain-driven route architecture (Home/Saga/Arc)",
+            "description": "Navigation was organized by context to be intuitive: the Home provides a catalog overview, the Saga page groups related arcs, and the Arc page deep dives into each block's details. This separation clarifies the user flow and facilitates project evolution without creating coupling between screens."
+          },
+          {
+            "type": "feature",
+            "title": "Dynamic SEO with full metadata per page",
+            "description": "Each screen automatically updates title, description, canonical, Open Graph, Twitter Card, and JSON-LD. Consequently, shared links are more attractive, search engines understand the content better, and each route gains its own identity instead of inheriting generic metadata."
+          },
+          {
+            "type": "feature",
+            "title": "Scraping layer with fallback for blocking scenarios",
+            "description": "When an external source limits requests or partially fails, the system attempts alternative paths (RSS, HTML, or direct link) to retrieve data. This reduces the chance of broken screens and improves experience reliability, especially in torrent search flows."
+          },
+          {
+            "type": "feature",
+            "title": "Automated scraping cache via workflow",
+            "description": "An automated routine updates the link cache at scheduled intervals. In practice, this decreases real-time scraping costs, improves user response time, and keeps important data ready for use even when the provider is unstable."
+          },
+          {
+            "type": "feature",
+            "title": "qBittorrent WebUI integration",
+            "description": "Users can send bulk links directly to a configured qBittorrent client, removing the need to manually copy and paste item by item. The flow includes URL validation, authentication, session handling, and clear success or error messages for easier diagnostics."
+          },
+          {
+            "type": "feature",
+            "title": "Smart extraction and prioritization of torrent links",
+            "description": "The system identifies magnet links and hashes, removes duplicates, and prioritizes the most useful versions based on criteria like quality and availability. This reduces noise in the final list and increases the chance of the user downloading the correct option on the first try."
+          },
+          {
+            "type": "feature",
+            "title": "Locally persisted display preferences",
+            "description": "Settings such as theme, sorting order, visual filters, and hiding completed sagas are saved in the browser. Thus, when the person returns to the site, the interface already appears in their preferred format without needing to reconfigure everything on each visit."
+          },
+          {
+            "type": "feature",
+            "title": "Centralized settings in a side panel",
+            "description": "Product options were gathered into a single panel with clear sections like display, torrent provider, feedback, and useful links. This avoids scattered navigation across multiple screens and makes feature discovery simpler for new users."
+          },
+          {
+            "type": "feature",
+            "title": "Internationalization support (i18n)",
+            "description": "The base is already prepared for multiple languages with an integrated translation structure. Even with a primary focus on PT-BR, this paves the way for future expansion without structural rework and helps maintain consistent copy across the entire interface."
+          },
+          {
+            "type": "product",
+            "title": "Specialized Brazilian hub for One Pace",
+            "description": "The product acts as a single reference point for the BR community to track One Pace content with better organization. Instead of relying on scattered sources, users find the paths to discover, understand, and continue their journey in one place."
+          },
+          {
+            "type": "product",
+            "title": "Discovery and continuity-oriented experience",
+            "description": "The proposal is not just to list content, but to guide the user between sagas and arcs logically, helping them decide the next step. This improves both the onboarding for beginners and the continuity for long-time followers."
+          },
+          {
+            "type": "product",
+            "title": "Community-driven, iterative, and open to contributions",
+            "description": "The hub's evolution is designed with community participation through feedback and issues. This model makes the product more alive, with improvements aligned to real usage needs, and strengthens the collaborative nature of the initiative."
+          }
+        ],
         "tecnologies": [
           "React",
-          "Next.js",
+          "Typescript",
+          "Serverless",
+          "React Query",
           "SEO",
-          "UX"
+          "React Router",
+          "TanStack React Query",
+          "Tailwind CSS v4",
+          "shadcn/ui",
+          "GitHub Actions (cache update workflow)"
         ],
-        "tags": [
-          "Web",
-          "Frontend",
-          "Personal"
-        ],
+        "tags": ["Web", "Frontend", "Personal", "One Pace", "SEO", "Scraping"],
         "deployLink": "one-pace-br.pages.dev"
       },
       {
@@ -151,20 +206,8 @@
         "description": "Fitness application built in React using Capacitor's web bridge to port to mobile.",
         "githubUrl": "https://github.com/iShouldz/treine-se",
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/v1778095392/treine-se_qyklbm.png",
-        "tecnologies": [
-          "React",
-          "Capacitor JS",
-          "Android Studio",
-          "IA"
-        ],
-        "tags": [
-          "Web",
-          "Frontend",
-          "Webview",
-          "Web Bridge",
-          "Fitness",
-          "IA"
-        ]
+        "tecnologies": ["React", "Capacitor JS", "Android Studio", "IA"],
+        "tags": ["Web", "Frontend", "Webview", "Web Bridge", "Fitness", "IA"]
       },
       {
         "id": "adedonha",
@@ -172,19 +215,8 @@
         "description": "Project for tracking the Adedonha (Stop) game on mobile.",
         "githubUrl": "https://github.com/iShouldz/adedonha",
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/v1778094983/adedonha_tmozpn.png",
-        "tecnologies": [
-          "React",
-          "Typescript",
-          "Shadcn",
-          "IA"
-        ],
-        "tags": [
-          "Web",
-          "Frontend",
-          "Games",
-          "Personal",
-          "Mobile First"
-        ],
+        "tecnologies": ["React", "Typescript", "Shadcn", "IA"],
+        "tags": ["Web", "Frontend", "Games", "Personal", "Mobile First"],
         "deployLink": "https://adedonha.vercel.app/"
       },
       {
@@ -193,17 +225,8 @@
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/v1778094396/a9efa034-f169-467f-857a-41d60f2df409.png",
         "description": "Academic project for veterinary care management.",
         "githubUrl": "https://github.com/iShouldz/vet-care",
-        "tecnologies": [
-          "React",
-          "Typescript",
-          "Shadcn"
-        ],
-        "tags": [
-          "Web",
-          "Frontend",
-          "Management",
-          "React"
-        ],
+        "tecnologies": ["React", "Typescript", "Shadcn"],
+        "tags": ["Web", "Frontend", "Management", "React"],
         "deployLink": "https://vetcareufape.vercel.app/"
       },
       {
@@ -212,17 +235,8 @@
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/v1778096521/6d4d2e82-35e8-4970-a9dd-aab97fe93bde.png",
         "description": "Repository for the second challenge of the Compass UOL scholarship program. In the application, the user could register new flowers and manage inventory, as well as make sales. The project was developed using React for the frontend with responsiveness applied, and json server for the backend.",
         "githubUrl": "https://github.com/iShouldz/FloriculturaGrupo04",
-        "tecnologies": [
-          "React",
-          "Typescript",
-          "Shadcn"
-        ],
-        "tags": [
-          "Web",
-          "Frontend",
-          "Management",
-          "React"
-        ],
+        "tecnologies": ["React", "Typescript", "Shadcn"],
+        "tags": ["Web", "Frontend", "Management", "React"],
         "deployLink": "https://floricultura-grupo04-pkbf-ofin807ak-ishouldzs-projects.vercel.app/"
       },
       {
@@ -231,17 +245,8 @@
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/v1778096066/c51748d2-481d-4972-b007-17d1fdaa1a51.png",
         "description": "Repository for the third challenge of the Compass UOL scholarship program. In the application, users could choose a car model, select the color and desired accessories, and finalize the purchase. The project was developed using React for the frontend, with json server for the backend.",
         "githubUrl": "https://github.com/iShouldz/DeliveryCar",
-        "tecnologies": [
-          "React",
-          "Typescript",
-          "Shadcn"
-        ],
-        "tags": [
-          "Web",
-          "Frontend",
-          "Management",
-          "React"
-        ],
+        "tecnologies": ["React", "Typescript", "Shadcn"],
+        "tags": ["Web", "Frontend", "Management", "React"],
         "deployLink": "https://delivery-car.vercel.app/"
       }
     ]
@@ -305,12 +310,7 @@
         "period": "September 2023 - September 2024",
         "location": "Garanhuns, PE",
         "description": "Research: PIBIC - Vulnerabilities caused by commits. Supervised by Professor Dr. Rodrigo Andrade. The project aims to analyze the relationship between code commits and the introduction of software vulnerabilities. Using data mining techniques and repository analysis, the study seeks to identify patterns and factors that contribute to the occurrence of security flaws, with the goal of providing insights for safer development practices.",
-        "tech": [
-          "Git",
-          "Python",
-          "Software Security",
-          "Vulnerability Analysis"
-        ]
+        "tech": ["Git", "Python", "Software Security", "Vulnerability Analysis"]
       },
       {
         "company": "UFAPE",

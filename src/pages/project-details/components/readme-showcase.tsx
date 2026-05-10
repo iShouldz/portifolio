@@ -185,16 +185,6 @@ const ReadmeShowcase = ({ repoMeta, currentProject }: ReadmeShowcaseProps) => {
                 </TopicSection>
 
                 <TopicSection
-                  icon={<MessageSquareQuote size={18} />}
-                  title={projectDetails.comments}
-                >
-                  <p className="text-sm leading-relaxed text-muted-foreground">
-                    Nenhum comentário adicional foi cadastrado para este
-                    projeto.
-                  </p>
-                </TopicSection>
-
-                <TopicSection
                   icon={<Link2 size={18} />}
                   title={projectDetails.links}
                 >
