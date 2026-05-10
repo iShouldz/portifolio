@@ -1,4 +1,5 @@
 # React + TypeScript + Vite + shadcn/ui
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/a7efbffb12c04c90a7599320d06e9090)](https://app.codacy.com/gh/iShouldz/portifolio/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 
 This is a template for a new Vite project with React, TypeScript, and shadcn/ui.
 
