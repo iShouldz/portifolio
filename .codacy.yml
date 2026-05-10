@@ -9,6 +9,7 @@ exclude_paths:
   - "*.config.ts"
   - ".eslintrc.*"
   - "eslint.config.*"
+  - "src/**/*.css"
 
 engines:
   eslint:
