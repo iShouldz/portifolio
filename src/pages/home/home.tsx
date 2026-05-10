@@ -24,7 +24,11 @@ const Home = () => {
     <>
       <FrontPageComponent introRef={introRef} heroScale={heroScale} />
 
-      <CardDisplay cardsLift={cardsLift} cardsSkew={cardsSkew} />
+      <CardDisplay
+        cardsRef={cardsRef}
+        cardsLift={cardsLift}
+        cardsSkew={cardsSkew}
+      />
 
       <Recomendations cardsLift={cardsLift} cardsSkew={cardsSkew} />
     </>

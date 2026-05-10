@@ -5,6 +5,7 @@ import { useRef } from "react"
 import { Download, MoveDown } from "lucide-react"
 import { useTranslation } from "react-i18next"
 import { RoutesUrl } from "@/utils/enum/routes.utils"
+import type { ICardDisplayProps } from "../../types"
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -32,7 +33,7 @@ const itemVariants: Variants | undefined = {
   },
 }
 
-const CardDisplay = ({ cardsRef, cardsLift, cardsSkew }: any) => {
+const CardDisplay = ({ cardsRef, cardsLift, cardsSkew }: ICardDisplayProps) => {
   const { t } = useTranslation()
   const navigate = useNavigate()
   const containerRef = useRef<HTMLDivElement>(null)

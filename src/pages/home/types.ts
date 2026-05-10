@@ -13,3 +13,9 @@ export interface IRecomendationsProps {
   cardsSkew: MotionValue<number>
   cardsLift: MotionValue<number>
 }
+
+export interface ICardDisplayProps {
+  cardsSkew: MotionValue<number>
+  cardsLift: MotionValue<number>
+  cardsRef: React.RefObject<HTMLElement | null>
+}
