@@ -212,56 +212,57 @@
         "githubUrl": "https://github.com/iShouldz/treine-se",
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/v1778095392/treine-se_qyklbm.png",
         "tecnologies": ["React", "Capacitor JS", "Android Studio", "IA"],
+
         "resources": [
           {
-            "type": "feature",
-            "title": "Base local de exercícios estruturada",
-            "description": "Catálogo em JSON com nome, tipo, dificuldade, equipamentos, instruções e músculos trabalhados, usado nos fluxos manual e IA."
-          },
-          {
-            "type": "feature",
-            "title": "Busca/filtro e seleção orientada de exercícios",
-            "description": "Filtros por tipo e dificuldade, combobox para busca de exercício e validações de formulário para garantir montagem consistente da ficha."
-          },
-          {
-            "type": "feature",
-            "title": "Detalhamento rico de exercício com suporte contextual",
-            "description": "Modal com execução, músculos, equipamentos e características; inclui acesso rápido ao chat com IA para dúvidas no contexto do exercício."
-          },
-          {
-            "type": "feature",
-            "title": "Player/embed de demonstração via YouTube",
-            "description": "Busca de vídeo por query, cache com React Query, renderização com React Player e tratamento explícito de estados loading/erro."
-          },
-          {
-            "type": "feature",
-            "title": "Persistência local e integrações externas",
-            "description": "Estado persistido com Redux Persist (perfil, chat e treinos), autenticação/serviços com Appwrite, IA via Google Gemini e notificações locais com Capacitor."
-          },
-          {
             "type": "product",
-            "title": "Criação de treino manual personalizada",
-            "description": "Fluxo em duas etapas para escolher exercício, configurar séries/repetições/carga/descanso e salvar o treino."
+            "title": "Criação manual de treino personalizada",
+            "description": "Fluxo em duas etapas que permite montar o treino do zero com mais controle: você escolhe os exercícios, define séries, repetições, carga e descanso, e salva tudo em uma ficha organizada para usar depois."
           },
           {
             "type": "product",
             "title": "Geração de treino com IA",
-            "description": "Questionário guiado que gera uma ficha personalizada com explicação do porquê dos exercícios, pronta para revisão e salvamento."
+            "description": "O app conduz um questionário simples sobre objetivo, nível e preferências, e a IA monta uma ficha personalizada já com justificativa dos exercícios. Depois, o usuário pode revisar, ajustar e salvar."
           },
           {
             "type": "product",
             "title": "Execução guiada do treino (modo play)",
-            "description": "Experiência focada em treino ativo, com cronômetro, navegação entre exercícios, controle de séries e conclusão com registro no histórico."
+            "description": "Durante o treino, a experiência fica focada na execução: cronômetro ativo, progressão entre exercícios, controle de séries concluídas e finalização com registro no histórico para acompanhamento."
           },
           {
             "type": "product",
-            "title": "Hub de progresso no dashboard",
-            "description": "Visão consolidada com treino do dia, treinos feitos, sequência semanal e feed de atividade recente para reforçar consistência."
+            "title": "Dashboard de progresso",
+            "description": "A tela principal reúne os indicadores mais úteis do dia a dia, como treino atual, sessões concluídas, sequência semanal e atividade recente, ajudando a manter consistência e visão de evolução."
           },
           {
             "type": "product",
-            "title": "Configuração de perfil e preferências",
-            "description": "Tela de configurações com modo simples/avançado para coletar dados de perfil físico e preferências, apoiando personalização da experiência."
+            "title": "Perfil e preferências personalizáveis",
+            "description": "As configurações permitem informar dados físicos e preferências de uso em modo simples ou avançado, para adaptar melhor recomendações, experiência visual e comportamento geral do app."
+          },
+          {
+            "type": "feature",
+            "title": "Catálogo local estruturado de exercícios",
+            "description": "A base de exercícios é organizada em JSON com informações completas (tipo, dificuldade, músculos, equipamentos e instruções), servindo como fonte para criação manual e para sugestões da IA."
+          },
+          {
+            "type": "feature",
+            "title": "Busca, filtros e seleção assistida",
+            "description": "A montagem do treino conta com filtros por tipo e dificuldade, campo de busca para localizar exercícios com rapidez e validações de formulário que evitam fichas incompletas ou inconsistentes."
+          },
+          {
+            "type": "feature",
+            "title": "Detalhamento de exercício com suporte contextual",
+            "description": "Cada exercício possui visualização rica com orientações de execução, músculos trabalhados e equipamentos necessários, além de atalho para tirar dúvidas com IA já no contexto do que está sendo feito."
+          },
+          {
+            "type": "feature",
+            "title": "Demonstração em vídeo com YouTube",
+            "description": "O sistema busca vídeos por query, renderiza com player integrado e usa cache para agilizar carregamentos. Também trata estados de loading e erro para manter a experiência estável."
+          },
+          {
+            "type": "feature",
+            "title": "Persistência local e integrações externas",
+            "description": "Dados importantes como perfil, treinos e chat ficam persistidos localmente, com integração a serviços externos para autenticação, IA e recursos nativos mobile, incluindo notificações locais."
           }
         ],
         "tags": ["Web", "Frontend", "Webview", "Web Bridge", "Fitness", "IA"]

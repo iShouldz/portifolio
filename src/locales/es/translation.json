@@ -114,17 +114,8 @@
         "description": "Mi portafolio personal, donde agrego mis proyectos y habilidades.",
         "githubUrl": "https://github.com/iShouldz/portifolio",
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/v1778094315/6e74906a-8e4c-432c-815e-68055465ab8a.png",
-        "tecnologies": [
-          "React",
-          "Typescript",
-          "SEO",
-          "UX"
-        ],
-        "tags": [
-          "Web",
-          "Frontend",
-          "Personal"
-        ]
+        "tecnologies": ["React", "Typescript", "SEO", "UX"],
+        "tags": ["Web", "Frontend", "Personal"]
       },
       {
         "id": "one-pace-hub",
@@ -206,14 +197,7 @@
           "shadcn/ui",
           "GitHub Actions (workflow de actualización de caché)"
         ],
-        "tags": [
-          "Web",
-          "Frontend",
-          "Personal",
-          "One Pace",
-          "SEO",
-          "Scraping"
-        ],
+        "tags": ["Web", "Frontend", "Personal", "One Pace", "SEO", "Scraping"],
         "deployLink": "one-pace-br.pages.dev"
       },
       {
@@ -222,20 +206,60 @@
         "description": "Aplicación de fitness construida en React usando el puente web de Capacitor para adaptarla a móvil.",
         "githubUrl": "https://github.com/iShouldz/treine-se",
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/v1778095392/treine-se_qyklbm.png",
-        "tecnologies": [
-          "React",
-          "Capacitor JS",
-          "Android Studio",
-          "IA"
+        "resources": [
+          {
+            "type": "product",
+            "title": "Creación manual de entrenamiento personalizada",
+            "description": "Flujo en dos etapas que permite armar el entrenamiento desde cero com más control: eliges los ejercicios, defines series, repeticiones, carga y descanso, y guardas todo en una ficha organizada para usar después."
+          },
+          {
+            "type": "product",
+            "title": "Generación de entrenamiento con IA",
+            "description": "La app realiza un cuestionario sencillo sobre objetivos, nivel y preferencias, y la IA crea una rutina personalizada que incluye la justificación de los ejercicios. Después, el usuario puede revisar, ajustar y guardar."
+          },
+          {
+            "type": "product",
+            "title": "Ejecución guiada del entrenamiento (modo play)",
+            "description": "Durante el entrenamiento, la experiencia se centra en la ejecución: cronómetro activo, progresión entre ejercicios, control de series completadas y finalización con registro en el historial para seguimiento."
+          },
+          {
+            "type": "product",
+            "title": "Dashboard de progreso",
+            "description": "La pantalla principal reúne los indicadores diarios más útiles, como el entrenamiento actual, sesiones completadas, racha semanal y actividad reciente, ayudando a mantener la consistencia y la visión de evolución."
+          },
+          {
+            "type": "product",
+            "title": "Perfil y preferencias personalizables",
+            "description": "Los ajustes permiten ingresar datos físicos y preferencias de uso en modo simple o avanzado, para adaptar mejor las recomendaciones, la experiencia visual y el comportamiento general de la app."
+          },
+          {
+            "type": "feature",
+            "title": "Catálogo local estructurado de ejercicios",
+            "description": "La base de ejercicios está organizada en JSON con información completa (tipo, dificultad, músculos, equipamiento e instrucciones), sirviendo como fuente para la creación manual y para sugerencias de la IA."
+          },
+          {
+            "type": "feature",
+            "title": "Búsqueda, filtros y selección asistida",
+            "description": "El armado del entrenamiento cuenta con filtros por tipo y dificultad, campo de búsqueda para localizar ejercicios con rapidez y validaciones de formulario que evitan fichas incompletas o inconsistentes."
+          },
+          {
+            "type": "feature",
+            "title": "Detalle de ejercicio con soporte contextual",
+            "description": "Cada ejercicio posee una vista rica con orientaciones de ejecución, músculos trabajados y equipamiento necesario, además de un acceso directo para resolver dudas con IA ya en el contexto de lo que se está realizando."
+          },
+          {
+            "type": "feature",
+            "title": "Demostración en video con YouTube",
+            "description": "El sistema busca videos por consulta, los renderiza con un reproductor integrado y utiliza caché para agilizar las cargas. También gestiona estados de carga y error para mantener la experiencia estable."
+          },
+          {
+            "type": "feature",
+            "title": "Persistencia local e integraciones externas",
+            "description": "Datos importantes como perfil, entrenamientos y chat se mantienen persistidos localmente, con integración a servicios externos para autenticación, IA y funciones nativas móviles, incluyendo notificaciones locales."
+          }
         ],
-        "tags": [
-          "Web",
-          "Frontend",
-          "Webview",
-          "Web Bridge",
-          "Fitness",
-          "IA"
-        ]
+        "tecnologies": ["React", "Capacitor JS", "Android Studio", "IA"],
+        "tags": ["Web", "Frontend", "Webview", "Web Bridge", "Fitness", "IA"]
       },
       {
         "id": "adedonha",
@@ -243,19 +267,8 @@
         "description": "Proyecto para el seguimiento del juego Adedonha (Stop) en móvil.",
         "githubUrl": "https://github.com/iShouldz/adedonha",
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/v1778094983/adedonha_tmozpn.png",
-        "tecnologies": [
-          "React",
-          "Typescript",
-          "Shadcn",
-          "IA"
-        ],
-        "tags": [
-          "Web",
-          "Frontend",
-          "Juegos",
-          "Personal",
-          "Mobile First"
-        ],
+        "tecnologies": ["React", "Typescript", "Shadcn", "IA"],
+        "tags": ["Web", "Frontend", "Juegos", "Personal", "Mobile First"],
         "deployLink": "https://adedonha.vercel.app/"
       },
       {
@@ -264,17 +277,8 @@
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/v1778094396/a9efa034-f169-467f-857a-41d60f2df409.png",
         "description": "Proyecto académico para la gestión de cuidados veterinarios.",
         "githubUrl": "https://github.com/iShouldz/vet-care",
-        "tecnologies": [
-          "React",
-          "Typescript",
-          "Shadcn"
-        ],
-        "tags": [
-          "Web",
-          "Frontend",
-          "Gestión",
-          "React"
-        ],
+        "tecnologies": ["React", "Typescript", "Shadcn"],
+        "tags": ["Web", "Frontend", "Gestión", "React"],
         "deployLink": "https://vetcareufape.vercel.app/"
       },
       {
@@ -283,17 +287,8 @@
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/v1778096521/6d4d2e82-35e8-4970-a9dd-aab97fe93bde.png",
         "description": "Repositorio referente al segundo desafío del programa de becas de Compass UOL. En la aplicación, el usuario podía registrar nuevas flores y gestionar el inventario, además de realizar ventas. El proyecto fue desarrollado utilizando React para el frontend y con diseño responsivo aplicado, con json server para el backend.",
         "githubUrl": "https://github.com/iShouldz/FloriculturaGrupo04",
-        "tecnologies": [
-          "React",
-          "Typescript",
-          "Shadcn"
-        ],
-        "tags": [
-          "Web",
-          "Frontend",
-          "Gestión",
-          "React"
-        ],
+        "tecnologies": ["React", "Typescript", "Shadcn"],
+        "tags": ["Web", "Frontend", "Gestión", "React"],
         "deployLink": "https://floricultura-grupo04-pkbf-ofin807ak-ishouldzs-projects.vercel.app/"
       },
       {
@@ -302,17 +297,8 @@
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/v1778096066/c51748d2-481d-4972-b007-17d1fdaa1a51.png",
         "description": "Repositorio referente al tercer desafío del programa de becas de Compass UOL. En la aplicación, los usuarios podían elegir un modelo de coche, seleccionar el color y los accesorios deseados, y finalizar la compra. El proyecto fue desarrollado utilizando React para el frontend, con json server para el backend.",
         "githubUrl": "https://github.com/iShouldz/DeliveryCar",
-        "tecnologies": [
-          "React",
-          "Typescript",
-          "Shadcn"
-        ],
-        "tags": [
-          "Web",
-          "Frontend",
-          "Gestión",
-          "React"
-        ],
+        "tecnologies": ["React", "Typescript", "Shadcn"],
+        "tags": ["Web", "Frontend", "Gestión", "React"],
         "deployLink": "https://delivery-car.vercel.app/"
       }
     ]
