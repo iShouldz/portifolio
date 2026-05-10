@@ -31,7 +31,7 @@ const FrontPageComponent = ({
           />
 
           <div className="flex flex-1 flex-col items-center justify-center gap-6">
-            <div className="relative flex items-center gap-6">
+            <div className="relative lg:flex items-center gap-6 xs:flex-col">
               <motion.div
                 initial={{ opacity: 0, x: -600, y: 24, scale: 0.96 }}
                 animate={{ opacity: 1, x: 0, y: 0, scale: 1 }}
