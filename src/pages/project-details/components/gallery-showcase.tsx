@@ -1,13 +1,14 @@
 import { motion } from "motion/react"
 import { ProjectGallery } from "@/components/gallery/CloudinaryGallery"
 import { useTranslation } from "react-i18next"
+import { memo } from "react"
 import type { MediaItem } from "@/utils/enum/types"
 
 interface GalleryShowcaseProps {
   slides: MediaItem[]
 }
 
-const GalleryShowcase = ({ slides }: GalleryShowcaseProps) => {
+const GalleryShowcase = memo(function GalleryShowcase({ slides }: GalleryShowcaseProps) {
   const { t } = useTranslation()
   return (
     <section className="relative min-h-screen py-20">
@@ -39,6 +40,6 @@ const GalleryShowcase = ({ slides }: GalleryShowcaseProps) => {
       </div>
     </section>
   )
-}
+})
 
 export default GalleryShowcase

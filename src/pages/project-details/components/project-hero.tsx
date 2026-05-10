@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button"
 import type { IProjectCard } from "@/pages/projects/types"
 import { ArrowUpRight, MoveDown } from "lucide-react"
 import { motion, useScroll, useTransform } from "motion/react"
-import { useRef } from "react"
+import { useRef, memo } from "react"
 import { useTranslation } from "react-i18next"
 
 interface ProjectHeroProps {
@@ -11,11 +11,11 @@ interface ProjectHeroProps {
   currentProject: IProjectCard | undefined
 }
 
-const ProjectHero = ({
+const ProjectHero = memo(function ProjectHero({
   title,
   description,
   currentProject,
-}: ProjectHeroProps) => {
+}: ProjectHeroProps) {
   const { t } = useTranslation()
   const ref = useRef<HTMLDivElement>(null)
 
@@ -118,6 +118,6 @@ const ProjectHero = ({
       </div>
     </motion.div>
   )
-}
+})
 
 export default ProjectHero

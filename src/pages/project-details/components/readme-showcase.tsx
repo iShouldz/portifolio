@@ -6,7 +6,7 @@ import type { IProjectCard } from "@/pages/projects/types"
 import { Button } from "@/components/ui/button"
 import { useTranslation } from "react-i18next"
 import { Badge } from "@/components/ui/badge"
-import type { ReactNode } from "react"
+import { memo, type ReactNode } from "react"
 import type { IGitExtractProps } from "../utils/types"
 
 interface ReadmeShowcaseProps {
@@ -35,7 +35,10 @@ const TopicSection = ({
   </section>
 )
 
-const ReadmeShowcase = ({ repoMeta, currentProject }: ReadmeShowcaseProps) => {
+const ReadmeShowcase = memo(function ReadmeShowcase({
+  repoMeta,
+  currentProject,
+}: ReadmeShowcaseProps) {
   const { t } = useTranslation()
 
   const featureResources =
@@ -218,6 +221,6 @@ const ReadmeShowcase = ({ repoMeta, currentProject }: ReadmeShowcaseProps) => {
       </div>
     </section>
   )
-}
+})
 
 export default ReadmeShowcase

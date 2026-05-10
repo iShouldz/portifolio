@@ -1,5 +1,6 @@
 import { StrictMode } from "react"
 import { createRoot } from "react-dom/client"
+import { HelmetProvider } from "react-helmet-async"
 
 import "./i18n.ts"
 import "./index.css"
@@ -11,11 +12,13 @@ import { Toaster } from "./components/ui/sonner.tsx"
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <ThemeProvider>
-      <TooltipProvider>
-        <RouterProvider router={routes} />
-        <Toaster />
-      </TooltipProvider>
-    </ThemeProvider>
+    <HelmetProvider>
+      <ThemeProvider>
+        <TooltipProvider>
+          <RouterProvider router={routes} />
+          <Toaster />
+        </TooltipProvider>
+      </ThemeProvider>
+    </HelmetProvider>
   </StrictMode>
 )
