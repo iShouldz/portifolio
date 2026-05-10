@@ -4,7 +4,7 @@ import type { ICard } from "../../types"
 const Card = ({ name, description, body, username }: ICard) => {
   return (
     <CardContainer className="inter-var">
-      <CardBody className="group/card relative h-[20rem] w-[35rem] rounded-xl border border-black/[0.1] bg-card p-6 sm:w-[30rem] dark:border-white/[0.2] dark:bg-black dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1]">
+      <CardBody className="group/card relative h-80 w-140 rounded-xl border border-black/10 bg-card p-6 sm:w-120 dark:border-white/20 dark:bg-black dark:hover:shadow-2xl dark:hover:shadow-emerald-500/10">
         <CardItem
           translateZ="50"
           className="flex gap-2 text-xl font-bold text-neutral-600 dark:text-white"
@@ -33,7 +33,7 @@ const Card = ({ name, description, body, username }: ICard) => {
         <CardItem
           as="p"
           translateZ="60"
-          className="mt-2 max-w-sm line-clamp-10 text-sm text-neutral-500 dark:text-neutral-300"
+          className="mt-2 line-clamp-10 max-w-sm text-sm text-neutral-500 dark:text-neutral-300"
         >
           {body}
         </CardItem>

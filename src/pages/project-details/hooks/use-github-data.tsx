@@ -20,7 +20,7 @@ const useGithubData = ({ repoMeta }: IReadmeView) => {
   useEffect(() => {
     if (!repoMeta) return
 
-    getRepoDetailedStats(repoMeta?.owner, repoMeta?.name).then((data) => {
+    getRepoDetailedStats(repoMeta.owner, repoMeta.name).then((data) => {
       setRepoDetails(data)
     })
   }, [repoMeta])

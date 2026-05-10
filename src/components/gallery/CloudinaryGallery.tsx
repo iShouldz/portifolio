@@ -15,8 +15,9 @@ export function ProjectGallery({ mediaList }: { mediaList: MediaItem[] }) {
 
   useEffect(() => {
     const mq = window.matchMedia("(max-width: 768px)")
-    const handler = (e: MediaQueryListEvent | MediaQueryList) =>
+    const handler = (e: MediaQueryListEvent | MediaQueryList) => {
       setIsMobile(e.matches)
+    }
 
     setIsMobile(mq.matches)
     if (mq.addEventListener) mq.addEventListener("change", handler)

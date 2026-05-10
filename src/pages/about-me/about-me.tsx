@@ -232,9 +232,9 @@ const AboutContact = () => {
                   placeholder={t("about.form.subject.placeholder")}
                   className="h-12 rounded-2xl border-white/10 bg-primary/20 px-4 focus:border-emerald-500/50"
                   value={form.subject}
-                  onChange={(e) =>
+                  onChange={(e) => {
                     setForm({ ...form, subject: e.target.value })
-                  }
+                  }}
                   required
                 />
               </div>

@@ -151,7 +151,9 @@ const CardDisplay = ({ cardsRef, cardsLift, cardsSkew }: ICardDisplayProps) => {
         >
           <WobbleCard
             containerClassName="h-full w-full bg-accent min-h-[160px] lg:min-h-[220px] cursor-pointer"
-            onClick={() => navigate("/about")}
+            onClick={() => {
+              navigate(RoutesUrl.ABOUT)
+            }}
           >
             <div className="group flex h-full max-w-sm flex-col justify-between p-6">
               <h2 className="max-w-80 text-left text-base font-semibold tracking-[-0.015em] text-balance text-foreground md:text-xl lg:text-3xl">

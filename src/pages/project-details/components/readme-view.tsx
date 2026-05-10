@@ -28,7 +28,7 @@ const ReadmeView = ({ repoMeta }: IReadmeView) => {
     }
 
     const isImage =
-      key === "src" || (node as { tagName?: string })?.tagName === "img"
+      key === "src" || (node as { tagName?: string }).tagName === "img"
 
     if (isImage) {
       const githubRaw = toGithubRawUrl(url)

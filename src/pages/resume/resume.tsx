@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import { WobbleCard } from "@/components/ui/wobble-card"
 import { useNavigate } from "react-router"
 import useSetupScrool from "@/hooks/use-setup-scrool/use-setup-scrool"
+import { RoutesUrl } from "@/utils/enum/routes.utils"
 
 const Resume = () => {
   const { t } = useTranslation()
@@ -56,7 +57,9 @@ const Resume = () => {
           <WobbleCard
             containerClassName="h-full w-full bg-primary/20 border border-white/10 backdrop-blur-xl rounded-[2rem] cursor-pointer"
             className="flex h-full flex-col justify-between p-6 sm:p-8"
-            onClick={() => navigate("/experiences")}
+            onClick={() => {
+              navigate(RoutesUrl.EXPERIENCIES)
+            }}
           >
             <div className="group flex h-full flex-col justify-between">
               <div className="flex items-start justify-between">
@@ -152,7 +155,9 @@ const Resume = () => {
           <WobbleCard
             containerClassName="h-full w-full bg-emerald-500/5 border border-emerald-500/20 backdrop-blur-xl rounded-[2rem] cursor-pointer"
             className="flex h-full flex-col p-6 sm:p-8"
-            onClick={() => navigate("/projects/one-pace-hub")}
+            onClick={() => {
+              navigate("/projects/one-pace-hub")
+            }}
           >
             <div className="group flex h-full flex-col justify-between">
               <div>

@@ -79,7 +79,9 @@ const Projects = () => {
             <CardFooter>
               <Button
                 variant={"ghost"}
-                onClick={() => handleRedirectToProjectDetails(project.id)}
+                onClick={() => {
+                  handleRedirectToProjectDetails(project.id)
+                }}
               >
                 {t("projects.cards.btn")} →
               </Button>

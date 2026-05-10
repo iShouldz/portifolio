@@ -105,7 +105,11 @@ const OutletPage = () => {
           </DockIcon>
 
           <Separator orientation="vertical" />
-          <DockIcon onClick={() => navigate("/resume")}>
+          <DockIcon
+            onClick={() => {
+              navigate(RoutesUrl.RESUME)
+            }}
+          >
             <Tooltip>
               <TooltipTrigger asChild>
                 <Zap />
@@ -204,13 +208,25 @@ const OutletPage = () => {
                   <DropdownMenuLabel>
                     {t("dock.language.label")}
                   </DropdownMenuLabel>
-                  <DropdownMenuItem onClick={() => handleToggleLanguage("en")}>
+                  <DropdownMenuItem
+                    onClick={() => {
+                      handleToggleLanguage("en")
+                    }}
+                  >
                     {t("dock.language.options.en")}
                   </DropdownMenuItem>
-                  <DropdownMenuItem onClick={() => handleToggleLanguage("es")}>
+                  <DropdownMenuItem
+                    onClick={() => {
+                      handleToggleLanguage("es")
+                    }}
+                  >
                     {t("dock.language.options.es")}
                   </DropdownMenuItem>
-                  <DropdownMenuItem onClick={() => handleToggleLanguage("pt")}>
+                  <DropdownMenuItem
+                    onClick={() => {
+                      handleToggleLanguage("pt")
+                    }}
+                  >
                     {t("dock.language.options.pt")}
                   </DropdownMenuItem>
                 </DropdownMenuGroup>
