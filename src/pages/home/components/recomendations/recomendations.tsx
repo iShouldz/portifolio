@@ -2,9 +2,9 @@ import { Marquee } from "@/components/ui/marquee"
 import { motion } from "motion/react"
 import Card from "../card/card"
 import { useTranslation } from "react-i18next"
-import type { ICard } from "../../types"
+import type { ICard, IRecomendationsProps } from "../../types"
 
-const Recomendations = ({ cardsLift, cardsSkew }: any) => {
+const Recomendations = ({ cardsLift, cardsSkew }: IRecomendationsProps) => {
   const { t } = useTranslation()
 
   const recomendationsList = t("landing-page.recomendations.list", {
@@ -43,7 +43,6 @@ const Recomendations = ({ cardsLift, cardsSkew }: any) => {
           ))}
         </Marquee>
       </div>
-
     </div>
   )
 }

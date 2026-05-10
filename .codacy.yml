@@ -13,6 +13,7 @@ exclude_paths:
   - "src/index.css"
   - "package-lock.json"
   - "package.json"
+  - "src/**/*.test.tsx"
 
 engines:
   eslint:

@@ -34,7 +34,7 @@ const GalleryShowcase = ({ slides }: GalleryShowcaseProps) => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <ProjectGallery mediaArray={slides} />
+          <ProjectGallery mediaList={slides} />
         </motion.div>
       </div>
     </section>

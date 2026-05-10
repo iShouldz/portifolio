@@ -63,7 +63,7 @@ export async function getRepoDetailedStats(
         watchers: repoData.data.watchers_count,
         sizeKb: repoData.data.size,
         homepage: repoData.data.homepage,
-        license: repoData.data.license?.name || "Sem licença",
+        license: repoData.data.license?.name ?? "Sem licença",
       },
       languages: Object.keys(languagesData.data),
       readme: readmeData.data,

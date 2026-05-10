@@ -8,8 +8,9 @@ import { useEffect, useMemo, useState } from "react"
 
 import "yet-another-react-lightbox/styles.css"
 import "yet-another-react-lightbox/plugins/thumbnails.css"
+import type { MediaItem } from "@/utils/enum/types"
 
-export function ProjectGallery({ mediaArray }: { mediaArray: any[] }) {
+export function ProjectGallery({ mediaList }: { mediaList: MediaItem[] }) {
   const [isMobile, setIsMobile] = useState(false)
 
   useEffect(() => {
@@ -105,7 +106,7 @@ export function ProjectGallery({ mediaArray }: { mediaArray: any[] }) {
       <Lightbox
         plugins={plugins}
         styles={stylesProp}
-        slides={mediaArray}
+        slides={mediaList}
         carousel={carouselProps}
         thumbnails={thumbnailsProp}
         inline={{ style: inlineStyle }}
