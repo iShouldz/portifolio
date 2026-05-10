@@ -1,7 +1,14 @@
 import { Dock, DockIcon } from "@/components/ui/dock"
 import { ScrollProgress } from "@/components/ui/scroll-progress"
 import ReactLenis from "lenis/react"
-import { CircleUser, FolderGit2, Home, Library, Zap } from "lucide-react"
+import {
+  CircleUser,
+  FolderGit2,
+  Home,
+  Library,
+  MoveLeft,
+  Zap,
+} from "lucide-react"
 import { Outlet, useNavigate } from "react-router"
 import { motion } from "motion/react"
 import {
@@ -26,7 +33,12 @@ import {
 
 const OutletPage = () => {
   const navigate = useNavigate()
+
   const { i18n, t } = useTranslation()
+
+  const handleBackPage = useCallback(() => {
+    navigate(-1)
+  }, [navigate])
 
   const handleGoToHome = useCallback(() => {
     navigate(RoutesUrl.HOME)
@@ -59,11 +71,17 @@ const OutletPage = () => {
   return (
     <ReactLenis root options={{ lerp: 0.08, duration: 1.2, smoothWheel: true }}>
       <ScroolToTop />
+
       <ScrollProgress className="h-2 bg-linear-to-r from-[#4b6f20] via-[#32b3af] to-[#84dbba] dark:from-[#152312] dark:via-[#84dbba] dark:to-[#32b3af]" />
       <main className="relative min-h-screen overflow-x-hidden bg-[radial-gradient(circle_at_top_left,rgba(75,111,32,0.12),transparent_25%),radial-gradient(circle_at_top_right,rgba(50,179,175,0.12),transparent_28%),linear-gradient(180deg,#d4d5d0,#c5c6bf)] text-foreground dark:bg-[radial-gradient(circle_at_top_left,rgba(132,219,186,0.15),transparent_25%),radial-gradient(circle_at_top_right,rgba(50,179,175,0.15),transparent_28%),linear-gradient(180deg,#152312,#0e1707)]">
         <Outlet />
       </main>
-
+      {window.location.pathname !== RoutesUrl.HOME && (
+        <MoveLeft
+          onClick={handleBackPage}
+          className="absolute top-10 left-10 cursor-pointer"
+        />
+      )}
       <motion.div
         initial={{ opacity: 0, x: 0, y: 60, scale: 0.96 }}
         animate={{ opacity: 1, x: 0, y: 0, scale: 1 }}
