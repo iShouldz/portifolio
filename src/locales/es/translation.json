@@ -113,7 +113,7 @@
         "title": "Portafolio",
         "description": "Mi portafolio personal, donde agrego mis proyectos y habilidades.",
         "githubUrl": "https://github.com/iShouldz/portifolio",
-        "img": "https://res.cloudinary.com/dxerrpspz/image/upload/v1778094315/6e74906a-8e4c-432c-815e-68055465ab8a.png",
+        "img": "https://res.cloudinary.com/dxerrpspz/image/upload/f_auto,q_auto/v1778094315/6e74906a-8e4c-432c-815e-68055465ab8a.png",
         "tecnologies": ["React", "Typescript", "SEO", "UX"],
         "tags": ["Web", "Frontend", "Personal"]
       },
@@ -205,7 +205,7 @@
         "title": "Treine-Se",
         "description": "Aplicación de fitness construida en React usando el puente web de Capacitor para adaptarla a móvil.",
         "githubUrl": "https://github.com/iShouldz/treine-se",
-        "img": "https://res.cloudinary.com/dxerrpspz/image/upload/v1778095392/treine-se_qyklbm.png",
+        "img": "https://res.cloudinary.com/dxerrpspz/image/upload/f_auto,q_auto/v1778095392/treine-se_qyklbm.png",
         "resources": [
           {
             "type": "product",
@@ -266,7 +266,7 @@
         "title": "Adedonha",
         "description": "Adedonha es una versión digital del clásico juego \"Stop/Adedonha\", centrada en partidas rápidas entre amigos. El proyecto busca mantener la dinámica tradicional del juego de papel y lápiz, pero con la incorporación de un temporizador, dibujo de letras, control de puntuación e historial de partidas.",
         "githubUrl": "https://github.com/iShouldz/adedonha",
-        "img": "https://res.cloudinary.com/dxerrpspz/image/upload/v1778094983/adedonha_tmozpn.png",
+        "img": "https://res.cloudinary.com/dxerrpspz/image/upload/f_auto,q_auto/v1778094983/adedonha_tmozpn.png",
         "tecnologies": ["React", "Typescript", "Shadcn", "IA"],
         "tags": ["Web", "Frontend", "Juegos", "Personal", "Mobile First"],
         "deployLink": "https://adedonha.vercel.app/",
@@ -351,7 +351,7 @@
       {
         "id": "vet-care",
         "title": "Vet Care",
-        "img": "https://res.cloudinary.com/dxerrpspz/image/upload/v1778094396/a9efa034-f169-467f-857a-41d60f2df409.png",
+        "img": "https://res.cloudinary.com/dxerrpspz/image/upload/f_auto,q_auto/v1778094396/a9efa034-f169-467f-857a-41d60f2df409.png",
         "description": "Proyecto académico para la gestión de cuidados veterinarios.",
         "githubUrl": "https://github.com/iShouldz/vet-care",
         "tecnologies": ["React", "Typescript", "Shadcn"],
@@ -361,7 +361,7 @@
       {
         "id": "floricultura",
         "title": "Floricultura",
-        "img": "https://res.cloudinary.com/dxerrpspz/image/upload/v1778096521/6d4d2e82-35e8-4970-a9dd-aab97fe93bde.png",
+        "img": "https://res.cloudinary.com/dxerrpspz/image/upload/f_auto,q_auto/v1778096521/6d4d2e82-35e8-4970-a9dd-aab97fe93bde.png",
         "description": "Repositorio referente al segundo desafío del programa de becas de Compass UOL. En la aplicación, el usuario podía registrar nuevas flores y gestionar el inventario, además de realizar ventas. El proyecto fue desarrollado utilizando React para el frontend y con diseño responsivo aplicado, con json server para el backend.",
         "githubUrl": "https://github.com/iShouldz/FloriculturaGrupo04",
         "tecnologies": ["React", "Typescript", "Shadcn"],
@@ -371,7 +371,7 @@
       {
         "id": "delivery-car",
         "title": "Delivery Car",
-        "img": "https://res.cloudinary.com/dxerrpspz/image/upload/v1778096066/c51748d2-481d-4972-b007-17d1fdaa1a51.png",
+        "img": "https://res.cloudinary.com/dxerrpspz/image/upload/f_auto,q_auto/v1778096066/c51748d2-481d-4972-b007-17d1fdaa1a51.png",
         "description": "Repositorio referente al tercer desafío del programa de becas de Compass UOL. En la aplicación, los usuarios podían elegir un modelo de coche, seleccionar el color y los accesorios deseados, y finalizar la compra. El proyecto fue desarrollado utilizando React para el frontend, con json server para el backend.",
         "githubUrl": "https://github.com/iShouldz/DeliveryCar",
         "tecnologies": ["React", "Typescript", "Shadcn"],

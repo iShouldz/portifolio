@@ -87,7 +87,7 @@ const AboutContact = () => {
             <div className="relative flex h-full flex-col items-center justify-end">
               <div className="absolute inset-0 z-10 bg-linear-to-t from-black/80 via-black/20 to-transparent" />
               <img
-                src="https://res.cloudinary.com/dxerrpspz/image/upload/v1778250217/pedro-perfil_xrsaoq.jpg"
+                src="https://res.cloudinary.com/dxerrpspz/image/upload/f_auto,q_auto/v1778250217/pedro-perfil_xrsaoq.jpg"
                 alt="Pedro Souza"
                 className="absolute inset-0 z-0 h-full w-full object-cover object-top grayscale-[0.3] transition-all duration-700 hover:scale-110 hover:grayscale-0"
               />

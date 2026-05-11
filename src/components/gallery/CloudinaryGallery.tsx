@@ -56,6 +56,7 @@ export function ProjectGallery({ mediaList }: { mediaList: MediaItem[] }) {
     return {
       padding: 0,
       spacing: 0,
+      preload: 1,
       imageFit: isMobile ? ("cover" as const) : ("contain" as const),
     }
   }, [isMobile])
