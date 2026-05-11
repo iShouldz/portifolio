@@ -725,11 +725,11 @@
       "company": {
         "title": "Compass UOL",
         "role": "Desarrollador Front-end Pleno",
-        "description": "Actuando en la cuenta de <1>Vivo (Telefónica)</1>, enfocado en arquitectura de componentes escalables e interfaces de alto rendimiento en el ecosistema B2B/B2C."
+        "description": "Desarrollador Frontend en el sector de Fintech de <1>Vivo</1>, enfocado en interfaces de alto rendimiento y componentes modulares. Implementación de entregas mediante prácticas de Clean Code y una sólida organización de pruebas, incluyendo pruebas unitarias, de componentes con Cypress y pruebas de mutación con Stryker para asegurar la máxima confiabilidad del código en producción."
       },
       "skills": {
         "title": "Principales conocimientos técnicos",
-        "description": "Algunas de las tecnologías y herramientas con las que tengo experiencia. Especialista en construir experiencias web fluidas con integraciones robustas, animaciones basadas en física y tipografía rigorosa."
+        "description": "Especialista en React, TypeScript y Next.js, con enfoque en microfrontends y gestión de estado con Zustand y TanStack Query. Dominio de estilización con Tailwind CSS y Shadcn/UI, priorizando Clean Code y resiliencia mediante una amplia cobertura de pruebas con Jest, Vitest, Cypress y Stryker (Mutation Testing)."
       },
       "education": {
         "certification": "Certificación",

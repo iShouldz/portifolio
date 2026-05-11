@@ -726,11 +726,11 @@
       "company": {
         "title": "Compass UOL",
         "role": "Mid-level Front-end Developer",
-        "description": "Working on the <1>Vivo (Telefônica)</1> account, focused on scalable component architecture and high-performance interfaces in the B2B/B2C ecosystem."
+        "description": "Frontend Developer in the Fintech sector at <1>Vivo</1>, focusing on high-performance interfaces and modular components. Implementing deliveries through Clean Code practices and a solid testing organization, including unit tests, component testing with Cypress, and mutation testing with Stryker to ensure maximum code reliability in production."
       },
       "skills": {
         "title": "Core technical skills",
-        "description": "Some of the technologies and tools I have experience with. Specialist in building fluid web experiences with robust integrations, physics-based animations, and rigorous typography."
+        "description": "Specialist in React, TypeScript, and Next.js, focusing on microfrontends and state management with Zustand and TanStack Query. Proficient in styling with Tailwind CSS and Shadcn/UI, prioritizing Clean Code and resilience through extensive test coverage with Jest, Vitest, Cypress, and Stryker (Mutation Testing)."
       },
       "education": {
         "certification": "Certification",
