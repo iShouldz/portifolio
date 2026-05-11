@@ -114,17 +114,8 @@
         "description": "Mi portafolio personal, donde agrego mis proyectos y habilidades.",
         "githubUrl": "https://github.com/iShouldz/portifolio",
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/f_auto,q_auto/v1778094315/6e74906a-8e4c-432c-815e-68055465ab8a.png",
-        "tecnologies": [
-          "React",
-          "Typescript",
-          "SEO",
-          "UX"
-        ],
-        "tags": [
-          "Web",
-          "Frontend",
-          "Personal"
-        ]
+        "tecnologies": ["React", "Typescript", "SEO", "UX"],
+        "tags": ["Web", "Frontend", "Personal"]
       },
       {
         "id": "one-pace-hub",
@@ -206,14 +197,7 @@
           "shadcn/ui",
           "GitHub Actions (workflow de actualización de caché)"
         ],
-        "tags": [
-          "Web",
-          "Frontend",
-          "Personal",
-          "One Pace",
-          "SEO",
-          "Scraping"
-        ],
+        "tags": ["Web", "Frontend", "Personal", "One Pace", "SEO", "Scraping"],
         "deployLink": "one-pace-br.pages.dev"
       },
       {
@@ -274,20 +258,8 @@
             "description": "Datos importantes como perfil, entrenamientos y chat se mantienen persistidos localmente, con integración a servicios externos para autenticación, IA y funciones nativas móviles, incluyendo notificaciones locales."
           }
         ],
-        "tecnologies": [
-          "React",
-          "Capacitor JS",
-          "Android Studio",
-          "IA"
-        ],
-        "tags": [
-          "Web",
-          "Frontend",
-          "Webview",
-          "Web Bridge",
-          "Fitness",
-          "IA"
-        ]
+        "tecnologies": ["React", "Capacitor JS", "Android Studio", "IA"],
+        "tags": ["Web", "Frontend", "Webview", "Web Bridge", "Fitness", "IA"]
       },
       {
         "id": "adedonha",
@@ -295,19 +267,8 @@
         "description": "Adedonha es una versión digital del clásico juego \"Stop/Adedonha\", centrada en partidas rápidas entre amigos. El proyecto busca mantener la dinámica tradicional del juego de papel y lápiz, pero con la incorporación de un temporizador, dibujo de letras, control de puntuación e historial de partidas.",
         "githubUrl": "https://github.com/iShouldz/adedonha",
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/f_auto,q_auto/v1778094983/adedonha_tmozpn.png",
-        "tecnologies": [
-          "React",
-          "Typescript",
-          "Shadcn",
-          "IA"
-        ],
-        "tags": [
-          "Web",
-          "Frontend",
-          "Juegos",
-          "Personal",
-          "Mobile First"
-        ],
+        "tecnologies": ["React", "Typescript", "Shadcn", "IA"],
+        "tags": ["Web", "Frontend", "Juegos", "Personal", "Mobile First"],
         "deployLink": "https://adedonha.vercel.app/",
         "resources": [
           {
@@ -393,17 +354,8 @@
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/f_auto,q_auto/v1778094396/a9efa034-f169-467f-857a-41d60f2df409.png",
         "description": "La interfaz web de VetCarePro es una plataforma para la gestión de clínicas veterinarias centrada en las operaciones diarias: atención al paciente, programación de citas, registro, personal, finanzas y ventas.",
         "githubUrl": "https://github.com/iShouldz/toDeploy",
-        "tecnologies": [
-          "React",
-          "Typescript",
-          "Shadcn"
-        ],
-        "tags": [
-          "Web",
-          "Frontend",
-          "Gestión",
-          "React"
-        ],
+        "tecnologies": ["React", "Typescript", "Shadcn"],
+        "tags": ["Web", "Frontend", "Gestión", "React"],
         "deployLink": "https://vetcareufape.vercel.app/",
         "resources": [
           {
@@ -484,16 +436,54 @@
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/f_auto,q_auto/v1778096521/6d4d2e82-35e8-4970-a9dd-aab97fe93bde.png",
         "description": "Repositorio referente al segundo desafío del programa de becas de Compass UOL. En la aplicación, el usuario podía registrar nuevas flores y gestionar el inventario, además de realizar ventas. El proyecto fue desarrollado utilizando React para el frontend y con diseño responsivo aplicado, con json server para el backend.",
         "githubUrl": "https://github.com/iShouldz/FloriculturaGrupo04",
-        "tecnologies": [
-          "React",
-          "Typescript",
-          "Shadcn"
-        ],
-        "tags": [
-          "Web",
-          "Frontend",
-          "Gestión",
-          "React"
+        "tecnologies": ["React", "Typescript", "Shadcn"],
+        "tags": ["Web", "Frontend", "Gestión", "React"],
+        "resources": [
+          {
+            "type": "feature",
+            "title": "Catálogo de plantas con búsqueda y filtros",
+            "description": "La página de productos presenta la lista completa de plantas y hace que la navegación sea más práctica con búsqueda por nombre y filtro por categoría (interior/exterior), facilitando encontrar opciones específicas sin tener que desplazarse por todo el sitio."
+          },
+          {
+            "type": "feature",
+            "title": "Escaparate en el inicio con destacados y promociones",
+            "description": "En la pantalla inicial, el sistema separa los artículos más populares y también los que están en oferta, funcionando como un escaparate rápido para quienes quieren descubrir plantas destacadas."
+          },
+          {
+            "type": "feature",
+            "title": "Detalles completos de la planta",
+            "description": "Cada planta tiene su propia página con foto, subtítulo, etiquetas, precio con descuento cuando existe, lista de características y descripción, ayudando al usuario a decidir con más seguridad."
+          },
+          {
+            "type": "feature",
+            "title": "Registro de plantas con validación",
+            "description": "Existe un formulario de registro de nuevas plantas con validación de campos obligatorios, precio, tipo y descripción. Tras guardar, aparece un modal de confirmación con un acceso directo para abrir la planta recién creada."
+          },
+          {
+            "type": "feature",
+            "title": "Flujo de autenticación para acceso al registro",
+            "description": "El acceso al área de registro de plantas está condicionado al inicio de sesión. Cuando el usuario no está autenticado, la aplicación lo redirige a la pantalla de login antes de habilitar el formulario."
+          },
+          {
+            "type": "feature",
+            "title": "Creación de cuenta de usuario",
+            "description": "El proyecto también ofrece una pantalla de registro (sign-up) para nuevos usuarios, con validación básica de email y contraseña y envío de datos al back-end."
+          },
+          {
+            "type": "feature",
+            "title": "Contenido educativo sobre el cuidado de plantas",
+            "description": "Además de la parte comercial, el inicio incluye una sección con pautas de cuidado (riego, luz y nutrientes), aportando un lado más informativo para quienes están empezando."
+          },
+          {
+            "type": "product",
+            "title": "Plantas ornamentales para ambientes interiores y exteriores",
+            "description": "El catálogo reúne especies variadas, con artículos orientados tanto a ambientes internos como externos, incluyendo suculentas, flores, árboles y hierbas aromáticas."
+          },
+          {
+            "type": "product",
+            "title": "Artículos con y sin promoción en el mismo catálogo",
+            "description": "Los productos están organizados con identificación de ofertas, lo que permite trabajar con promociones semanales sin tener que separarlos en sistemas diferentes."
+          }
         ],
         "deployLink": "https://floricultura-grupo04-pkbf-ofin807ak-ishouldzs-projects.vercel.app/"
       },
@@ -503,17 +493,8 @@
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/f_auto,q_auto/v1778096066/c51748d2-481d-4972-b007-17d1fdaa1a51.png",
         "description": "Repositorio referente al tercer desafío del programa de becas de Compass UOL. En la aplicación, los usuarios podían elegir un modelo de coche, seleccionar el color y los accesorios deseados, y finalizar la compra. El proyecto fue desarrollado utilizando React para el frontend, con json server para el backend.",
         "githubUrl": "https://github.com/iShouldz/DeliveryCar",
-        "tecnologies": [
-          "React",
-          "Typescript",
-          "Shadcn"
-        ],
-        "tags": [
-          "Web",
-          "Frontend",
-          "Gestión",
-          "React"
-        ],
+        "tecnologies": ["React", "Typescript", "Shadcn"],
+        "tags": ["Web", "Frontend", "Gestión", "React"],
         "deployLink": "https://delivery-car.vercel.app/"
       }
     ]

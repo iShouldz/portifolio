@@ -115,17 +115,8 @@
         "description": "My personal portfolio, where I aggregate my projects and skills.",
         "githubUrl": "https://github.com/iShouldz/portifolio",
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/f_auto,q_auto/v1778094315/6e74906a-8e4c-432c-815e-68055465ab8a.png",
-        "tecnologies": [
-          "React",
-          "Typescript",
-          "SEO",
-          "UX"
-        ],
-        "tags": [
-          "Web",
-          "Frontend",
-          "Personal"
-        ]
+        "tecnologies": ["React", "Typescript", "SEO", "UX"],
+        "tags": ["Web", "Frontend", "Personal"]
       },
       {
         "id": "one-pace-hub",
@@ -207,14 +198,7 @@
           "shadcn/ui",
           "GitHub Actions (cache update workflow)"
         ],
-        "tags": [
-          "Web",
-          "Frontend",
-          "Personal",
-          "One Pace",
-          "SEO",
-          "Scraping"
-        ],
+        "tags": ["Web", "Frontend", "Personal", "One Pace", "SEO", "Scraping"],
         "deployLink": "one-pace-br.pages.dev"
       },
       {
@@ -275,20 +259,8 @@
             "description": "Important data such as profile, workouts, and chat are persisted locally, with integration to external services for authentication, AI, and native mobile features, including local notifications."
           }
         ],
-        "tecnologies": [
-          "React",
-          "Capacitor JS",
-          "Android Studio",
-          "IA"
-        ],
-        "tags": [
-          "Web",
-          "Frontend",
-          "Webview",
-          "Web Bridge",
-          "Fitness",
-          "IA"
-        ]
+        "tecnologies": ["React", "Capacitor JS", "Android Studio", "IA"],
+        "tags": ["Web", "Frontend", "Webview", "Web Bridge", "Fitness", "IA"]
       },
       {
         "id": "adedonha",
@@ -296,19 +268,8 @@
         "description": "Adedonha is a digital version of the classic game \"Stop/Adedonha,\" focusing on quick matches between friends. The project aims to maintain the traditional dynamics of paper and pen, but with the support of a timer, letter drawing, score control, and match history.",
         "githubUrl": "https://github.com/iShouldz/adedonha",
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/f_auto,q_auto/v1778094983/adedonha_tmozpn.png",
-        "tecnologies": [
-          "React",
-          "Typescript",
-          "Shadcn",
-          "IA"
-        ],
-        "tags": [
-          "Web",
-          "Frontend",
-          "Games",
-          "Personal",
-          "Mobile First"
-        ],
+        "tecnologies": ["React", "Typescript", "Shadcn", "IA"],
+        "tags": ["Web", "Frontend", "Games", "Personal", "Mobile First"],
         "deployLink": "https://adedonha.vercel.app/",
         "resources": [
           {
@@ -394,17 +355,8 @@
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/f_auto,q_auto/v1778094396/a9efa034-f169-467f-857a-41d60f2df409.png",
         "description": "VetCarePro's web front-end, a platform for managing veterinary clinics with a focus on daily operations: patient care, scheduling, registration, staff, finances, and sales.",
         "githubUrl": "https://github.com/iShouldz/toDeploy",
-        "tecnologies": [
-          "React",
-          "Typescript",
-          "Shadcn"
-        ],
-        "tags": [
-          "Web",
-          "Frontend",
-          "Management",
-          "React"
-        ],
+        "tecnologies": ["React", "Typescript", "Shadcn"],
+        "tags": ["Web", "Frontend", "Management", "React"],
         "deployLink": "https://vetcareufape.vercel.app/",
         "resources": [
           {
@@ -485,16 +437,54 @@
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/f_auto,q_auto/v1778096521/6d4d2e82-35e8-4970-a9dd-aab97fe93bde.png",
         "description": "Repository for the second challenge of the Compass UOL scholarship program. In the application, the user could register new flowers and manage inventory, as well as make sales. The project was developed using React for the frontend with responsiveness applied, and json server for the backend.",
         "githubUrl": "https://github.com/iShouldz/FloriculturaGrupo04",
-        "tecnologies": [
-          "React",
-          "Typescript",
-          "Shadcn"
-        ],
-        "tags": [
-          "Web",
-          "Frontend",
-          "Management",
-          "React"
+        "tecnologies": ["React", "Typescript", "Shadcn"],
+        "tags": ["Web", "Frontend", "Management", "React"],
+        "resources": [
+          {
+            "type": "feature",
+            "title": "Plant catalog with search and filters",
+            "description": "The products page features a full list of plants and makes navigation more practical with name search and category filtering (indoor/outdoor), making it easy to find specific options without endless scrolling."
+          },
+          {
+            "type": "feature",
+            "title": "Home page showcase with highlights and deals",
+            "description": "On the home screen, the system separates the most popular items as well as those on sale, acting as a quick showcase for anyone looking to discover featured plants."
+          },
+          {
+            "type": "feature",
+            "title": "Complete plant details",
+            "description": "Each plant has its own page with a photo, subtitle, tags, discounted price (when applicable), features list, and description, helping the user decide with more confidence."
+          },
+          {
+            "type": "feature",
+            "title": "Plant registration with validation",
+            "description": "There is a registration form for new plants with field validation for required data, price, type, and description. After saving, a confirmation modal appears with a shortcut to open the newly created plant."
+          },
+          {
+            "type": "feature",
+            "title": "Authentication flow for registration access",
+            "description": "Access to the plant registration area is restricted to logged-in users. When the user is not authenticated, the application redirects to the login screen before releasing the form."
+          },
+          {
+            "type": "feature",
+            "title": "User account creation",
+            "description": "The project also offers a sign-up screen for new users, with basic email and password validation and data submission to the back-end."
+          },
+          {
+            "type": "feature",
+            "title": "Educational plant care content",
+            "description": "Beyond the commercial side, the home page includes a section with care guidelines (watering, light, and nutrients), providing an informative edge for beginners."
+          },
+          {
+            "type": "product",
+            "title": "Ornamental plants for indoor and outdoor environments",
+            "description": "The catalog brings together varied species, with items focused on both indoor and outdoor settings, including succulents, flowers, trees, and aromatic herbs."
+          },
+          {
+            "type": "product",
+            "title": "Promotional and non-promotional items in the same catalog",
+            "description": "Products are organized with sale identification, allowing for weekly offers without separating them into different systems."
+          }
         ],
         "deployLink": "https://floricultura-grupo04-pkbf-ofin807ak-ishouldzs-projects.vercel.app/"
       },
@@ -504,17 +494,8 @@
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/f_auto,q_auto/v1778096066/c51748d2-481d-4972-b007-17d1fdaa1a51.png",
         "description": "Repository for the third challenge of the Compass UOL scholarship program. In the application, users could choose a car model, select the color and desired accessories, and finalize the purchase. The project was developed using React for the frontend, with json server for the backend.",
         "githubUrl": "https://github.com/iShouldz/DeliveryCar",
-        "tecnologies": [
-          "React",
-          "Typescript",
-          "Shadcn"
-        ],
-        "tags": [
-          "Web",
-          "Frontend",
-          "Management",
-          "React"
-        ],
+        "tecnologies": ["React", "Typescript", "Shadcn"],
+        "tags": ["Web", "Frontend", "Management", "React"],
         "deployLink": "https://delivery-car.vercel.app/"
       }
     ]
@@ -594,12 +575,7 @@
         "period": "September 2023 - September 2024",
         "location": "Garanhuns, PE",
         "description": "Research: PIBIC - Vulnerabilities caused by commits. Supervised by Professor Dr. Rodrigo Andrade. The project aims to analyze the relationship between code commits and the introduction of software vulnerabilities. Using data mining techniques and repository analysis, the study seeks to identify patterns and factors that contribute to the occurrence of security flaws, with the goal of providing insights for safer development practices.",
-        "tech": [
-          "Git",
-          "Python",
-          "Software Security",
-          "Vulnerability Analysis"
-        ]
+        "tech": ["Git", "Python", "Software Security", "Vulnerability Analysis"]
       },
       {
         "company": "UFAPE",

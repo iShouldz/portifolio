@@ -3,6 +3,7 @@ import { ScrollProgress } from "@/components/ui/scroll-progress"
 import ReactLenis from "lenis/react"
 import {
   CircleUser,
+  Download,
   FolderGit2,
   Home,
   Library,
@@ -150,6 +151,20 @@ const OutletPage = () => {
               </TooltipTrigger>
               <TooltipContent>
                 <p>{t("dock.about")}</p>
+              </TooltipContent>
+            </Tooltip>
+          </DockIcon>
+
+          <DockIcon>
+            <Tooltip>
+              <a href="/Curriculo.pdf" download="Curriculo.pdf">
+                <TooltipTrigger asChild>
+                  <Download />
+                </TooltipTrigger>
+              </a>
+
+              <TooltipContent>
+                <p>{t("dock.curriculum")}</p>
               </TooltipContent>
             </Tooltip>
           </DockIcon>

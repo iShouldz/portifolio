@@ -458,7 +458,54 @@
         "githubUrl": "https://github.com/iShouldz/FloriculturaGrupo04",
         "tecnologies": ["React", "Typescript", "Shadcn"],
         "tags": ["Web", "Frontend", "Gereciamento", "React"],
-        "deployLink": "https://floricultura-grupo04-pkbf-ofin807ak-ishouldzs-projects.vercel.app/"
+        "deployLink": "https://floricultura-grupo04-pkbf-ofin807ak-ishouldzs-projects.vercel.app/",
+        "resources": [
+          {
+            "type": "feature",
+            "title": "Catálogo de plantas com busca e filtro",
+            "description": "A página de produtos traz a lista completa de plantas e deixa a navegação mais prática com busca por nome e filtro por categoria (indoor/outdoor), facilitando encontrar opções específicas sem precisar rolar tudo."
+          },
+          {
+            "type": "feature",
+            "title": "Vitrine na home com destaques e promoções",
+            "description": "Na tela inicial, o sistema separa os itens mais populares e também os que estão em promoção, funcionando como uma vitrine rápida para quem quer descobrir plantas em destaque."
+          },
+          {
+            "type": "feature",
+            "title": "Detalhes completos da planta",
+            "description": "Cada planta tem uma página própria com foto, subtítulo, etiquetas, preço com desconto quando existe, lista de características e descrição, ajudando o usuário a decidir com mais segurança."
+          },
+          {
+            "type": "feature",
+            "title": "Cadastro de planta com validação",
+            "description": "Existe um formulário de registro de novas plantas com validação de campos obrigatórios, preço, tipo e descrição. Após salvar, aparece um modal de confirmação com atalho para abrir a planta recém-criada."
+          },
+          {
+            "type": "feature",
+            "title": "Fluxo de autenticação para acesso ao registro",
+            "description": "O acesso à área de cadastro de plantas é condicionado ao login. Quando o usuário não está autenticado, a aplicação direciona para a tela de login antes de liberar o formulário."
+          },
+          {
+            "type": "feature",
+            "title": "Criação de conta de usuário",
+            "description": "O projeto também oferece tela de sign-up para novo usuário, com validação básica de email e senha e envio dos dados para o backend."
+          },
+          {
+            "type": "feature",
+            "title": "Conteúdo educativo de cuidados com plantas",
+            "description": "Além da parte comercial, a home inclui uma seção com orientações de cuidados (rega, luz e nutrientes), trazendo um lado mais informativo para quem está começando."
+          },
+          {
+            "type": "product",
+            "title": "Plantas ornamentais para ambiente interno e externo",
+            "description": "O catálogo reúne espécies variadas, com itens voltados tanto para ambientes internos quanto externos, incluindo suculentas, flores, árvores e ervas aromáticas."
+          },
+          {
+            "type": "product",
+            "title": "Itens com e sem promoção no mesmo catálogo",
+            "description": "Os produtos são organizados com identificação de promoções, permitindo trabalhar com ofertas semanais sem separar em sistemas diferentes."
+          }
+        ]
       },
       {
         "id": "delivery-car",

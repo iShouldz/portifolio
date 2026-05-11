@@ -228,5 +228,42 @@
         "src": "https://res.cloudinary.com/dxerrpspz/image/upload/v1778510873/f8a78c3b-d41a-465a-8956-6409ecb0a9f9.png"
       }
     ]
+  },
+  {
+    "id": "floricultura",
+    "mediaList": [
+      {
+        "type": "image",
+        "src": "https://res.cloudinary.com/dxerrpspz/image/upload/v1778535360/37d9deea-1b73-4649-aca2-7fc77dffc9e6.png"
+      },
+      {
+        "type": "image",
+        "src": "https://res.cloudinary.com/dxerrpspz/image/upload/v1778535387/c8e14d29-1405-42a2-912f-e5e78b5bf632.png"
+      },
+      {
+        "type": "image",
+        "src": "https://res.cloudinary.com/dxerrpspz/image/upload/v1778535559/a4e7bf25-cfee-49b7-9dad-0e0659c458c7.png"
+      },
+      {
+        "type": "image",
+        "src": "https://res.cloudinary.com/dxerrpspz/image/upload/v1778536772/1f41160b-540d-4255-a67d-468a91917b93.png"
+      },
+      {
+        "type": "image",
+        "src": "https://res.cloudinary.com/dxerrpspz/image/upload/v1778536790/7ddf0d3e-27b5-49eb-bafc-e59183c3f85b.png"
+      },
+      {
+        "type": "image",
+        "src": "https://res.cloudinary.com/dxerrpspz/image/upload/v1778536810/d9ef9cf0-8d65-4c5d-ac3a-6e42df6a5d5f.png"
+      },
+      {
+        "type": "image",
+        "src": "https://res.cloudinary.com/dxerrpspz/image/upload/v1778536814/cd111ac9-6d42-481a-935b-7d4057eeec22.png"
+      },
+      {
+        "type": "image",
+        "src": "https://res.cloudinary.com/dxerrpspz/image/upload/v1778536817/9271b2e7-9462-4b55-832f-bdae52a28420.png"
+      }
+    ]
   }
 ]
