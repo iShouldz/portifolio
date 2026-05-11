@@ -1,7 +1,7 @@
 import { motion, useScroll, useTransform, type Variants } from "motion/react"
 import { WobbleCard } from "@/components/ui/wobble-card"
 import { useNavigate } from "react-router"
-import { useMemo, useRef } from "react"
+import { useRef } from "react"
 import { Download, MoveDown } from "lucide-react"
 import { useTranslation } from "react-i18next"
 import { RoutesUrl } from "@/utils/enum/routes.utils"
