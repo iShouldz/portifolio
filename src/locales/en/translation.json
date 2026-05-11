@@ -770,7 +770,7 @@
       "description": "Fill in the information below and I will get in touch soon.",
       "name": {
         "label": "What's your email?",
-        "placeholder": "Enter your name"
+        "placeholder": "Enter your email"
       },
       "subject": {
         "label": "What's the subject?",

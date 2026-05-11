@@ -769,7 +769,7 @@
       "description": "Completa la información a continuación y me pondré en contacto pronto.",
       "name": {
         "label": "¿Cuál es tu email?",
-        "placeholder": "Escribe tu nombre"
+        "placeholder": "Escribe tu email"
       },
       "subject": {
         "label": "¿Cuál es el asunto?",
