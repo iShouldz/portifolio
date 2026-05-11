@@ -15,7 +15,7 @@ const Recomendations = ({ cardsLift, cardsSkew }: IRecomendationsProps) => {
   const secondRow = recomendationsList.slice(recomendationsList.length / 2)
 
   return (
-    <div className="relative mt-32 mb-20 flex min-h-[120vh] w-full flex-col items-center justify-center gap-8 overflow-hidden">
+    <div className="relative mt-32 mb-20 flex min-h-[150vh] w-full flex-col items-center justify-center gap-8 overflow-hidden">
       <motion.div
         initial={{ opacity: 0, x: -80 }}
         whileInView={{ opacity: 1, x: 0 }}
