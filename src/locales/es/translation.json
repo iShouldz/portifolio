@@ -495,7 +495,60 @@
         "githubUrl": "https://github.com/iShouldz/DeliveryCar",
         "tecnologies": ["React", "Typescript", "Shadcn"],
         "tags": ["Web", "Frontend", "Gestión", "React"],
-        "deployLink": "https://delivery-car.vercel.app/"
+        "deployLink": "https://delivery-car.vercel.app/",
+
+        "resources": [
+          {
+            "type": "product",
+            "title": "Plataforma web de movilidad MyRide",
+            "description": "Aplicación para conectar pasajeros y conductores en un flujo sencillo de viajes, con enfoque en registro, estimación de trayecto y gestión de datos en el panel."
+          },
+          {
+            "type": "feature",
+            "title": "Página de inicio con búsqueda rápida de trayecto",
+            "description": "Pantalla principal con formulario directo para ingresar origen y destino, además de un acceso directo para abrir la ruta en Google Maps."
+          },
+          {
+            "type": "feature",
+            "title": "Simulación de viaje con cálculo de distancia y precio",
+            "description": "Flujo de cotización que recibe origen y destino por país/ciudad, calcula la distancia en KM y muestra el valor estimado del viaje."
+          },
+          {
+            "type": "feature",
+            "title": "Registro de conductor con validación de datos",
+            "description": "Formulario completo com validación de nombre, correo electrónico, código, país y ciudad, incluyendo la opción de informar la categoría del vehículo."
+          },
+          {
+            "type": "feature",
+            "title": "Confirmación de envío con revisión de información",
+            "description": "Después del registro, el sistema muestra un resumen de los datos enviados y permite corregir los campos principales antes de continuar."
+          },
+          {
+            "type": "feature",
+            "title": "Dashboard de conductores registrados",
+            "description": "Panel que lista a los conductores, muestra los datos de perfil en un modal y permite eliminar registros de forma rápida."
+          },
+          {
+            "type": "feature",
+            "title": "Autenticación con login, registro y rutas protegidas",
+            "description": "Sistema básico de inicio de sesión y registro mediante modal, con control de acceso para páginas internas como el dashboard y el perfil."
+          },
+          {
+            "type": "feature",
+            "title": "Perfil de usuario con notificaciones",
+            "description": "Área de perfil con estado de la cuenta, historial de notificaciones del sistema, cierre de sesión y opción de eliminación de cuenta."
+          },
+          {
+            "type": "feature",
+            "title": "Página de app móvil con valoración",
+            "description": "Sección dedicada a la aplicación móvil con botón para la tienda y componente de valoración por estrellas."
+          },
+          {
+            "type": "feature",
+            "title": "Página de contacto con canales del autor",
+            "description": "Pantalla de contacto con presentación del desarrollador y enlaces directos a GitHub y LinkedIn."
+          }
+        ]
       }
     ]
   },

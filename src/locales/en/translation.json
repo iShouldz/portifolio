@@ -496,7 +496,60 @@
         "githubUrl": "https://github.com/iShouldz/DeliveryCar",
         "tecnologies": ["React", "Typescript", "Shadcn"],
         "tags": ["Web", "Frontend", "Management", "React"],
-        "deployLink": "https://delivery-car.vercel.app/"
+        "deployLink": "https://delivery-car.vercel.app/",
+
+        "resources": [
+          {
+            "type": "product",
+            "title": "MyRide mobility web platform",
+            "description": "An application to connect passengers and drivers in a seamless ride flow, focusing on registration, route estimation, and dashboard data management."
+          },
+          {
+            "type": "feature",
+            "title": "Home page with quick route search",
+            "description": "Main screen featuring a direct form to input origin and destination, plus a shortcut to open the route in Google Maps."
+          },
+          {
+            "type": "feature",
+            "title": "Ride simulation with distance and price calculation",
+            "description": "Quotation flow that receives origin and destination by country/city, calculates distance in KM, and displays the estimated ride value."
+          },
+          {
+            "type": "feature",
+            "title": "Driver registration with data validation",
+            "description": "Complete form with name, email, code, country, and city validation, including an option to specify the vehicle category."
+          },
+          {
+            "type": "feature",
+            "title": "Submission confirmation with information review",
+            "description": "After registration, the system displays a summary of the submitted data and allows editing key fields before proceeding."
+          },
+          {
+            "type": "feature",
+            "title": "Registered drivers dashboard",
+            "description": "Panel that lists drivers, shows profile data in a modal, and allows for quick record removal."
+          },
+          {
+            "type": "feature",
+            "title": "Authentication with login, signup, and protected routes",
+            "description": "Basic login and signup system via modal, with access control for internal pages such as dashboard and profile."
+          },
+          {
+            "type": "feature",
+            "title": "User profile with notifications",
+            "description": "Profile area featuring account status, system notification history, logout, and account deletion option."
+          },
+          {
+            "type": "feature",
+            "title": "Mobile app page with ratings",
+            "description": "Section dedicated to the mobile application with a store button and a star rating component."
+          },
+          {
+            "type": "feature",
+            "title": "Contact page with author channels",
+            "description": "Contact screen featuring the developer's introduction and direct links to GitHub and LinkedIn."
+          }
+        ]
       }
     ]
   },

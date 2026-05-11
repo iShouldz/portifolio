@@ -515,7 +515,59 @@
         "githubUrl": "https://github.com/iShouldz/DeliveryCar",
         "tecnologies": ["React", "Typescript", "Shadcn"],
         "tags": ["Web", "Frontend", "Gereciamento", "React"],
-        "deployLink": "https://delivery-car.vercel.app/"
+        "deployLink": "https://delivery-car.vercel.app/",
+        "resources": [
+          {
+            "type": "product",
+            "title": "Plataforma web de mobilidade MyRide",
+            "description": "Aplicação para conectar passageiros e motoristas em um fluxo simples de corridas, com foco em cadastro, estimativa de trajeto e gestão dos dados no painel."
+          },
+          {
+            "type": "feature",
+            "title": "Página inicial com busca rápida de trajeto",
+            "description": "Tela principal com formulário direto para informar origem e destino, além de atalho para abrir a rota no Google Maps."
+          },
+          {
+            "type": "feature",
+            "title": "Simulação de corrida com cálculo de distância e preço",
+            "description": "Fluxo de cotação que recebe origem e destino por país/cidade, calcula a distância em KM e mostra o valor estimado da corrida."
+          },
+          {
+            "type": "feature",
+            "title": "Cadastro de motorista com validação de dados",
+            "description": "Formulário completo com validação de nome, e-mail, código, país e cidade, incluindo opção de informar categoria do veículo."
+          },
+          {
+            "type": "feature",
+            "title": "Confirmação de envio com revisão das informações",
+            "description": "Depois do cadastro, o sistema exibe um resumo dos dados enviados e permite corrigir os campos principais antes de seguir."
+          },
+          {
+            "type": "feature",
+            "title": "Dashboard de motoristas cadastrados",
+            "description": "Painel que lista os motoristas, mostra dados de perfil em modal e permite remover registros de forma rápida."
+          },
+          {
+            "type": "feature",
+            "title": "Autenticação com login, cadastro e rotas protegidas",
+            "description": "Sistema básico de login e sign-up por modal, com controle de acesso para páginas internas como dashboard e perfil."
+          },
+          {
+            "type": "feature",
+            "title": "Perfil do usuário com notificações",
+            "description": "Área de perfil com status de conta, histórico de notificações do sistema, logout e opção de exclusão da conta."
+          },
+          {
+            "type": "feature",
+            "title": "Página de app mobile com avaliação",
+            "description": "Seção dedicada ao aplicativo mobile com botão para loja e componente de avaliação por estrelas."
+          },
+          {
+            "type": "feature",
+            "title": "Página de contato com canais do autor",
+            "description": "Tela de contato com apresentação do desenvolvedor e links diretos para GitHub e LinkedIn."
+          }
+        ]
       }
     ]
   },
