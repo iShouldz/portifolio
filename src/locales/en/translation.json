@@ -353,7 +353,7 @@
         "id": "vet-care",
         "title": "Vet Care",
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/f_auto,q_auto/v1778094396/a9efa034-f169-467f-857a-41d60f2df409.png",
-        "description": "Academic project for veterinary care management.",
+        "description": "VetCarePro's web front-end, a platform for managing veterinary clinics with a focus on daily operations: patient care, scheduling, registration, staff, finances, and sales.",
         "githubUrl": "https://github.com/iShouldz/toDeploy",
         "tecnologies": ["React", "Typescript", "Shadcn"],
         "tags": ["Web", "Frontend", "Management", "React"],
