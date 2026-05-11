@@ -123,7 +123,7 @@ export function ProjectGallery({ mediaList }: { mediaList: MediaItem[] }) {
               return (
                 <div className="flex h-full w-full items-center justify-center p-4">
                   <iframe
-                    className="aspect-video w-full max-w-4xl rounded-lg shadow-lg"
+                    className="aspect-video w-full py-11 rounded-lg shadow-lg"
                     src={`https://www.youtube.com/embed/${currentSlide.videoId}?autoplay=0&rel=0`}
                     title="YouTube video player"
                     frameBorder="0"

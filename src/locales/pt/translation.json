@@ -376,7 +376,79 @@
         "githubUrl": "https://github.com/iShouldz/toDeploy",
         "tecnologies": ["React", "Typescript", "Shadcn"],
         "tags": ["Web", "Frontend", "Gereciamento", "React"],
-        "deployLink": "https://vetcareufape.vercel.app/"
+        "deployLink": "https://vetcareufape.vercel.app/",
+        "resources": [
+          {
+            "type": "product",
+            "title": "VetCarePro Web",
+            "description": "Plataforma web para gestão de clínicas veterinárias, reunindo atendimento, agenda, equipe, vendas e financeiro em um único fluxo de trabalho."
+          },
+          {
+            "type": "feature",
+            "title": "Acesso com login, cadastro e onboarding",
+            "description": "Entrada da conta com validação de formulário, opção de manter sessão ativa e um tour guiado para ajudar quem está usando o sistema pela primeira vez."
+          },
+          {
+            "type": "product",
+            "title": "Gestão de clínicas com controle por perfil",
+            "description": "Permite listar, criar, editar e remover clínicas, respeitando permissões de acesso antes de entrar na área interna de cada unidade."
+          },
+          {
+            "type": "product",
+            "title": "Dashboard operacional da clínica",
+            "description": "Painel com indicadores rápidos, consultas próximas, busca por atendimentos e atalhos para ações do dia a dia sem precisar navegar por várias telas."
+          },
+          {
+            "type": "product",
+            "title": "Cadastro e acompanhamento de pacientes",
+            "description": "Fluxo completo para registrar pacientes, consultar detalhes, editar dados e acompanhar histórico clínico em uma visualização organizada."
+          },
+          {
+            "type": "product",
+            "title": "Gestão de serviços veterinários",
+            "description": "Área dedicada para cadastrar serviços, manter a lista atualizada e consultar detalhes de cada procedimento oferecido pela clínica."
+          },
+          {
+            "type": "product",
+            "title": "Gestão de funcionários e folha",
+            "description": "Controle do time com cadastro, edição e remoção de colaboradores, além de apoio ao acompanhamento de pagamentos salariais."
+          },
+          {
+            "type": "product",
+            "title": "Agenda de consultas e conclusão de atendimento",
+            "description": "Organiza agendamentos com criação, edição e listagem paginada, incluindo conclusão de consulta ao final do atendimento."
+          },
+          {
+            "type": "product",
+            "title": "Produtos, estoque e carrinho de vendas",
+            "description": "Cadastro de produtos com status de estoque, carrinho com ajuste de quantidade e fechamento de compra direto pela interface."
+          },
+          {
+            "type": "feature",
+            "title": "Pagamento via PIX com QR Code",
+            "description": "Fluxo de cobrança integrado com geração de QR Code PIX para facilitar recebimentos tanto em vendas quanto em rotinas financeiras."
+          },
+          {
+            "type": "product",
+            "title": "Painel financeiro com indicadores e controles",
+            "description": "Consolida métricas como receitas, débitos e valores a receber, com opção de ocultar valores sensíveis e validar pagamentos da equipe."
+          },
+          {
+            "type": "feature",
+            "title": "Planos de assinatura e página de preços",
+            "description": "Apresentação dos níveis de plano (Free, Standard e Enterprise) com comparação de recursos para apoiar a decisão de contratação."
+          },
+          {
+            "type": "feature",
+            "title": "Tema claro/escuro e personalização visual",
+            "description": "Permite alternar tema da interface e ajustar elementos visuais do header para deixar o uso mais confortável no dia a dia."
+          },
+          {
+            "type": "feature",
+            "title": "Experiência de uso responsiva",
+            "description": "Interface adaptada para mobile, tablet e desktop, com estados de carregamento, mensagens de erro e feedback visual nas ações do usuário."
+          }
+        ]
       },
       {
         "id": "floricultura",

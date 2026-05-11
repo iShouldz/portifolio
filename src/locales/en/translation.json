@@ -357,7 +357,79 @@
         "githubUrl": "https://github.com/iShouldz/toDeploy",
         "tecnologies": ["React", "Typescript", "Shadcn"],
         "tags": ["Web", "Frontend", "Management", "React"],
-        "deployLink": "https://vetcareufape.vercel.app/"
+        "deployLink": "https://vetcareufape.vercel.app/",
+        "resources": [
+          {
+            "type": "product",
+            "title": "VetCarePro Web",
+            "description": "Web platform for veterinary clinic management, unifying care, scheduling, staff, sales, and finance into a single workflow."
+          },
+          {
+            "type": "feature",
+            "title": "Login, registration, and onboarding",
+            "description": "Account entry with form validation, keep-session-active option, and a guided tour to help first-time users navigate the system."
+          },
+          {
+            "type": "product",
+            "title": "Clinic management with profile control",
+            "description": "Allows listing, creating, editing, and removing clinics, enforcing access permissions before entering each unit's internal area."
+          },
+          {
+            "type": "product",
+            "title": "Operational clinic dashboard",
+            "description": "Dashboard with quick indicators, upcoming appointments, consultation search, and shortcuts for daily actions without navigating multiple screens."
+          },
+          {
+            "type": "product",
+            "title": "Patient registration and tracking",
+            "description": "Complete flow to register patients, view details, edit data, and track clinical history in an organized view."
+          },
+          {
+            "type": "product",
+            "title": "Veterinary services management",
+            "description": "Dedicated area to register services, keep the list updated, and view details of each procedure offered by the clinic."
+          },
+          {
+            "type": "product",
+            "title": "Staff and payroll management",
+            "description": "Team control with staff registration, editing, and removal, plus support for tracking payroll payments."
+          },
+          {
+            "type": "product",
+            "title": "Appointment scheduling and checkout",
+            "description": "Organizes appointments with creation, editing, and paginated listing, including consultation completion at the end of the service."
+          },
+          {
+            "type": "product",
+            "title": "Products, inventory, and shopping cart",
+            "description": "Product registration with inventory status, shopping cart with quantity adjustments, and checkout directly through the interface."
+          },
+          {
+            "type": "feature",
+            "title": "PIX payment with QR Code",
+            "description": "Integrated billing flow with PIX QR Code generation to facilitate payments in both sales and financial routines."
+          },
+          {
+            "type": "product",
+            "title": "Financial panel with controls",
+            "description": "Consolidates metrics like revenue, debts, and receivables, with an option to hide sensitive values and validate staff payments."
+          },
+          {
+            "type": "feature",
+            "title": "Subscription plans and pricing page",
+            "description": "Presentation of plan tiers (Free, Standard, and Enterprise) with feature comparisons to support purchasing decisions."
+          },
+          {
+            "type": "feature",
+            "title": "Light/dark theme and visual customization",
+            "description": "Allows toggling the interface theme and adjusting visual header elements to make daily use more comfortable."
+          },
+          {
+            "type": "feature",
+            "title": "Responsive user experience",
+            "description": "Interface adapted for mobile, tablet, and desktop, with loading states, error messages, and visual feedback on user actions."
+          }
+        ]
       },
       {
         "id": "floricultura",
