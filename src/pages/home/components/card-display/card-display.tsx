@@ -1,11 +1,12 @@
 import { motion, useScroll, useTransform, type Variants } from "motion/react"
 import { WobbleCard } from "@/components/ui/wobble-card"
 import { useNavigate } from "react-router"
-import { useRef } from "react"
+import { useMemo, useRef } from "react"
 import { Download, MoveDown } from "lucide-react"
 import { useTranslation } from "react-i18next"
 import { RoutesUrl } from "@/utils/enum/routes.utils"
 import type { ICardDisplayProps } from "../../types"
+import { resumeFiles } from "../../utils/get-resume-file"
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -34,7 +35,7 @@ const itemVariants: Variants | undefined = {
 }
 
 const CardDisplay = ({ cardsRef, cardsLift, cardsSkew }: ICardDisplayProps) => {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
   const navigate = useNavigate()
   const containerRef = useRef<HTMLDivElement>(null)
 
@@ -42,6 +43,8 @@ const CardDisplay = ({ cardsRef, cardsLift, cardsSkew }: ICardDisplayProps) => {
     target: containerRef,
     offset: ["start end", "end start"],
   })
+
+  const currentLanguage = resumeFiles[i18n.language] || "Curriculum.pdf"
 
   const yFast = useTransform(scrollYProgress, [0, 1], [300, -300])
   const yFastSobreMim = useTransform(scrollYProgress, [0, 1], [250, -250])
@@ -132,7 +135,7 @@ const CardDisplay = ({ cardsRef, cardsLift, cardsSkew }: ICardDisplayProps) => {
           variants={itemVariants}
           className="col-span-1 lg:col-span-1"
         >
-          <a href="/Curriculo.pdf" download="Curriculo.pdf">
+          <a href={`/${currentLanguage}`} download={currentLanguage}>
             <WobbleCard containerClassName="h-full w-full min-h-[320px] lg:min-h-[360px] bg-secondary cursor-pointer">
               <div className="group flex h-full flex-col items-center justify-center p-6 text-center">
                 <h2 className="flex flex-col items-center justify-center gap-4 text-center text-base font-semibold tracking-[-0.015em] text-balance text-foreground md:text-xl lg:text-3xl">
