@@ -108,11 +108,35 @@ export function ProjectGallery({ mediaList }: { mediaList: MediaItem[] }) {
       <Lightbox
         plugins={plugins}
         styles={stylesProp}
-        slides={mediaList}
+        //eslint-disable-next-line @typescript-eslint/no-explicit-any
+        slides={mediaList as any}
         carousel={carouselProps}
         thumbnails={thumbnailsProp}
         inline={{ style: inlineStyle }}
-        render={{ buttonPrev: buttonPrev, buttonNext: buttonNext }}
+        render={{
+          buttonPrev: buttonPrev,
+          buttonNext: buttonNext,
+          slide: ({ slide }) => {
+            const currentSlide = slide as unknown as MediaItem
+
+            if (currentSlide.type === "youtube") {
+              return (
+                <div className="flex h-full w-full items-center justify-center p-4">
+                  <iframe
+                    className="aspect-video w-full max-w-4xl rounded-lg shadow-lg"
+                    src={`https://www.youtube.com/embed/${currentSlide.videoId}?autoplay=0&rel=0`}
+                    title="YouTube video player"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
+              )
+            }
+
+            return undefined
+          },
+        }}
       />
     </div>
   )

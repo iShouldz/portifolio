@@ -3,7 +3,12 @@ export interface ProjectMedia {
   mediaList: MediaItem[]
 }
 
-export type MediaItem = ImageMedia | VideoMedia
+interface YoutubeMedia {
+  type: "youtube"
+  videoId: string
+}
+
+export type MediaItem = ImageMedia | VideoMedia | YoutubeMedia
 
 interface ImageMedia {
   type: "image"
@@ -20,7 +25,7 @@ interface VideoMedia {
 
 interface VideoSource {
   src: string
-  type: string 
+  type: string
 }
 
 export type ProjectMediaList = ProjectMedia[]

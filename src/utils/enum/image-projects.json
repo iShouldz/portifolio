@@ -85,13 +85,17 @@
         "src": "https://res.cloudinary.com/dxerrpspz/image/upload/f_auto,q_auto/v1778181319/f563aeb6-98b8-4d50-a535-d933f9f37451.png"
       },
       {
+        "type": "youtube",
+        "videoId": "CqMsG3ksVQQ"
+      },
+      {
         "type": "video",
         "autoPlay": true,
         "muted": true,
         "controls": true,
         "sources": [
           {
-            "src": "https://res.cloudinary.com/dxerrpspz/video/upload/f_auto,q_auto/v1778181178/Screen_Recording_20260507_160842_treine-se_sdyjes.mp4",
+            "src": "https://www.youtube.com/watch?v=CqMsG3ksVQQ",
             "type": "video/mp4"
           }
         ]
@@ -139,75 +143,40 @@
     "mediaList": [
       {
         "type": "image",
-        "src": "https://res.cloudinary.com/dxerrpspz/image/upload/f_auto,q_auto/v1778179200/f4e3fe49-7236-4428-900a-8145d695d334_r7ayml.jpg"
+        "src": "https://res.cloudinary.com/dxerrpspz/image/upload/f_auto,q_auto/v1778472111/2d4bef4b-4b88-4f58-b040-393cd43fa94e.png"
       },
       {
         "type": "image",
-        "src": "https://res.cloudinary.com/dxerrpspz/image/upload/f_auto,q_auto/v1778181320/2156253b-cbce-4134-ab80-6a0f105b530b.png"
+        "src": "https://res.cloudinary.com/dxerrpspz/image/upload/f_auto,q_auto/v1778472125/ff8d51e1-77e7-4fb4-bfcd-a397fb7d830b.png"
       },
       {
         "type": "image",
-        "src": "https://res.cloudinary.com/dxerrpspz/image/upload/f_auto,q_auto/v1778181116/05ea7f5b-82fa-4df2-b125-e5c680b564f5.png"
+        "src": "https://res.cloudinary.com/dxerrpspz/image/upload/f_auto,q_auto/v1778472149/c210631c-0cce-4e9d-a385-f9ca34cb1707.png"
       },
       {
         "type": "image",
-        "src": "https://res.cloudinary.com/dxerrpspz/image/upload/f_auto,q_auto/v1778181101/b459ea51-d4ad-47f7-a22a-d9c5f778293c.png"
+        "src": "https://res.cloudinary.com/dxerrpspz/image/upload/f_auto,q_auto/v1778472172/ca37ffdf-7346-4267-9ab6-54e2036a3866.png"
       },
       {
         "type": "image",
-        "src": "https://res.cloudinary.com/dxerrpspz/image/upload/f_auto,q_auto/v1778181117/5df37568-4d74-4a14-b540-f5918e0353ae.png"
+        "src": "https://res.cloudinary.com/dxerrpspz/image/upload/f_auto,q_auto/v1778472197/ef8f6207-e096-485f-9ff9-de294a8b8945.png"
       },
       {
         "type": "image",
-        "src": "https://res.cloudinary.com/dxerrpspz/image/upload/f_auto,q_auto/v1778181319/f563aeb6-98b8-4d50-a535-d933f9f37451.png"
+        "src": "https://res.cloudinary.com/dxerrpspz/image/upload/f_auto,q_auto/v1778472232/7163008e-f754-47b0-897b-5bdf8a644f16.png"
       },
       {
-        "type": "video",
-        "autoPlay": true,
-        "muted": true,
-        "controls": true,
-        "sources": [
-          {
-            "src": "https://res.cloudinary.com/dxerrpspz/video/upload/f_auto,q_auto/v1778181178/Screen_Recording_20260507_160842_treine-se_sdyjes.mp4",
-            "type": "video/mp4"
-          }
-        ]
+        "type": "image",
+        "src": "https://res.cloudinary.com/dxerrpspz/image/upload/f_auto,q_auto/v1778472285/40a2626f-c971-4ba9-a308-63b65621215e.png"
       },
       {
-        "type": "video",
-        "autoPlay": true,
-        "muted": true,
-        "controls": true,
-        "sources": [
-          {
-            "src": "https://res.cloudinary.com/dxerrpspz/video/upload/f_auto,q_auto/v1778181175/Screen_Recording_20260507_154303_treine-se_muais0.mp4",
-            "type": "video/mp4"
-          }
-        ]
+        "type": "image",
+        "src": "https://res.cloudinary.com/dxerrpspz/image/upload/f_auto,q_auto/v1778474140/Screenshot_2026-05-11_010440_b7vsxg.png"
       },
+
       {
-        "type": "video",
-        "autoPlay": true,
-        "muted": true,
-        "controls": true,
-        "sources": [
-          {
-            "src": "https://res.cloudinary.com/dxerrpspz/video/upload/f_auto,q_auto/v1778181173/Screen_Recording_20260507_160913_treine-se_zexmox.mp4",
-            "type": "video/mp4"
-          }
-        ]
-      },
-      {
-        "type": "video",
-        "autoPlay": true,
-        "muted": true,
-        "controls": true,
-        "sources": [
-          {
-            "src": "https://res.cloudinary.com/dxerrpspz/video/upload/f_auto,q_auto/v1778181173/Screen_Recording_20260507_161002_treine-se_kweiib.mp4",
-            "type": "video/mp4"
-          }
-        ]
+        "type": "image",
+        "src": "https://res.cloudinary.com/dxerrpspz/image/upload/f_auto,q_auto/v1778472301/c03a5375-7383-4466-ab75-50b9d699cb59.png"
       }
     ]
   }
