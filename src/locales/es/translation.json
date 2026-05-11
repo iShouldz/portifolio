@@ -114,8 +114,17 @@
         "description": "Mi portafolio personal, donde agrego mis proyectos y habilidades.",
         "githubUrl": "https://github.com/iShouldz/portifolio",
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/f_auto,q_auto/v1778094315/6e74906a-8e4c-432c-815e-68055465ab8a.png",
-        "tecnologies": ["React", "Typescript", "SEO", "UX"],
-        "tags": ["Web", "Frontend", "Personal"]
+        "tecnologies": [
+          "React",
+          "Typescript",
+          "SEO",
+          "UX"
+        ],
+        "tags": [
+          "Web",
+          "Frontend",
+          "Personal"
+        ]
       },
       {
         "id": "one-pace-hub",
@@ -197,7 +206,14 @@
           "shadcn/ui",
           "GitHub Actions (workflow de actualización de caché)"
         ],
-        "tags": ["Web", "Frontend", "Personal", "One Pace", "SEO", "Scraping"],
+        "tags": [
+          "Web",
+          "Frontend",
+          "Personal",
+          "One Pace",
+          "SEO",
+          "Scraping"
+        ],
         "deployLink": "one-pace-br.pages.dev"
       },
       {
@@ -258,8 +274,20 @@
             "description": "Datos importantes como perfil, entrenamientos y chat se mantienen persistidos localmente, con integración a servicios externos para autenticación, IA y funciones nativas móviles, incluyendo notificaciones locales."
           }
         ],
-        "tecnologies": ["React", "Capacitor JS", "Android Studio", "IA"],
-        "tags": ["Web", "Frontend", "Webview", "Web Bridge", "Fitness", "IA"]
+        "tecnologies": [
+          "React",
+          "Capacitor JS",
+          "Android Studio",
+          "IA"
+        ],
+        "tags": [
+          "Web",
+          "Frontend",
+          "Webview",
+          "Web Bridge",
+          "Fitness",
+          "IA"
+        ]
       },
       {
         "id": "adedonha",
@@ -267,8 +295,19 @@
         "description": "Adedonha es una versión digital del clásico juego \"Stop/Adedonha\", centrada en partidas rápidas entre amigos. El proyecto busca mantener la dinámica tradicional del juego de papel y lápiz, pero con la incorporación de un temporizador, dibujo de letras, control de puntuación e historial de partidas.",
         "githubUrl": "https://github.com/iShouldz/adedonha",
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/f_auto,q_auto/v1778094983/adedonha_tmozpn.png",
-        "tecnologies": ["React", "Typescript", "Shadcn", "IA"],
-        "tags": ["Web", "Frontend", "Juegos", "Personal", "Mobile First"],
+        "tecnologies": [
+          "React",
+          "Typescript",
+          "Shadcn",
+          "IA"
+        ],
+        "tags": [
+          "Web",
+          "Frontend",
+          "Juegos",
+          "Personal",
+          "Mobile First"
+        ],
         "deployLink": "https://adedonha.vercel.app/",
         "resources": [
           {
@@ -354,8 +393,17 @@
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/f_auto,q_auto/v1778094396/a9efa034-f169-467f-857a-41d60f2df409.png",
         "description": "La interfaz web de VetCarePro es una plataforma para la gestión de clínicas veterinarias centrada en las operaciones diarias: atención al paciente, programación de citas, registro, personal, finanzas y ventas.",
         "githubUrl": "https://github.com/iShouldz/toDeploy",
-        "tecnologies": ["React", "Typescript", "Shadcn"],
-        "tags": ["Web", "Frontend", "Gestión", "React"],
+        "tecnologies": [
+          "React",
+          "Typescript",
+          "Shadcn"
+        ],
+        "tags": [
+          "Web",
+          "Frontend",
+          "Gestión",
+          "React"
+        ],
         "deployLink": "https://vetcareufape.vercel.app/",
         "resources": [
           {
@@ -436,8 +484,17 @@
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/f_auto,q_auto/v1778096521/6d4d2e82-35e8-4970-a9dd-aab97fe93bde.png",
         "description": "Repositorio referente al segundo desafío del programa de becas de Compass UOL. En la aplicación, el usuario podía registrar nuevas flores y gestionar el inventario, además de realizar ventas. El proyecto fue desarrollado utilizando React para el frontend y con diseño responsivo aplicado, con json server para el backend.",
         "githubUrl": "https://github.com/iShouldz/FloriculturaGrupo04",
-        "tecnologies": ["React", "Typescript", "Shadcn"],
-        "tags": ["Web", "Frontend", "Gestión", "React"],
+        "tecnologies": [
+          "React",
+          "Typescript",
+          "Shadcn"
+        ],
+        "tags": [
+          "Web",
+          "Frontend",
+          "Gestión",
+          "React"
+        ],
         "deployLink": "https://floricultura-grupo04-pkbf-ofin807ak-ishouldzs-projects.vercel.app/"
       },
       {
@@ -446,8 +503,17 @@
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/f_auto,q_auto/v1778096066/c51748d2-481d-4972-b007-17d1fdaa1a51.png",
         "description": "Repositorio referente al tercer desafío del programa de becas de Compass UOL. En la aplicación, los usuarios podían elegir un modelo de coche, seleccionar el color y los accesorios deseados, y finalizar la compra. El proyecto fue desarrollado utilizando React para el frontend, con json server para el backend.",
         "githubUrl": "https://github.com/iShouldz/DeliveryCar",
-        "tecnologies": ["React", "Typescript", "Shadcn"],
-        "tags": ["Web", "Frontend", "Gestión", "React"],
+        "tecnologies": [
+          "React",
+          "Typescript",
+          "Shadcn"
+        ],
+        "tags": [
+          "Web",
+          "Frontend",
+          "Gestión",
+          "React"
+        ],
         "deployLink": "https://delivery-car.vercel.app/"
       }
     ]
@@ -583,7 +649,20 @@
   },
   "about": {
     "title": "Saber más sobre mí.",
-    "description": "Desarrollador Front-end graduado en Ciencias de la Computación (UFAPE), con actuación sólida en arquitecturas complejas y Microfrontends. En Compass UOL, trabajo en la cuenta de Vivo, donde elevo el listón de calidad aplicando Clean Code y pruebas integrales (Unitarias, de Componente y de Mutación con Stryker). Mi enfoque une la estética moderna de herramientas como Tailwind y Shadcn con la robustez técnica de la gestión de estados con Zustand y el consumo eficiente de APIs. Me motiva el desafío de transformar los requisitos de negocio en productos escalables dentro de entornos ágiles y colaborativos.",
+    "description": "Desarrollador front-end con titulación en Informática (UFAPE), con experiencia en diversas arquitecturas y microfrontends. En Compass UOL, trabajo en Vivo Telefónica, donde aplico conceptos de Clean Code y pruebas exhaustivas (unitarias, de componentes y de mutación con Stryker). Mi enfoque combina la estética moderna de herramientas como Tailwind y Shadcn con la solidez técnica de la gestión de estado mediante Zustand y Redux, y un consumo eficiente de API a través de React Query. Estoy acostumbrado a entornos ágiles, participando activamente en revisiones de código, rituales Scrum y procesos de despliegue estructurados (GMUD).",
+    "social-contact": {
+      "title": "Mis otras opciones de contacto.",
+      "description": "Si quieres, ponte en contacto.",
+      "linkedin": "Perfil de LinkedIn",
+      "github": "Perfil de GitHub",
+      "email": {
+        "caption": "Mi correo",
+        "address": "pedrosport10@gmail.com",
+        "button": "Copiar correo",
+        "copy": "Copiar dirección",
+        "copied": "Copiado"
+      }
+    },
     "form": {
       "title": "¿Hablamos?",
       "description": "Completa la información a continuación y me pondré en contacto pronto.",

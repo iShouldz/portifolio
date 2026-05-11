@@ -598,7 +598,22 @@
   },
   "about": {
     "title": "Saiba mais sobre mim.",
-    "description": "Desenvolvedor Front-end graduado em Ciência da Computação (UFAPE), com atuação sólida em arquiteturas complexas e Microfrontends. Na Compass UOL, atuo na conta da Vivo, onde elevo a barra de qualidade aplicando Clean Code e testes abrangentes (Unitários, Componente e Mutação com Stryker). Minha abordagem une a estética moderna de ferramentas como Tailwind e Shadcn à robustez técnica de gerenciamento de estados com Zustand e consumo eficiente de APIs. Sou movido pelo desafio de transformar requisitos de negócio em produtos escaláveis dentro de ambientes ágeis e colaborativos.",
+    "my-contacts": "Meus contatos",
+    "description": "Desenvolvedor Front-end graduado em Ciência da Computação (UFAPE), com atuação em arquiteturas diversas e Microfrontends. Na Compass UOL, atuo na Vivo Telefonica, onde atuo aplicando conceitos de Clean Code e testes abrangentes (Unitários, Componente e Mutação com Stryker). Minha abordagem une a estética moderna de ferramentas como Tailwind e Shadcn à robustez técnica de gerenciamento de estados com Zustand e Redux, com consumo eficiente de APIs, através do React Query. Sou habituado a ambientes ágeis, participando ativamente de code reviews, ritos do Scrum e processos estruturados de deploy (GMUD).",
+    "social-contact": {
+      "title": "Minhas outras opções de contato.",
+      "description": "Fique a vontade para entrar em contato.",
+      "linkedin": "Perfil no LinkedIn",
+      "github": "Perfil no GitHub",
+      "email": {
+        "caption": "Meu e-mail",
+        "address": "pedrosport10@gmail.com",
+        "button": "Copiar e-mail",
+        "copy": "Copiar endereço",
+        "copied": "Copiado"
+      }
+    },
+
     "form": {
       "title": "Então, vamos conversar?",
       "description": "Preencha as informações abaixo e eu vou entrar em contato em breve.",
