@@ -15,7 +15,7 @@ const Recomendations = ({ cardsLift, cardsSkew }: IRecomendationsProps) => {
   const secondRow = recomendationsList.slice(recomendationsList.length / 2)
 
   return (
-    <div className="relative mt-32 mb-20 flex min-h-[150vh] w-full flex-col items-center justify-center gap-8 overflow-hidden">
+    <section className="relative mt-32 mb-20 flex min-h-[150vh] w-full flex-col items-center justify-center gap-8 overflow-hidden">
       <motion.div
         initial={{ opacity: 0, x: -80 }}
         whileInView={{ opacity: 1, x: 0 }}
@@ -31,19 +31,28 @@ const Recomendations = ({ cardsLift, cardsSkew }: IRecomendationsProps) => {
         </div>
       </motion.div>
 
-      <div>
-        <Marquee pauseOnHover className="[--duration:25s]">
+      <div className="w-full">
+        <Marquee
+          pauseOnHover
+          className="[--duration:25s]"
+          aria-label="Recomendações de colegas - linha 1"
+        >
           {firstRow.map((review) => (
             <Card {...review} key={review.name} />
           ))}
         </Marquee>
-        <Marquee pauseOnHover reverse className="[--duration:25s]">
+        <Marquee
+          pauseOnHover
+          reverse
+          className="[--duration:25s]"
+          aria-label="Recomendações de colegas - linha 2"
+        >
           {secondRow.map((review) => (
             <Card {...review} key={review.name} />
           ))}
         </Marquee>
       </div>
-    </div>
+    </section>
   )
 }
 

@@ -13,9 +13,14 @@ const FrontPageComponent = ({
   const { t } = useTranslation()
   return (
     <section ref={introRef} className="relative min-h-[120vh]">
+      <style>{`
+        @media (prefers-reduced-motion: reduce) {
+          * { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+        }
+      `}</style>
       <div className="sticky top-0 flex h-screen items-center justify-center px-4 sm:px-6 lg:px-10">
         <motion.div
-          style={{ scale: heroScale, opacity: 0.94 }}
+          style={{ scale: heroScale, opacity: 0.94, willChange: "transform" }}
           className="max-w-8xl relative flex h-[88vh] w-full flex-col overflow-hidden rounded-[2.5rem] border border-border/60 bg-background/55 p-5 shadow-[0_30px_110px_rgba(15,23,42,0.1)] backdrop-blur-2xl sm:p-8"
         >
           <RetroGrid
@@ -28,6 +33,7 @@ const FrontPageComponent = ({
             aria-hidden="true"
             animate={{ y: [0, 20, 0], x: [0, -10, 0] }}
             transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
+            style={{ willChange: "transform" }}
           />
 
           <div className="flex flex-1 flex-col items-center justify-center gap-6">
