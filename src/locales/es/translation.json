@@ -632,7 +632,7 @@
       {
         "company": "Compass UOL",
         "icon": "employment",
-        "role": "Desarrollador Front-end Pleno",
+        "role": "Desarrollador Front-end",
         "period": "Noviembre 2023 - Presente",
         "location": "Remoto (Vivo/Telefônica)",
         "description": "Proyecto DevStore: Actué como desarrollador Front-end principal, siendo el único responsable de la entrega del proyecto en la fase final. Desarrollé y mantuve aplicaciones web escalables en React, utilizando Zustand, Redux y React Query para la gestión de estado y consumo de APIs REST vía Axios. Mi experiencia incluye el uso de TypeScript, Shadcn, Tailwind CSS, Styled Components y Material UI para crear interfaces de usuario optimizadas y accesibles. Contribuí activamente en la garantía de calidad a través de pruebas automatizadas con Vitest.\n\n Vivo Telefônica (actualmente): Participé en múltiples proyectos con enfoque en microfrontends en el área de Fintech. Apliqué principios de clean code y utilicé Mística para el desarrollo de UI. Fui responsable de garantizar la robustez del código a través de un conjunto integral de pruebas, incluyendo pruebas unitarias con Jest, pruebas de componente con Cypress y pruebas de mutación con Stryker.",
@@ -701,7 +701,7 @@
     "blocks": {
       "company": {
         "title": "Compass UOL",
-        "role": "Desarrollador Front-end Pleno",
+        "role": "Desarrollador Front-end",
         "description": "Desarrollador Frontend en el sector de Fintech de <1>Vivo</1>, enfocado en interfaces de alto rendimiento y componentes modulares. Implementación de entregas mediante prácticas de Clean Code y una sólida organización de pruebas, incluyendo pruebas unitarias, de componentes con Cypress y pruebas de mutación con Stryker para asegurar la máxima confiabilidad del código en producción."
       },
       "skills": {

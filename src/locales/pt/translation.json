@@ -721,7 +721,7 @@
     "blocks": {
       "company": {
         "title": "Compass UOL",
-        "role": "Desenvolvedor Front-end Pleno",
+        "role": "Desenvolvedor Front-end",
         "description": "Desenvolvedor Front-end no setor de Fintech da <1>Vivo</1>, focado em interfaces de alta performance e componentes modulares. Implementação de entregas através de práticas de Clean Code e organização de testes sólida, envolvendo testes unitários, de componente com o Cypress e testes de mutação com Stryker para assegurar a máxima confiabilidade do código em produção."
       },
       "skills": {
