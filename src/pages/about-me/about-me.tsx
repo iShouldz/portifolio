@@ -240,7 +240,9 @@ const AboutContact = () => {
                   type="email"
                   className="h-12 rounded-2xl border-white/10 bg-primary/20 px-4 focus:border-emerald-500/50"
                   value={form.email}
-                  onChange={(e) => setForm({ ...form, email: e.target.value })}
+                  onChange={(e) => {
+                    setForm({ ...form, email: e.target.value })
+                  }}
                   required
                 />
               </div>

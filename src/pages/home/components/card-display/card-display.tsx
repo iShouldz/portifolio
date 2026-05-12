@@ -99,7 +99,9 @@ const CardDisplay = ({ cardsRef, cardsLift, cardsSkew }: ICardDisplayProps) => {
           >
             <WobbleCard
               containerClassName="h-full w-full bg-secondary min-h-[320px] lg:min-h-[560px] rounded-[2.5rem] cursor-pointer"
-              onClick={() => navigate(RoutesUrl.PROJECTS)}
+              onClick={() => {
+                navigate(RoutesUrl.PROJECTS)
+              }}
             >
               <div className="group flex h-full w-full flex-col justify-between p-6">
                 <h2 className="text-left text-base font-semibold tracking-[-0.015em] text-balance text-foreground md:text-xl lg:text-3xl">
@@ -127,7 +129,9 @@ const CardDisplay = ({ cardsRef, cardsLift, cardsSkew }: ICardDisplayProps) => {
             tabIndex={0}
             role="button"
             aria-label="Ir para experiências"
-            onClick={() => navigate(RoutesUrl.EXPERIENCIES)}
+            onClick={() => {
+              navigate(RoutesUrl.EXPERIENCIES)
+            }}
             onKeyDown={(e: React.KeyboardEvent<HTMLDivElement>) => {
               if (e.key === "Enter" || e.key === " ")
                 navigate(RoutesUrl.EXPERIENCIES)
@@ -136,7 +140,9 @@ const CardDisplay = ({ cardsRef, cardsLift, cardsSkew }: ICardDisplayProps) => {
           >
             <WobbleCard
               containerClassName="h-full w-full bg-primary/20 min-h-[320px] lg:min-h-[360px] cursor-pointer"
-              onClick={() => navigate(RoutesUrl.EXPERIENCIES)}
+              onClick={() => {
+                navigate(RoutesUrl.EXPERIENCIES)
+              }}
             >
               <div className="group flex h-full flex-col justify-between p-6">
                 <h2 className="text-left text-base font-semibold tracking-[-0.015em] text-balance text-foreground md:text-xl lg:text-3xl">

@@ -15,6 +15,7 @@ exclude_paths:
   - "package.json"
   - "src/**/*.test.tsx"
   - "src/i18n.ts"
+  - "src/main.tsx"
 
 engines:
   eslint:

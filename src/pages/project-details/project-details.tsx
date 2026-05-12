@@ -22,21 +22,18 @@ const loadMarkdownStyles = async () => {
 const SectionSkeleton = () => {
   return (
     <div className="mx-auto w-full max-w-7xl space-y-8 px-6 py-12">
-      {/* Hero skeleton */}
       <div className="animate-pulse">
-        <div className="h-8 w-1/3 rounded-lg bg-muted mb-4" />
-        <div className="h-6 w-2/3 rounded-lg bg-muted mb-2" />
+        <div className="mb-4 h-8 w-1/3 rounded-lg bg-muted" />
+        <div className="mb-2 h-6 w-2/3 rounded-lg bg-muted" />
         <div className="h-4 w-1/4 rounded-lg bg-muted" />
       </div>
 
-      {/* Gallery skeleton */}
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-3 animate-pulse">
+      <div className="grid animate-pulse grid-cols-1 gap-4 md:grid-cols-3">
         <div className="col-span-2 h-48 rounded-xl bg-muted" />
         <div className="h-48 rounded-xl bg-muted" />
       </div>
 
-      {/* Readme / content skeleton */}
-      <div className="space-y-3 animate-pulse">
+      <div className="animate-pulse space-y-3">
         <div className="h-4 w-3/4 rounded-lg bg-muted" />
         <div className="h-4 w-full rounded-lg bg-muted" />
         <div className="h-4 w-5/6 rounded-lg bg-muted" />
@@ -84,7 +81,7 @@ const ProjectDetails = memo(function ProjectDetails() {
   )
 
   useMemo(() => {
-    loadMarkdownStyles()
+    void loadMarkdownStyles()
   }, [])
 
   return (

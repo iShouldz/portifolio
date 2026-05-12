@@ -51,7 +51,7 @@ const OutletPage = () => {
   const handleToggleLanguage = useCallback(
     (language: "pt" | "en" | "es") => {
       localStorage.setItem("lang", language)
-      i18n.changeLanguage(language)
+      void i18n.changeLanguage(language)
     },
     [i18n]
   )
