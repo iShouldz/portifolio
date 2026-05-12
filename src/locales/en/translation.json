@@ -113,19 +113,53 @@
       {
         "id": "portifolio",
         "title": "Portfolio",
-        "description": "My personal portfolio, where I aggregate my projects and skills.",
+        "description": "Personal portfolio developed to present projects, experiences, and contact methods in a more interactive visual experience, with fluid navigation, support for multiple languages, and detail pages for each project.",
         "githubUrl": "https://github.com/iShouldz/portifolio",
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/f_auto,q_auto/v1778094315/6e74906a-8e4c-432c-815e-68055465ab8a.png",
-        "tecnologies": [
-          "React",
-          "Typescript",
-          "SEO",
-          "UX"
-        ],
-        "tags": [
-          "Web",
-          "Frontend",
-          "Personal"
+        "tecnologies": ["React", "Typescript", "SEO", "UX"],
+        "tags": ["Web", "Frontend", "Personal"],
+
+        "resources": [
+          {
+            "type": "product",
+            "title": "Personal web portfolio for professional presentation",
+            "description": "The product centralizes your projects, experiences, and contact methods in a responsive web application, focused on making your presentation easier for recruiters, clients, and networking."
+          },
+          {
+            "type": "feature",
+            "title": "Navigation through main sections",
+            "description": "Allows quick access to Home, Resume, Projects, Experience, and About, keeping navigation simple and direct."
+          },
+          {
+            "type": "feature",
+            "title": "Project listing with detail page",
+            "description": "Displays projects in cards and allows opening a detail route with complete information for each item."
+          },
+          {
+            "type": "feature",
+            "title": "Repository README rendering",
+            "description": "Automatically displays the README from GitHub projects on the detail page to expand the technical context."
+          },
+          {
+            "type": "feature",
+            "title": "Multilingual support",
+            "description": "Offers content in multiple languages with dynamic switching in the interface."
+          },
+          {
+            "type": "feature",
+            "title": "Light and dark theme",
+            "description": "Allows toggling between viewing modes to improve accessibility and user preference."
+          },
+          {
+            "type": "feature",
+            "title": "Direct contact",
+            "description": "Includes a contact section/form and shortcuts to social networks to facilitate conversion and networking."
+          },
+          {
+            "type": "feature",
+            "title": "Resume download",
+            "description": "Provides a quick action to download the resume directly through the interface."
+          }
         ]
       },
       {
@@ -208,14 +242,7 @@
           "shadcn/ui",
           "GitHub Actions (cache update workflow)"
         ],
-        "tags": [
-          "Web",
-          "Frontend",
-          "Personal",
-          "One Pace",
-          "SEO",
-          "Scraping"
-        ],
+        "tags": ["Web", "Frontend", "Personal", "One Pace", "SEO", "Scraping"],
         "deployLink": "one-pace-br.pages.dev"
       },
       {
@@ -276,20 +303,8 @@
             "description": "Important data such as profile, workouts, and chat are persisted locally, with integration to external services for authentication, AI, and native mobile features, including local notifications."
           }
         ],
-        "tecnologies": [
-          "React",
-          "Capacitor JS",
-          "Android Studio",
-          "IA"
-        ],
-        "tags": [
-          "Web",
-          "Frontend",
-          "Webview",
-          "Web Bridge",
-          "Fitness",
-          "IA"
-        ]
+        "tecnologies": ["React", "Capacitor JS", "Android Studio", "IA"],
+        "tags": ["Web", "Frontend", "Webview", "Web Bridge", "Fitness", "IA"]
       },
       {
         "id": "adedonha",
@@ -297,19 +312,8 @@
         "description": "Adedonha is a digital version of the classic game \"Stop/Adedonha,\" focusing on quick matches between friends. The project aims to maintain the traditional dynamics of paper and pen, but with the support of a timer, letter drawing, score control, and match history.",
         "githubUrl": "https://github.com/iShouldz/adedonha",
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/f_auto,q_auto/v1778094983/adedonha_tmozpn.png",
-        "tecnologies": [
-          "React",
-          "Typescript",
-          "Shadcn",
-          "IA"
-        ],
-        "tags": [
-          "Web",
-          "Frontend",
-          "Games",
-          "Personal",
-          "Mobile First"
-        ],
+        "tecnologies": ["React", "Typescript", "Shadcn", "IA"],
+        "tags": ["Web", "Frontend", "Games", "Personal", "Mobile First"],
         "deployLink": "https://adedonha.vercel.app/",
         "resources": [
           {
@@ -395,17 +399,8 @@
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/f_auto,q_auto/v1778094396/a9efa034-f169-467f-857a-41d60f2df409.png",
         "description": "VetCarePro's web front-end, a platform for managing veterinary clinics with a focus on daily operations: patient care, scheduling, registration, staff, finances, and sales.",
         "githubUrl": "https://github.com/iShouldz/toDeploy",
-        "tecnologies": [
-          "React",
-          "Typescript",
-          "Shadcn"
-        ],
-        "tags": [
-          "Web",
-          "Frontend",
-          "Management",
-          "React"
-        ],
+        "tecnologies": ["React", "Typescript", "Shadcn"],
+        "tags": ["Web", "Frontend", "Management", "React"],
         "deployLink": "https://vetcareufape.vercel.app/",
         "resources": [
           {
@@ -486,17 +481,8 @@
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/f_auto,q_auto/v1778096521/6d4d2e82-35e8-4970-a9dd-aab97fe93bde.png",
         "description": "Repository for the second challenge of the Compass UOL scholarship program. In the application, the user could register new flowers and manage inventory, as well as make sales. The project was developed using React for the frontend with responsiveness applied, and json server for the backend.",
         "githubUrl": "https://github.com/iShouldz/FloriculturaGrupo04",
-        "tecnologies": [
-          "React",
-          "Typescript",
-          "Shadcn"
-        ],
-        "tags": [
-          "Web",
-          "Frontend",
-          "Management",
-          "React"
-        ],
+        "tecnologies": ["React", "Typescript", "Shadcn"],
+        "tags": ["Web", "Frontend", "Management", "React"],
         "resources": [
           {
             "type": "feature",
@@ -552,17 +538,8 @@
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/f_auto,q_auto/v1778096066/c51748d2-481d-4972-b007-17d1fdaa1a51.png",
         "description": "Repository for the third challenge of the Compass UOL scholarship program. In the application, users could choose a car model, select the color and desired accessories, and finalize the purchase. The project was developed using React for the frontend, with json server for the backend.",
         "githubUrl": "https://github.com/iShouldz/DeliveryCar",
-        "tecnologies": [
-          "React",
-          "Typescript",
-          "Shadcn"
-        ],
-        "tags": [
-          "Web",
-          "Frontend",
-          "Management",
-          "React"
-        ],
+        "tecnologies": ["React", "Typescript", "Shadcn"],
+        "tags": ["Web", "Frontend", "Management", "React"],
         "deployLink": "https://delivery-car.vercel.app/",
         "resources": [
           {
@@ -695,12 +672,7 @@
         "period": "September 2023 - September 2024",
         "location": "Garanhuns, PE",
         "description": "Research: PIBIC - Vulnerabilities caused by commits. Supervised by Professor Dr. Rodrigo Andrade. The project aims to analyze the relationship between code commits and the introduction of software vulnerabilities. Using data mining techniques and repository analysis, the study seeks to identify patterns and factors that contribute to the occurrence of security flaws, with the goal of providing insights for safer development practices.",
-        "tech": [
-          "Git",
-          "Python",
-          "Software Security",
-          "Vulnerability Analysis"
-        ]
+        "tech": ["Git", "Python", "Software Security", "Vulnerability Analysis"]
       },
       {
         "company": "UFAPE",

@@ -112,11 +112,54 @@
       {
         "id": "portifolio",
         "title": "Portafolio",
-        "description": "Mi portafolio personal, donde agrego mis proyectos y habilidades.",
+        "description": "Portafolio personal desarrollado para presentar proyectos, experiencias y formas de contacto en una experiencia visual más interactiva, con navegación fluida, soporte para múltiples idiomas y páginas de detalles para cada proyecto.",
         "githubUrl": "https://github.com/iShouldz/portifolio",
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/f_auto,q_auto/v1778094315/6e74906a-8e4c-432c-815e-68055465ab8a.png",
         "tecnologies": ["React", "Typescript", "SEO", "UX"],
-        "tags": ["Web", "Frontend", "Personal"]
+        "tags": ["Web", "Frontend", "Personal"],
+
+        "resources": [
+          {
+            "type": "product",
+            "title": "Portafolio web personal para presentación profesional",
+            "description": "El producto centraliza tus proyectos, experiencias y formas de contacto en una aplicación web responsiva, con el enfoque de facilitar tu presentación a reclutadores, clientes y networking."
+          },
+          {
+            "type": "feature",
+            "title": "Navegación por secciones principales",
+            "description": "Permite acceder rápidamente a Inicio, Resumen, Proyectos, Experiencia y Sobre mí, manteniendo la navegación simple y directa."
+          },
+          {
+            "type": "feature",
+            "title": "Listado de proyectos con página de detalles",
+            "description": "Muestra los proyectos en tarjetas y permite abrir una ruta de detalles con información completa de cada ítem."
+          },
+          {
+            "type": "feature",
+            "title": "Renderizado de README de los repositorios",
+            "description": "Muestra automáticamente el README de los proyectos de GitHub en la página de detalles para ampliar el contexto técnico."
+          },
+          {
+            "type": "feature",
+            "title": "Soporte multilingüe",
+            "description": "Ofrece contenido en múltiples idiomas con cambio dinámico en la interfaz."
+          },
+          {
+            "type": "feature",
+            "title": "Tema claro y oscuro",
+            "description": "Permite alternar entre modos de visualización para mejorar la accesibilidad y preferencia de uso."
+          },
+          {
+            "type": "feature",
+            "title": "Contacto directo",
+            "description": "Incluye una sección/formulario de contacto y accesos directos a redes sociales para facilitar la conversión y el networking."
+          },
+          {
+            "type": "feature",
+            "title": "Descarga de currículum",
+            "description": "Proporciona una acción rápida para descargar el currículum directamente a través de la interfaz."
+          }
+        ]
       },
       {
         "id": "one-pace-hub",
