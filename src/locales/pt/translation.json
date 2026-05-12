@@ -652,10 +652,10 @@
       {
         "company": "Compass UOL",
         "icon": "employment",
-        "role": "Desenvolvedor Front-end Pleno",
+        "role": "Desenvolvedor Front-end",
         "period": "Novembro 2023 - Presente",
         "location": "Remoto (Vivo/Telefônica)",
-        "description": "Projeto DevStore: Atuei como desenvolvedor Front-end principal, sendo o único responsável pela entrega do projeto na fase final. Desenvolvi e mantive aplicações web escaláveis em React, utilizando Zustand, Redux e React Query para gestão de estado e consumo de APIs REST via Axios. Minha experiência inclui o uso de TypeScript, Shadcn, Tailwind CSS, Styled Components e Material UI para criar interfaces de usuário otimizadas e acessíveis. Contribuí ativamente na garantia de qualidade através de testes automatizados com Vitest.\n\n Vivo Telefônica (atualmente): Participei de múltiplos projetos com foco em microfrontends na área de Fintech. Apliquei princípios de clean code e utilizei Mística para o desenvolvimento de UI. Fui responsável por garantir a robustez do código através de um conjunto abrangente de testes, incluindo testes unitários com o Jest, testes de componente com Cypress e testes de mutação com Stryker.",
+        "description": "Vivo Telefônica (atualmente): Participei de múltiplos projetos com foco em microfrontends na área de Fintech. Apliquei princípios de clean code e utilizei Mística para o desenvolvimento de UI. Fui responsável por garantir a robustez do código através de um conjunto abrangente de testes, incluindo testes unitários com o Jest, testes de componente com Cypress e testes de mutação com Stryker.\n\n Projeto DevStore: Atuei como desenvolvedor Front-end principal, sendo o único responsável pela entrega do projeto na fase final. Desenvolvi e mantive aplicações web escaláveis em React, utilizando Zustand, Redux e React Query para gestão de estado e consumo de APIs REST via Axios. Minha experiência inclui o uso de TypeScript, Shadcn, Tailwind CSS, Styled Components e Material UI para criar interfaces de usuário otimizadas e acessíveis. Contribuí ativamente na garantia de qualidade através de testes automatizados com Vitest.",
         "tech": [
           "React",
           "TypeScript",
