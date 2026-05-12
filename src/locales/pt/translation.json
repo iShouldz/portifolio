@@ -787,7 +787,7 @@
       },
       "btn": {
         "send-email": "Enviar email",
-        "send-email_isSendingma": "Enviando..."
+        "send-email_isSending": "Enviando..."
       }
     }
   }

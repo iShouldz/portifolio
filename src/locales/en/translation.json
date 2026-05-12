@@ -782,8 +782,7 @@
       },
       "btn": {
         "send-email": "Send email",
-        "send-email_isSending": "Sending...",
-        "send-email_isSendingma": "Sending..."
+        "send-email_isSending": "Sending..."
       }
     },
     "my-contacts": "My contacts"

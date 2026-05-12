@@ -115,17 +115,8 @@
         "description": "Mi portafolio personal, donde agrego mis proyectos y habilidades.",
         "githubUrl": "https://github.com/iShouldz/portifolio",
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/f_auto,q_auto/v1778094315/6e74906a-8e4c-432c-815e-68055465ab8a.png",
-        "tecnologies": [
-          "React",
-          "Typescript",
-          "SEO",
-          "UX"
-        ],
-        "tags": [
-          "Web",
-          "Frontend",
-          "Personal"
-        ]
+        "tecnologies": ["React", "Typescript", "SEO", "UX"],
+        "tags": ["Web", "Frontend", "Personal"]
       },
       {
         "id": "one-pace-hub",
@@ -207,14 +198,7 @@
           "shadcn/ui",
           "GitHub Actions (workflow de actualización de caché)"
         ],
-        "tags": [
-          "Web",
-          "Frontend",
-          "Personal",
-          "One Pace",
-          "SEO",
-          "Scraping"
-        ],
+        "tags": ["Web", "Frontend", "Personal", "One Pace", "SEO", "Scraping"],
         "deployLink": "one-pace-br.pages.dev"
       },
       {
@@ -275,20 +259,8 @@
             "description": "Datos importantes como perfil, entrenamientos y chat se mantienen persistidos localmente, con integración a servicios externos para autenticación, IA y funciones nativas móviles, incluyendo notificaciones locales."
           }
         ],
-        "tecnologies": [
-          "React",
-          "Capacitor JS",
-          "Android Studio",
-          "IA"
-        ],
-        "tags": [
-          "Web",
-          "Frontend",
-          "Webview",
-          "Web Bridge",
-          "Fitness",
-          "IA"
-        ]
+        "tecnologies": ["React", "Capacitor JS", "Android Studio", "IA"],
+        "tags": ["Web", "Frontend", "Webview", "Web Bridge", "Fitness", "IA"]
       },
       {
         "id": "adedonha",
@@ -296,19 +268,8 @@
         "description": "Adedonha es una versión digital del clásico juego \"Stop/Adedonha\", centrada en partidas rápidas entre amigos. El proyecto busca mantener la dinámica tradicional del juego de papel y lápiz, pero con la incorporación de un temporizador, dibujo de letras, control de puntuación e historial de partidas.",
         "githubUrl": "https://github.com/iShouldz/adedonha",
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/f_auto,q_auto/v1778094983/adedonha_tmozpn.png",
-        "tecnologies": [
-          "React",
-          "Typescript",
-          "Shadcn",
-          "IA"
-        ],
-        "tags": [
-          "Web",
-          "Frontend",
-          "Juegos",
-          "Personal",
-          "Mobile First"
-        ],
+        "tecnologies": ["React", "Typescript", "Shadcn", "IA"],
+        "tags": ["Web", "Frontend", "Juegos", "Personal", "Mobile First"],
         "deployLink": "https://adedonha.vercel.app/",
         "resources": [
           {
@@ -394,17 +355,8 @@
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/f_auto,q_auto/v1778094396/a9efa034-f169-467f-857a-41d60f2df409.png",
         "description": "La interfaz web de VetCarePro es una plataforma para la gestión de clínicas veterinarias centrada en las operaciones diarias: atención al paciente, programación de citas, registro, personal, finanzas y ventas.",
         "githubUrl": "https://github.com/iShouldz/toDeploy",
-        "tecnologies": [
-          "React",
-          "Typescript",
-          "Shadcn"
-        ],
-        "tags": [
-          "Web",
-          "Frontend",
-          "Gestión",
-          "React"
-        ],
+        "tecnologies": ["React", "Typescript", "Shadcn"],
+        "tags": ["Web", "Frontend", "Gestión", "React"],
         "deployLink": "https://vetcareufape.vercel.app/",
         "resources": [
           {
@@ -485,17 +437,8 @@
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/f_auto,q_auto/v1778096521/6d4d2e82-35e8-4970-a9dd-aab97fe93bde.png",
         "description": "Repositorio referente al segundo desafío del programa de becas de Compass UOL. En la aplicación, el usuario podía registrar nuevas flores y gestionar el inventario, además de realizar ventas. El proyecto fue desarrollado utilizando React para el frontend y con diseño responsivo aplicado, con json server para el backend.",
         "githubUrl": "https://github.com/iShouldz/FloriculturaGrupo04",
-        "tecnologies": [
-          "React",
-          "Typescript",
-          "Shadcn"
-        ],
-        "tags": [
-          "Web",
-          "Frontend",
-          "Gestión",
-          "React"
-        ],
+        "tecnologies": ["React", "Typescript", "Shadcn"],
+        "tags": ["Web", "Frontend", "Gestión", "React"],
         "resources": [
           {
             "type": "feature",
@@ -551,17 +494,8 @@
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/f_auto,q_auto/v1778096066/c51748d2-481d-4972-b007-17d1fdaa1a51.png",
         "description": "Repositorio referente al tercer desafío del programa de becas de Compass UOL. En la aplicación, los usuarios podían elegir un modelo de coche, seleccionar el color y los accesorios deseados, y finalizar la compra. El proyecto fue desarrollado utilizando React para el frontend, con json server para el backend.",
         "githubUrl": "https://github.com/iShouldz/DeliveryCar",
-        "tecnologies": [
-          "React",
-          "Typescript",
-          "Shadcn"
-        ],
-        "tags": [
-          "Web",
-          "Frontend",
-          "Gestión",
-          "React"
-        ],
+        "tecnologies": ["React", "Typescript", "Shadcn"],
+        "tags": ["Web", "Frontend", "Gestión", "React"],
         "deployLink": "https://delivery-car.vercel.app/",
         "resources": [
           {
@@ -781,8 +715,7 @@
       },
       "btn": {
         "send-email": "Enviar email",
-        "send-email_isSending": "Enviando...",
-        "send-email_isSendingma": "Envío..."
+        "send-email_isSending": "Enviando..."
       }
     },
     "my-contacts": "Mis contactos"
