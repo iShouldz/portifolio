@@ -27,12 +27,14 @@ vi.mock("@/utils/enum/image-projects.json", () => ({
 }))
 
 describe("Project details page", () => {
-  it("renders project details for a valid id", () => {
+  it("renders project details for a valid id", async () => {
     vi.mocked(useParams).mockReturnValue({ id: "portifolio" })
 
     render(<ProjectDetails />)
 
-    expect(screen.getByTestId("project-hero")).toHaveTextContent("Portifolio")
+    expect(await screen.findByTestId("project-hero")).toHaveTextContent(
+      "Portifolio"
+    )
     expect(screen.getByTestId("gallery-showcase")).toBeInTheDocument()
     expect(screen.getByTestId("readme-showcase")).toBeInTheDocument()
   })
@@ -42,6 +44,8 @@ describe("Project details page", () => {
 
     render(<ProjectDetails />)
 
-    expect(screen.getByTestId("project-hero")).toHaveTextContent("Projeto")
+    expect(screen.getByTestId("project-hero")).toHaveTextContent(
+      "Project Title"
+    )
   })
 })

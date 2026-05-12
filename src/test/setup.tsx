@@ -46,13 +46,58 @@ const mockExperiences = [
   },
 ]
 
+const mockRecommendations = [
+  {
+    name: "Alice",
+    description: "Great collaborator",
+    body: "Delivered strong work.",
+    username: "alice-dev",
+    initials: "AL",
+    tone: "emerald",
+  },
+  {
+    name: "Bruno",
+    description: "Reliable engineer",
+    body: "Always helpful.",
+    username: "bruno-code",
+    initials: "BR",
+    tone: "amber",
+  },
+  {
+    name: "Carla",
+    description: "Fast learner",
+    body: "Improved the team a lot.",
+    username: "carla-ui",
+    initials: "CA",
+    tone: "blue",
+  },
+  {
+    name: "Diego",
+    description: "Solid delivery",
+    body: "Consistent and accurate.",
+    username: "diego-dev",
+    initials: "DI",
+    tone: "rose",
+  },
+]
+
 vi.mock("react-i18next", () => {
   return {
     useTranslation: () => ({
-      t: (key: string, options?: { returnObjects?: boolean; context?: string }) => {
-        if (key === "projects.list" && options?.returnObjects) return mockProjects
+      t: (
+        key: string,
+        options?: { returnObjects?: boolean; context?: string }
+      ) => {
+        if (key === "projects.list" && options?.returnObjects)
+          return mockProjects
         if (key === "experiences.experiences-list" && options?.returnObjects) {
           return mockExperiences
+        }
+        if (
+          key === "landing-page.recomendations.list" &&
+          options?.returnObjects
+        ) {
+          return mockRecommendations
         }
         if (key === "project-details.details" && options?.returnObjects) {
           return {
@@ -129,6 +174,7 @@ vi.mock("lenis/react", () => ({
   default: ({ children }: { children: React.ReactNode }) => (
     <div data-testid="lenis">{children}</div>
   ),
+  useLenis: vi.fn(),
 }))
 
 vi.mock("@/components/scrool-to-top/scrool-to-top", () => ({
@@ -169,7 +215,9 @@ vi.mock("@/components/ui/tooltip", () => ({
 }))
 
 vi.mock("@/components/ui/dropdown-menu", () => ({
-  DropdownMenu: ({ children }: { children: React.ReactNode }) => <>{children}</>,
+  DropdownMenu: ({ children }: { children: React.ReactNode }) => (
+    <>{children}</>
+  ),
   DropdownMenuContent: ({ children }: { children: React.ReactNode }) => (
     <div>{children}</div>
   ),
@@ -229,6 +277,17 @@ class ResizeObserverMock {
 }
 
 globalThis.ResizeObserver = ResizeObserverMock as typeof ResizeObserver
+
+globalThis.IntersectionObserver = class {
+  observe = vi.fn()
+  unobserve = vi.fn()
+  disconnect = vi.fn()
+  root = null
+  rootMargin = ""
+  scrollMargin = ""
+  thresholds = []
+  takeRecords = vi.fn()
+} as any
 
 globalThis.matchMedia = (query: string) => ({
   matches: false,
