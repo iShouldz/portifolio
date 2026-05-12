@@ -1,11 +1,12 @@
-import * as React from "react"
 import { render, screen } from "@testing-library/react"
 import { describe, expect, it, vi } from "vitest"
 import useSetupScrool from "./use-setup-scrool"
 
 const { useScrollMock, useTransformMock } = vi.hoisted(() => ({
   useScrollMock: vi.fn(() => ({ scrollYProgress: 0 })),
-  useTransformMock: vi.fn((_value: unknown, _input: number[], output: number[]) => output[0]),
+  useTransformMock: vi.fn(
+    (_value: unknown, _input: number[], output: number[]) => output[0]
+  ),
 }))
 
 vi.mock("motion/react", () => ({
