@@ -25,6 +25,7 @@ import {
 } from "@/components/ui/dropdown-menu"
 import { GithubIcon } from "@/components/icons/GithubIcon"
 import { LinkedinIcon } from "@/components/icons/LinkedinIcon"
+import { resumeFiles } from "../home/utils/get-resume-file"
 
 const OutletPage = () => {
   const navigate = useNavigate()
@@ -54,6 +55,8 @@ const OutletPage = () => {
     },
     [i18n]
   )
+
+  const currentLanguage = resumeFiles[i18n.language] || "Curriculum.pdf"
 
   return (
     <ReactLenis root options={{ lerp: 0.08, duration: 1.2, smoothWheel: true }}>
@@ -109,7 +112,7 @@ const OutletPage = () => {
 
           <DockIcon>
             <Tooltip>
-              <a href="/Curriculo.pdf" download="Curriculo.pdf">
+              <a href={`/${currentLanguage}`} download={currentLanguage}>
                 <TooltipTrigger asChild>
                   <Download />
                 </TooltipTrigger>
