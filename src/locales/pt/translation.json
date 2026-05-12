@@ -115,7 +115,7 @@
     "list": [
       {
         "id": "portifolio",
-        "title": "Portifolio",
+        "title": "Portfolio",
         "description": "Portfólio pessoal desenvolvido para apresentar projetos, experiências e formas de contato em uma experiência visual mais interativa, com navegação fluida, suporte a múltiplos idiomas e páginas de detalhe para cada projeto.",
         "githubUrl": "https://github.com/iShouldz/portifolio",
         "img": "https://res.cloudinary.com/dxerrpspz/image/upload/f_auto,q_auto/v1778094315/6e74906a-8e4c-432c-815e-68055465ab8a.png",
