@@ -9,6 +9,7 @@ import { RouterProvider } from "react-router"
 import { routes } from "./routes.tsx"
 import { TooltipProvider } from "./components/ui/tooltip.tsx"
 import { Toaster } from "./components/ui/sonner.tsx"
+import { Analytics } from "@vercel/analytics/react"
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -16,6 +17,7 @@ createRoot(document.getElementById("root")!).render(
       <ThemeProvider>
         <TooltipProvider>
           <RouterProvider router={routes} />
+          <Analytics />
           <Toaster />
         </TooltipProvider>
       </ThemeProvider>
