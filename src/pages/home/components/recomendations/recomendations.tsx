@@ -3,9 +3,25 @@ import { motion } from "motion/react"
 import Card from "../card/card"
 import { useTranslation } from "react-i18next"
 import type { ICard, IRecomendationsProps } from "../../types"
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
+import {
+  CardDescription,
+  CardHeader,
+  Card as CardShadcn,
+  CardTitle,
+} from "@/components/ui/card"
+import useIsMobile from "@/hooks/use-is-mobile"
+import { LinkedinIcon } from "@/components/icons/LinkedinIcon"
 
 const Recomendations = ({ cardsLift, cardsSkew }: IRecomendationsProps) => {
   const { t } = useTranslation()
+  const isMobile = useIsMobile()
 
   const recomendationsList = t("landing-page.recomendations.list", {
     returnObjects: true,
@@ -31,27 +47,52 @@ const Recomendations = ({ cardsLift, cardsSkew }: IRecomendationsProps) => {
         </div>
       </motion.div>
 
-      <div className="w-full">
-        <Marquee
-          pauseOnHover
-          className="[--duration:25s]"
-          aria-label="Recomendações de colegas - linha 1"
-        >
-          {firstRow.map((review) => (
-            <Card {...review} key={review.name} />
-          ))}
-        </Marquee>
-        <Marquee
-          pauseOnHover
-          reverse
-          className="[--duration:25s]"
-          aria-label="Recomendações de colegas - linha 2"
-        >
-          {secondRow.map((review) => (
-            <Card {...review} key={review.name} />
-          ))}
-        </Marquee>
-      </div>
+      {isMobile ? (
+        <Carousel className="w-full">
+          <CarouselContent className="w-full p-1">
+            {recomendationsList.map((review, index) => (
+              <CarouselItem key={index} className="min-h-80">
+                <CardShadcn>
+                  <CardHeader className="flex flex-col gap-2">
+                    <CardTitle>{review.name}</CardTitle>
+                    <CardDescription className="flex items-center gap-2 text-xs font-light text-muted-foreground">
+                      <LinkedinIcon />
+                      {review.username}
+                    </CardDescription>
+                    <CardDescription className="line-clamp-10 h-full min-h-80">
+                      {review.body}
+                    </CardDescription>
+                  </CardHeader>
+                </CardShadcn>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className="left-3! z-50" />
+          <CarouselNext className="right-3! z-50" />
+        </Carousel>
+      ) : (
+        <div className="w-full">
+          <Marquee
+            pauseOnHover
+            className="[--duration:25s]"
+            aria-label="Recomendações de colegas - linha 1"
+          >
+            {firstRow.map((review) => (
+              <Card {...review} key={review.name} />
+            ))}
+          </Marquee>
+          <Marquee
+            pauseOnHover
+            reverse
+            className="[--duration:25s]"
+            aria-label="Recomendações de colegas - linha 2"
+          >
+            {secondRow.map((review) => (
+              <Card {...review} key={review.name} />
+            ))}
+          </Marquee>
+        </div>
+      )}
     </section>
   )
 }
