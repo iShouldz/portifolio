@@ -100,6 +100,14 @@
           "initials": "PP",
           "body": "I had the opportunity to work with Pedro on the Vivo project, and I can confidently say that he is a top-level professional. From the beginning, it was very clear how much he technically masters what he does, especially with React. His knowledge of the project is deep, and it was essential for me to adapt more quickly when I joined the team. He not only understands the technology but also the entire architecture and the processes involved, which makes a big difference on a daily basis. Besides his technical skills, Pedro stands out greatly for his attitude. He has always been an extremely supportive, patient, and helpful partner. From my first day, he welcomed me with open arms to help, and this continues to this day — even working in different teams within the same project, he is never unavailable when we need him. Another point worth highlighting is how he shares knowledge. He has great teaching skills and can explain complex concepts clearly and objectively, which contributed a lot to my development and adaptation to the project. Without a doubt, he is a professional who adds immense value technically and personally to any team.",
           "tone": "from-fuchsia-400 via-pink-400 to-rose-500"
+        },
+        {
+          "name": "Tomás Rossato Benfica",
+          "username": "/trbenfica",
+          "description": "Software Engineer @ Neogrid | Java | JavaScript | TypeScript",
+          "initials": "PP",
+          "body": "Working with Pedro at Compass UOL was an excellent experience. He was our group leader and the team's main developer, handling the project's most important responsibilities with great competence. In addition to delivering fast, he always maintained a very high technical standard and a great vision for the product, solving complex problems naturally. He was also a great day-to-day partner and someone the team could fully trust during critical moments. Without a doubt, he is a highly competent professional and a massive asset to any technology team.",
+          "tone": "from-fuchsia-400 via-pink-400 to-rose-500"
         }
       ]
     }

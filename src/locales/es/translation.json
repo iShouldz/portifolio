@@ -99,6 +99,14 @@
           "initials": "PP",
           "body": "Tuve la oportunidad de trabajar con Pedro en el proyecto de Vivo, y puedo decir con total tranquilidad que es un profesional de altísimo nivel. Desde el principio, quedó muy claro cuánto domina técnicamente lo que hace, especialmente con React. Su conocimiento sobre el proyecto es profundo, y fue esencial para que pudiera adaptarme más rápidamente cuando me uní al equipo. No solo entiende la tecnología, sino también toda la arquitectura y los procesos involucrados, lo que marca una gran diferencia en el día a día. Además de la parte técnica, Pedro destaca mucho por su actitud. Siempre ha sido un compañero extremadamente solidario, paciente y servicial. Desde mi primer día, me recibió con los brazos abiertos para ayudar, y esto continúa hasta hoy; incluso trabajando en diferentes equipos dentro del mismo proyecto, nunca deja de estar disponible cuando lo necesitamos. Otro punto que merece la pena destacar es la forma en que comparte el conocimiento. Tiene una excelente capacidad didáctica y logra explicar conceptos complejos de forma clara y objetiva, lo que contribuyó mucho a mi desarrollo y adaptación al proyecto. Sin duda, es un profesional que aporta muchísimo tanto a nivel técnico como personal dentro de cualquier equipo.",
           "tone": "from-fuchsia-400 via-pink-400 to-rose-500"
+        },
+        {
+          "name": "Tomás Rossato Benfica",
+          "username": "/trbenfica",
+          "description": "Software Engineer @ Neogrid | Java | JavaScript | TypeScript",
+          "initials": "PP",
+          "body": "Trabajar con Pedro en Compass UOL fue una excelente experiencia. Fue el líder de nuestro grupo y el desarrollador principal del equipo, asumiendo las responsabilidades más importantes del proyecto con mucha competencia. Además de ser rápido en las entregas, siempre mantuvo un nivel técnico muy alto y una gran visión del producto, logrando resolver problemas complejos con total naturalidad. También fue un gran compañero en el día a día y alguien en quien el equipo podía confiar en los momentos más críticos. Sin duda, es un profesional muy competente y un gran refuerzo para cualquier equipo de tecnología.",
+          "tone": "from-fuchsia-400 via-pink-400 to-rose-500"
         }
       ]
     }
